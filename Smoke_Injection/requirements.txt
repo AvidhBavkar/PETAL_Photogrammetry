@@ -1,3 +1,6 @@
 CoolProp==6.6.0
+fluids==1.0.25
+numpy==1.26.4
 Pint==0.23
+scipy==1.13.0
 typing_extensions==4.10.0
