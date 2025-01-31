@@ -1,0 +1,18 @@
+{
+    "status": "SUCCESS",
+    "execMode": "LOCAL",
+    "nodeName": "ImageMatching_1",
+    "nodeType": "ImageMatching",
+    "packageName": "aliceVision",
+    "packageVersion": null,
+    "graph": "",
+    "commandLine": "aliceVision_imageMatching  --input \"C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/meshroom/MeshroomCache/CameraInit/b5483bef2ee92723720762112d9f4a8f006a9142/cameraInit.sfm\" --featuresFolders \"C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/meshroom/MeshroomCache/FeatureExtraction/5c68a583c5e7573bbf35259a8ba5825d54c33d86\" --method SequentialAndVocabularyTree --tree \"C:\\Users\\Avidh Bavkar\\Downloads\\Meshroom-2023.3.0-win64\\Meshroom-2023.3.0\\aliceVision\\share\\aliceVision\\vlfeat_K80L3.SIFT.tree\" --weights \"\" --minNbImages 200 --maxDescriptors 500 --nbMatches 40 --nbNeighbors 5 --verboseLevel info --output \"C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/meshroom/MeshroomCache/ImageMatching/6b550069c26329b8135e484255601fb69cf4676e/imageMatches.txt\"",
+    "env": null,
+    "startDateTime": "2024-11-20 10:07:30.465323",
+    "endDateTime": "2024-11-20 10:07:35.401301",
+    "elapsedTime": 4.935977935791016,
+    "hostname": "RHIAN",
+    "sessionUid": "a22be008-a750-11ef-a912-088e901f65b1",
+    "returnCode": 0,
+    "elapsedTimeStr": "0:00:04.935978"
+}

@@ -1,0 +1,18 @@
+{
+    "status": "SUCCESS",
+    "execMode": "LOCAL",
+    "nodeName": "DepthMap_1",
+    "nodeType": "DepthMap",
+    "packageName": "aliceVision",
+    "packageVersion": null,
+    "graph": "",
+    "commandLine": "aliceVision_depthMapEstimation  --input \"C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/meshroom/MeshroomCache/StructureFromMotion/6134e9e839f7223d14819e2da1cf90cf3a999ebe/sfm.abc\" --imagesFolder \"C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/meshroom/MeshroomCache/PrepareDenseScene/8e3c0b2966564921603602656d4b9e6c70aa60ff\" --downscale 2 --minViewAngle 2.0 --maxViewAngle 70.0 --tileBufferWidth 1024 --tileBufferHeight 1024 --tilePadding 64 --autoAdjustSmallImage True --chooseTCamsPerTile True --maxTCams 10 --sgmScale 2 --sgmStepXY 2 --sgmStepZ -1 --sgmMaxTCamsPerTile 4 --sgmWSH 4 --sgmUseSfmSeeds True --sgmSeedsRangeInflate 0.2 --sgmDepthThicknessInflate 0.0 --sgmMaxSimilarity 1.0 --sgmGammaC 5.5 --sgmGammaP 8.0 --sgmP1 10.0 --sgmP2Weighting 100.0 --sgmMaxDepths 1500 --sgmFilteringAxes \"YX\" --sgmDepthListPerTile True --sgmUseConsistentScale False --refineEnabled True --refineScale 1 --refineStepXY 1 --refineMaxTCamsPerTile 4 --refineSubsampling 10 --refineHalfNbDepths 15 --refineWSH 3 --refineSigma 15.0 --refineGammaC 15.5 --refineGammaP 8.0 --refineInterpolateMiddleDepth False --refineUseConsistentScale False --colorOptimizationEnabled True --colorOptimizationNbIterations 100 --sgmUseCustomPatchPattern False --refineUseCustomPatchPattern False --exportIntermediateDepthSimMaps False --exportIntermediateNormalMaps False --exportIntermediateVolumes False --exportIntermediateCrossVolumes False --exportIntermediateTopographicCutVolumes False --exportIntermediateVolume9pCsv False --exportTilePattern False --nbGPUs 0 --verboseLevel info --output \"C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/meshroom/MeshroomCache/DepthMap/b4c331b9d680327a3c19c76ed2cf1434735bb201\" --rangeStart 384 --rangeSize 12",
+    "env": null,
+    "startDateTime": "2024-11-20 10:41:21.815386",
+    "endDateTime": "2024-11-20 10:41:44.996182",
+    "elapsedTime": 23.180795907974243,
+    "hostname": "RHIAN",
+    "sessionUid": "a22be008-a750-11ef-a912-088e901f65b1",
+    "returnCode": 0,
+    "elapsedTimeStr": "0:00:23.180796"
+}

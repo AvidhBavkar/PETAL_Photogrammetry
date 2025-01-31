@@ -1,0 +1,18 @@
+{
+    "status": "SUCCESS",
+    "execMode": "LOCAL",
+    "nodeName": "PrepareDenseScene_1",
+    "nodeType": "PrepareDenseScene",
+    "packageName": "aliceVision",
+    "packageVersion": null,
+    "graph": "",
+    "commandLine": "aliceVision_prepareDenseScene  --input \"C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/meshroom/MeshroomCache/StructureFromMotion/6134e9e839f7223d14819e2da1cf90cf3a999ebe/sfm.abc\" --maskExtension png --outputFileType exr --saveMetadata True --saveMatricesTxtFiles False --evCorrection False --verboseLevel info --output \"C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/meshroom/MeshroomCache/PrepareDenseScene/8e3c0b2966564921603602656d4b9e6c70aa60ff\" --rangeStart 200 --rangeSize 40",
+    "env": null,
+    "startDateTime": "2024-11-20 10:25:15.533001",
+    "endDateTime": "2024-11-20 10:25:19.383625",
+    "elapsedTime": 3.8506240844726562,
+    "hostname": "RHIAN",
+    "sessionUid": "a22be008-a750-11ef-a912-088e901f65b1",
+    "returnCode": 0,
+    "elapsedTimeStr": "0:00:03.850624"
+}

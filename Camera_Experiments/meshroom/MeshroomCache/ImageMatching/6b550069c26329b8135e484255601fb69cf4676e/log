@@ -1,0 +1,47 @@
+[2024-11-20 10:07:31.050185] [0x00004d74] [trace]   Embedded OCIO configuration file: 'C:\Users\Avidh Bavkar\Downloads\Meshroom-2023.3.0-win64\Meshroom-2023.3.0\aliceVision/share/aliceVision/config.ocio' found.
+Program called with the following parameters:
+ * featuresFolders =  = [C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/meshroom/MeshroomCache/FeatureExtraction/5c68a583c5e7573bbf35259a8ba5825d54c33d86]
+ * input = "C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/meshroom/MeshroomCache/CameraInit/b5483bef2ee92723720762112d9f4a8f006a9142/cameraInit.sfm"
+ * matchingMode = "a/a" (default)
+ * maxCoresAvailable =  Unknown Type "unsigned int" (default)
+ * maxDescriptors = 500
+ * maxMemoryAvailable = 18446744073709551615 (default)
+ * method =  Unknown Type "enum aliceVision::imageMatching::EImageMatchingMethod"
+ * minNbImages = 200
+ * nbMatches = 40
+ * nbNeighbors = 5
+ * output = "C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/meshroom/MeshroomCache/ImageMatching/6b550069c26329b8135e484255601fb69cf4676e/imageMatches.txt"
+ * outputCombinedSfM = "" (default)
+ * tree = "C:\Users\Avidh Bavkar\Downloads\Meshroom-2023.3.0-win64\Meshroom-2023.3.0\aliceVision\share\aliceVision\vlfeat_K80L3.SIFT.tree"
+ * verboseLevel = "info"
+ * weights = ""
+
+Hardware : 
+	Detected core count : 20
+	OpenMP will use 20 cores
+	Detected available memory : 11247 Mo
+
+[10:07:31.128212][info] Use SEQUENTIAL and VOCABULARYTREE matching.
+[10:07:31.129214][info] Loading vocabulary tree
+[10:07:31.644568][info] tree loaded with:
+	- 3 levels
+	- 80 branching factor
+	in 0 seconds
+[10:07:31.644568][info] Creating the databases...
+[10:07:31.649557][info] No weights specified, skipping...
+[10:07:31.649557][info] Reading descriptors from: 
+	- C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/meshroom/MeshroomCache/FeatureExtraction/5c68a583c5e7573bbf35259a8ba5825d54c33d86
+
+0%   10   20   30   40   50   60   70   80   90   100%
+|----|----|----|----|----|----|----|----|----|----|
+***************************************************
+[10:07:34.504512][info] Read 471 sets of descriptors for a total of 235500 features
+[10:07:34.504512][info] Reading took 2 sec.
+[10:07:34.505515][info] Computing weights...
+[10:07:34.509802][info] Query all documents
+[10:07:34.510802][info] Generate matches in mode: a/a
+[10:07:35.260270][info] Query all documents took 0 sec.
+[10:07:35.260270][info] Convert all matches to pairList
+[10:07:35.268264][info] Convert all matches to pairList took 0 sec.
+[10:07:35.361337][info] Number of selected image pairs: 10696
+[10:07:35.378511][info] pairList exported in: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/meshroom/MeshroomCache/ImageMatching/6b550069c26329b8135e484255601fb69cf4676e/imageMatches.txt

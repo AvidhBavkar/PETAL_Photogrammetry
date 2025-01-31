@@ -1,0 +1,148 @@
+[2024-11-20 10:06:18.620476] [0x0000764c] [trace]   Embedded OCIO configuration file: 'C:\Users\Avidh Bavkar\Downloads\Meshroom-2023.3.0-win64\Meshroom-2023.3.0\aliceVision/share/aliceVision/config.ocio' found.
+Program called with the following parameters:
+ * contrastFiltering =  Unknown Type "enum aliceVision::feature::EFeatureConstrastFiltering"
+ * describerPreset =  Unknown Type "enum aliceVision::feature::EImageDescriberPreset"
+ * describerQuality =  Unknown Type "enum aliceVision::feature::EFeatureQuality"
+ * describerTypes = "dspsift"
+ * forceCpuExtraction = 1
+ * gridFiltering = 1
+ * input = "C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/meshroom/MeshroomCache/CameraInit/b5483bef2ee92723720762112d9f4a8f006a9142/cameraInit.sfm"
+ * maskExtension = "png"
+ * maskInvert = 0
+ * masksFolder = ""
+ * maxCoresAvailable =  Unknown Type "unsigned int" (default)
+ * maxMemoryAvailable = 18446744073709551615 (default)
+ * maxNbFeatures = 0 (default)
+ * maxThreads = 0
+ * output = "C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/meshroom/MeshroomCache/FeatureExtraction/5c68a583c5e7573bbf35259a8ba5825d54c33d86"
+ * rangeSize = 40
+ * rangeStart = 160
+ * relativePeakThreshold = 0.02 (default)
+ * verboseLevel = "info"
+ * workingColorSpace =  Unknown Type "enum aliceVision::image::EImageColorSpace"
+
+Hardware : 
+	Detected core count : 20
+	OpenMP will use 20 cores
+	Detected available memory : 11338 Mo
+
+[10:06:18.627482][info] CUDA-Enabled GPU.
+Device information:
+	- id:                      0
+	- name:                    NVIDIA GeForce RTX 3050 Ti Laptop GPU
+	- compute capability:      8.6
+	- clock frequency (kHz):   1035000
+	- total device memory:     4095 MB 
+	- device memory available: 3282 MB 
+	- per-block shared memory: 49152
+	- warp size:               32
+	- max threads per block:   1024
+	- max threads per SM(X):   1536
+	- max block sizes:         {1024,1024,64}
+	- max grid sizes:          {2147483647,65535,65535}
+	- max 2D array texture:    {131072,65536}
+	- max 3D array texture:    {16384,16384,16384}
+	- max 2D linear texture:   {131072,65000,2097120}
+	- max 2D layered texture:  {32768,32768,2048}
+	- number of SM(x)s:        20
+	- registers per SM(x):     65536
+	- registers per block:     65536
+	- concurrent kernels:      yes
+	- mapping host memory:     yes
+	- unified addressing:      yes
+	- texture alignment:       512 byte
+	- pitch alignment:         32 byte
+CUDA build version: 11.6
+0
+[10:06:19.013092][info] Job max memory consumption for one image: 165 MB
+[10:06:19.013092][info] Memory information: 
+	- Total RAM:     31.6788 GB
+	- Free RAM:      10.9495 GB
+	- Available RAM: 10.9495 GB
+	- Total swap:    131072 GB
+	- Free swap:     131023 GB
+[10:06:19.013092][info] Max number of threads regarding memory usage: 61
+[10:06:19.013092][warning] More than half of the RAM is used by other applications. It would be more efficient to close them.
+[10:06:19.013092][warning]  => 21 GB are used by other applications for a total RAM capacity of 32 GB.
+[10:06:19.013092][info] # threads for extraction: 20
+[10:06:19.122319][info] Extracting dspsift features from view 'C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame34.jpg' [cpu]
+[10:06:19.130841][info] Extracting dspsift features from view 'C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame262.jpg' [cpu]
+[10:06:19.119317][info] Extracting dspsift features from view 'C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame28.jpg' [cpu]
+[10:06:19.136856][info] Extracting dspsift features from view 'C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame67.jpg' [cpu]
+[10:06:19.154860][info] Extracting dspsift features from view 'C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame300.jpg' [cpu]
+[10:06:19.159857][info] Extracting dspsift features from view 'C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame115.jpg' [cpu]
+[10:06:19.163862][info] Extracting dspsift features from view 'C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame268.jpg' [cpu]
+[10:06:19.165863][info] Extracting dspsift features from view 'C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame320.jpg' [cpu]
+[10:06:19.154860][info] Extracting dspsift features from view 'C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame110.jpg' [cpu]
+[10:06:19.173860][info] Extracting dspsift features from view 'C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame11.jpg' [cpu]
+[10:06:19.177860][info] Extracting dspsift features from view 'C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame113.jpg' [cpu]
+[10:06:19.188860][info] Extracting dspsift features from view 'C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame323.jpg' [cpu]
+[10:06:19.196862][info] Extracting dspsift features from view 'C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame114.jpg' [cpu]
+[10:06:19.208860][info] Extracting dspsift features from view 'C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame37.jpg' [cpu]
+[10:06:19.217876][info] Extracting dspsift features from view 'C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame189.jpg' [cpu]
+[10:06:19.222874][info] Extracting dspsift features from view 'C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame36.jpg' [cpu]
+[10:06:19.225874][info] Extracting dspsift features from view 'C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame321.jpg' [cpu]
+[10:06:19.238402][info] Extracting dspsift features from view 'C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame35.jpg' [cpu]
+[10:06:19.267906][info] Extracting dspsift features from view 'C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame299.jpg' [cpu]
+[10:06:19.294902][info] Extracting dspsift features from view 'C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame264.jpg' [cpu]
+[10:06:21.290679][info]       934 dspsift features extracted from view 'C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame115.jpg'
+[10:06:21.417172][info] Extracting dspsift features from view 'C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame296.jpg' [cpu]
+[10:06:21.509282][info]       936 dspsift features extracted from view 'C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame110.jpg'
+[10:06:21.678704][info] Extracting dspsift features from view 'C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame111.jpg' [cpu]
+[10:06:21.691716][info]       1256 dspsift features extracted from view 'C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame320.jpg'
+[10:06:21.727264][info] Extracting dspsift features from view 'C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame188.jpg' [cpu]
+[10:06:21.743272][info]       1595 dspsift features extracted from view 'C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame300.jpg'
+[10:06:21.785100][info] Extracting dspsift features from view 'C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame301.jpg' [cpu]
+[10:06:21.998494][info]       921 dspsift features extracted from view 'C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame114.jpg'
+[10:06:22.093034][info] Extracting dspsift features from view 'C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame297.jpg' [cpu]
+[10:06:22.140765][info]       1518 dspsift features extracted from view 'C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame189.jpg'
+[10:06:22.173765][info] Extracting dspsift features from view 'C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame302.jpg' [cpu]
+[10:06:22.311288][info]       950 dspsift features extracted from view 'C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame113.jpg'
+[10:06:22.372827][info] Extracting dspsift features from view 'C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame69.jpg' [cpu]
+[10:06:23.150309][info]       1285 dspsift features extracted from view 'C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame321.jpg'
+[10:06:23.283914][info]       1232 dspsift features extracted from view 'C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame323.jpg'
+[10:06:23.390177][info]       1424 dspsift features extracted from view 'C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame34.jpg'
+[10:06:23.434727][info] Extracting dspsift features from view 'C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame10.jpg' [cpu]
+[10:06:23.542740][info]       1501 dspsift features extracted from view 'C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame37.jpg'
+[10:06:23.543740][info]       1489 dspsift features extracted from view 'C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame36.jpg'
+[10:06:23.613168][info]       1329 dspsift features extracted from view 'C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame67.jpg'
+[10:06:23.614199][info]       1388 dspsift features extracted from view 'C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame28.jpg'
+[10:06:23.615194][info]       1408 dspsift features extracted from view 'C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame11.jpg'
+[10:06:23.645753][info]       1471 dspsift features extracted from view 'C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame35.jpg'
+[10:06:23.645753][info]       1616 dspsift features extracted from view 'C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame299.jpg'
+[10:06:23.657215][info] Extracting dspsift features from view 'C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame322.jpg' [cpu]
+[10:06:23.658212][info] Extracting dspsift features from view 'C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame112.jpg' [cpu]
+[10:06:23.715708][info] Extracting dspsift features from view 'C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame33.jpg' [cpu]
+[10:06:23.723107][info] Extracting dspsift features from view 'C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame80.jpg' [cpu]
+[10:06:23.735705][info] Extracting dspsift features from view 'C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame39.jpg' [cpu]
+[10:06:23.740727][info]       1801 dspsift features extracted from view 'C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame264.jpg'
+[10:06:23.742724][info] Extracting dspsift features from view 'C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame288.jpg' [cpu]
+[10:06:23.775725][info]       1878 dspsift features extracted from view 'C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame262.jpg'
+[10:06:23.781740][info] Extracting dspsift features from view 'C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame68.jpg' [cpu]
+[10:06:23.806726][info]       1824 dspsift features extracted from view 'C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame268.jpg'
+[10:06:23.807725][info] Extracting dspsift features from view 'C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame298.jpg' [cpu]
+[10:06:23.835536][info] Extracting dspsift features from view 'C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame38.jpg' [cpu]
+[10:06:23.846095][info] Extracting dspsift features from view 'C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame26.jpg' [cpu]
+[10:06:23.873690][info] Extracting dspsift features from view 'C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame265.jpg' [cpu]
+[10:06:23.909091][info] Extracting dspsift features from view 'C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame29.jpg' [cpu]
+[10:06:24.720932][info]       1556 dspsift features extracted from view 'C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame296.jpg'
+[10:06:24.957454][info]       888 dspsift features extracted from view 'C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame111.jpg'
+[10:06:25.051248][info]       1438 dspsift features extracted from view 'C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame188.jpg'
+[10:06:25.252500][info]       1554 dspsift features extracted from view 'C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame301.jpg'
+[10:06:25.614831][info]       1590 dspsift features extracted from view 'C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame297.jpg'
+[10:06:25.678390][info]       1578 dspsift features extracted from view 'C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame302.jpg'
+[10:06:25.718613][info]       1350 dspsift features extracted from view 'C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame69.jpg'
+[10:06:26.451761][info]       1422 dspsift features extracted from view 'C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame26.jpg'
+[10:06:26.452758][info]       1416 dspsift features extracted from view 'C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame10.jpg'
+[10:06:26.550537][info]       897 dspsift features extracted from view 'C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame112.jpg'
+[10:06:26.858961][info]       1424 dspsift features extracted from view 'C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame33.jpg'
+[10:06:26.942654][info]       1674 dspsift features extracted from view 'C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame288.jpg'
+[10:06:27.021300][info]       1495 dspsift features extracted from view 'C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame39.jpg'
+[10:06:27.101852][info]       1440 dspsift features extracted from view 'C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame29.jpg'
+[10:06:27.215347][info]       1561 dspsift features extracted from view 'C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame298.jpg'
+[10:06:27.375414][info]       1316 dspsift features extracted from view 'C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame322.jpg'
+[10:06:27.557337][info]       1259 dspsift features extracted from view 'C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame80.jpg'
+[10:06:27.655477][info]       1484 dspsift features extracted from view 'C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame38.jpg'
+[10:06:27.688895][info]       1391 dspsift features extracted from view 'C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame68.jpg'
+[10:06:27.723692][info]       1871 dspsift features extracted from view 'C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame265.jpg'
+[10:06:27.723692][info] Task done in (s): 8.712000

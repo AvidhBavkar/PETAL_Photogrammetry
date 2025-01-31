@@ -1,0 +1,1129 @@
+[2024-11-20 10:44:59.590812] [0x0000a080] [trace]   Embedded OCIO configuration file: 'C:\Users\Avidh Bavkar\Downloads\Meshroom-2023.3.0-win64\Meshroom-2023.3.0\aliceVision/share/aliceVision/config.ocio' found.
+Program called with the following parameters:
+ * autoAdjustSmallImage = 1
+ * chooseTCamsPerTile = 1
+ * colorOptimizationEnabled = 1
+ * colorOptimizationNbIterations = 100
+ * customPatchPatternGroupSubpartsPerLevel = 0 (default)
+ * customPatchPatternSubparts =  Unknown Type "class std::vector<struct aliceVision::depthMap::CustomPatchPatternParams::SubpartParams,class std::allocator<struct aliceVision::depthMap::CustomPatchPatternParams::SubpartParams> >" (default)
+ * downscale = 2
+ * exportIntermediateCrossVolumes = 0
+ * exportIntermediateDepthSimMaps = 0
+ * exportIntermediateNormalMaps = 0
+ * exportIntermediateTopographicCutVolumes = 0
+ * exportIntermediateVolume9pCsv = 0
+ * exportIntermediateVolumes = 0
+ * exportTilePattern = 0
+ * imagesFolder = "C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/meshroom/MeshroomCache/PrepareDenseScene/8e3c0b2966564921603602656d4b9e6c70aa60ff"
+ * input = "C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/meshroom/MeshroomCache/StructureFromMotion/6134e9e839f7223d14819e2da1cf90cf3a999ebe/sfm.abc"
+ * maxCoresAvailable =  Unknown Type "unsigned int" (default)
+ * maxMemoryAvailable = 18446744073709551615 (default)
+ * maxTCams = 10
+ * maxViewAngle = 70
+ * minViewAngle = 2
+ * nbGPUs = 0
+ * output = "C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/meshroom/MeshroomCache/DepthMap/b4c331b9d680327a3c19c76ed2cf1434735bb201"
+ * rangeSize = 12
+ * rangeStart = 456
+ * refineEnabled = 1
+ * refineGammaC = 15.5
+ * refineGammaP = 8
+ * refineHalfNbDepths = 15
+ * refineInterpolateMiddleDepth = 0
+ * refineMaxTCamsPerTile = 4
+ * refineScale = 1
+ * refineSigma = 15
+ * refineStepXY = 1
+ * refineSubsampling = 10
+ * refineUseConsistentScale = 0
+ * refineUseCustomPatchPattern = 0
+ * refineWSH = 3
+ * sgmDepthListPerTile = 1
+ * sgmDepthThicknessInflate = 0
+ * sgmFilteringAxes = "YX"
+ * sgmGammaC = 5.5
+ * sgmGammaP = 8
+ * sgmMaxDepths = 1500
+ * sgmMaxSimilarity = 1
+ * sgmMaxTCamsPerTile = 4
+ * sgmP1 = 10
+ * sgmP2Weighting = 100
+ * sgmScale = 2
+ * sgmSeedsRangeInflate = 0.2
+ * sgmStepXY = 2
+ * sgmStepZ = -1
+ * sgmUseConsistentScale = 0
+ * sgmUseCustomPatchPattern = 0
+ * sgmUseSfmSeeds = 1
+ * sgmWSH = 4
+ * tileBufferHeight = 1024
+ * tileBufferWidth = 1024
+ * tilePadding = 64
+ * verboseLevel = "info"
+
+Hardware : 
+	Detected core count : 20
+	OpenMP will use 20 cores
+	Detected available memory : 11421 Mo
+
+[10:44:59.625449][info] CUDA-Enabled GPU.
+Device information:
+	- id:                      0
+	- name:                    NVIDIA GeForce RTX 3050 Ti Laptop GPU
+	- compute capability:      8.6
+	- clock frequency (kHz):   1035000
+	- total device memory:     4095 MB 
+	- device memory available: 3282 MB 
+	- per-block shared memory: 49152
+	- warp size:               32
+	- max threads per block:   1024
+	- max threads per SM(X):   1536
+	- max block sizes:         {1024,1024,64}
+	- max grid sizes:          {2147483647,65535,65535}
+	- max 2D array texture:    {131072,65536}
+	- max 3D array texture:    {16384,16384,16384}
+	- max 2D linear texture:   {131072,65000,2097120}
+	- max 2D layered texture:  {32768,32768,2048}
+	- number of SM(x)s:        20
+	- registers per SM(x):     65536
+	- registers per block:     65536
+	- concurrent kernels:      yes
+	- mapping host memory:     yes
+	- unified addressing:      yes
+	- texture alignment:       512 byte
+	- pitch alignment:         32 byte
+CUDA build version: 11.6
+[10:45:00.349739][info] Supported CUDA-Enabled GPU detected.
+[10:45:17.318499][info] Found 1 image dimension(s): 
+[10:45:17.318499][info] 	- [816x624]
+[10:45:18.121573][info] Overall maximum dimension: [816x624]
+[10:45:18.121573][warning] Tile buffer size (width: 1024, height: 1024) is larger than the maximum image size (width: 408, height: 312).
+[10:45:18.121573][warning] Single tile computation, override SGM maximum number of T cameras per tile (before: 4, now: 10).
+[10:45:18.121573][warning] Single tile computation, override Refine maximum number of T cameras per tile (before: 4, now: 10).
+[10:45:18.121573][warning] Single tile computation, override SGM step XY (before: 2, now: 1).
+[10:45:18.121573][info] Tiling information: 
+	- parameters: 
+	      - buffer width:  1024 px
+	      - buffer height: 1024 px
+	      - padding: 64 px
+	- maximum downscale:  2
+	- maximum image width:  408 px
+	- maximum image height: 312 px
+[10:45:18.121573][info] Maximum image size is smaller than one tile, use only one tile.
+[10:45:18.121573][info] SGM parameters:
+	- scale: 2
+	- stepXY: 1
+[10:45:18.121573][info] Refine parameters:
+	- scale: 1
+	- stepXY: 1
+[10:45:18.121573][info] Number of GPU devices: 1, number of CPU threads: 20
+[10:45:18.536128][info] Device memory:
+	- available: 2625.8 MB
+	- requirement for the first tile: 867.892 MB
+	- # computation buffers per tile: 851.867 MB (Sgm: 757.867 MB, Refine: 94 MB)
+	- # input images (R + 10 Ts): 16.0247 MB (single mipmap image size: 1.45679 MB)
+[10:45:18.536985][info] Parallelization:
+	- # tiles per image: 1
+	- # simultaneous depth maps computation: 3
+	- # simultaneous tiles computation: 3
+[10:45:18.685684][info] Device memory (device id: 0):
+	- used: 3383.31 MB
+	- available: 712.25 MB
+	- total: 4095.56 MB
+[10:45:21.370374][info] (rc: 456, tile: 1/1) Camera / Depth information: 
+	- R camera:
+	   - id: 456
+	   - view id: 2108626645
+	   - depth planes: 32
+	   - depths range: [1.49638-1.7277]
+	- T cameras:
+	   - T camera (1/10):
+	      - id: 437
+	      - view id: 2035126263
+	      - depth planes: 32
+	      - depths range: [1.49638-1.7277]
+	      - depth indexes range: [0-32]
+	   - T camera (2/10):
+	      - id: 435
+	      - view id: 2030687873
+	      - depth planes: 32
+	      - depths range: [1.49638-1.7277]
+	      - depth indexes range: [0-32]
+	   - T camera (3/10):
+	      - id: 436
+	      - view id: 2032966634
+	      - depth planes: 32
+	      - depths range: [1.49638-1.7277]
+	      - depth indexes range: [0-32]
+	   - T camera (4/10):
+	      - id: 108
+	      - view id: 516357712
+	      - depth planes: 32
+	      - depths range: [1.49638-1.7277]
+	      - depth indexes range: [0-32]
+	   - T camera (5/10):
+	      - id: 73
+	      - view id: 377384666
+	      - depth planes: 32
+	      - depths range: [1.49638-1.7277]
+	      - depth indexes range: [0-32]
+	   - T camera (6/10):
+	      - id: 107
+	      - view id: 516095249
+	      - depth planes: 32
+	      - depths range: [1.49638-1.7277]
+	      - depth indexes range: [0-32]
+	   - T camera (7/10):
+	      - id: 453
+	      - view id: 2101605984
+	      - depth planes: 32
+	      - depths range: [1.49638-1.7277]
+	      - depth indexes range: [0-32]
+	   - T camera (8/10):
+	      - id: 104
+	      - view id: 512761770
+	      - depth planes: 32
+	      - depths range: [1.49638-1.7277]
+	      - depth indexes range: [0-32]
+	   - T camera (9/10):
+	      - id: 200
+	      - view id: 980879293
+	      - depth planes: 32
+	      - depths range: [1.49638-1.7277]
+	      - depth indexes range: [0-32]
+	   - T camera (10/10):
+	      - id: 452
+	      - view id: 2095913543
+	      - depth planes: 32
+	      - depths range: [1.49638-1.7277]
+	      - depth indexes range: [0-32]
+[10:45:21.370374][info] (rc: 456, tile: 1/1) SGM depth/thickness map of view id: 2108626645, rc: 456 (457 / 471).
+[10:45:21.370374][info] (rc: 456, tile: 1/1) SGM Compute similarity volume.
+[10:45:21.371374][info] (rc: 456, tile: 1/1) SGM Compute similarity volume done.
+[10:45:21.371374][info] (rc: 456, tile: 1/1) SGM Optimizing volume (filtering axes: YX).
+[10:45:21.895626][info] (rc: 456, tile: 1/1) SGM Optimizing volume done.
+[10:45:21.895626][info] (rc: 456, tile: 1/1) SGM Retrieve best depth in volume.
+[10:45:21.895626][info] (rc: 456, tile: 1/1) SGM Retrieve best depth in volume done.
+[10:45:21.895626][info] (rc: 456, tile: 1/1) SGM depth/thickness map done.
+[10:45:21.895626][info] (rc: 456, tile: 1/1) SGM Smooth thickness map.
+[10:45:21.895626][info] (rc: 456, tile: 1/1) SGM Smooth thickness map done.
+[10:45:21.895626][info] (rc: 456, tile: 1/1) Refine depth/sim map of view id: 2108626645, rc: 456 (457 / 471).
+[10:45:21.896865][info] (rc: 456, tile: 1/1) Refine and fuse depth/sim map volume.
+[10:45:21.897839][info] (rc: 456, tile: 1/1) Refine and fuse depth/sim map volume done.
+[10:45:21.897839][info] (rc: 456, tile: 1/1) Color optimize depth/sim map.
+[10:45:21.903036][info] (rc: 456, tile: 1/1) Color optimize depth/sim map done.
+[10:45:21.903036][info] (rc: 456, tile: 1/1) Refine depth/sim map done.
+[10:45:21.928615][info] (rc: 457, tile: 1/1) Camera / Depth information: 
+	- R camera:
+	   - id: 457
+	   - view id: 2112397712
+	   - depth planes: 26
+	   - depths range: [1.51458-1.71719]
+	- T cameras:
+	   - T camera (1/10):
+	      - id: 436
+	      - view id: 2032966634
+	      - depth planes: 26
+	      - depths range: [1.51458-1.71719]
+	      - depth indexes range: [0-26]
+	   - T camera (2/10):
+	      - id: 108
+	      - view id: 516357712
+	      - depth planes: 26
+	      - depths range: [1.51458-1.71719]
+	      - depth indexes range: [0-26]
+	   - T camera (3/10):
+	      - id: 107
+	      - view id: 516095249
+	      - depth planes: 26
+	      - depths range: [1.51458-1.71719]
+	      - depth indexes range: [0-26]
+	   - T camera (4/10):
+	      - id: 278
+	      - view id: 1323399470
+	      - depth planes: 26
+	      - depths range: [1.51458-1.71719]
+	      - depth indexes range: [0-26]
+	   - T camera (5/10):
+	      - id: 104
+	      - view id: 512761770
+	      - depth planes: 26
+	      - depths range: [1.51458-1.71719]
+	      - depth indexes range: [0-26]
+	   - T camera (6/10):
+	      - id: 200
+	      - view id: 980879293
+	      - depth planes: 26
+	      - depths range: [1.51458-1.71719]
+	      - depth indexes range: [0-26]
+	   - T camera (7/10):
+	      - id: 73
+	      - view id: 377384666
+	      - depth planes: 26
+	      - depths range: [1.51458-1.71719]
+	      - depth indexes range: [0-26]
+	   - T camera (8/10):
+	      - id: 79
+	      - view id: 383165107
+	      - depth planes: 26
+	      - depths range: [1.51458-1.71719]
+	      - depth indexes range: [0-26]
+	   - T camera (9/10):
+	      - id: 202
+	      - view id: 987695446
+	      - depth planes: 26
+	      - depths range: [1.51458-1.71719]
+	      - depth indexes range: [0-26]
+	   - T camera (10/10):
+	      - id: 453
+	      - view id: 2101605984
+	      - depth planes: 26
+	      - depths range: [1.51458-1.71719]
+	      - depth indexes range: [0-26]
+[10:45:21.928615][info] (rc: 457, tile: 1/1) SGM depth/thickness map of view id: 2112397712, rc: 457 (458 / 471).
+[10:45:21.929613][info] (rc: 457, tile: 1/1) SGM Compute similarity volume.
+[10:45:21.930612][info] (rc: 457, tile: 1/1) SGM Compute similarity volume done.
+[10:45:21.930612][info] (rc: 457, tile: 1/1) SGM Optimizing volume (filtering axes: YX).
+[10:45:22.659990][info] (rc: 457, tile: 1/1) SGM Optimizing volume done.
+[10:45:22.659990][info] (rc: 457, tile: 1/1) SGM Retrieve best depth in volume.
+[10:45:22.659990][info] (rc: 457, tile: 1/1) SGM Retrieve best depth in volume done.
+[10:45:22.659990][info] (rc: 457, tile: 1/1) SGM depth/thickness map done.
+[10:45:22.659990][info] (rc: 457, tile: 1/1) SGM Smooth thickness map.
+[10:45:22.659990][info] (rc: 457, tile: 1/1) SGM Smooth thickness map done.
+[10:45:22.661110][info] (rc: 457, tile: 1/1) Refine depth/sim map of view id: 2112397712, rc: 457 (458 / 471).
+[10:45:22.661110][info] (rc: 457, tile: 1/1) Refine and fuse depth/sim map volume.
+[10:45:22.661110][info] (rc: 457, tile: 1/1) Refine and fuse depth/sim map volume done.
+[10:45:22.661110][info] (rc: 457, tile: 1/1) Color optimize depth/sim map.
+[10:45:22.664107][info] (rc: 457, tile: 1/1) Color optimize depth/sim map done.
+[10:45:22.665102][info] (rc: 457, tile: 1/1) Refine depth/sim map done.
+[10:45:22.684098][info] (rc: 458, tile: 1/1) Camera / Depth information: 
+	- R camera:
+	   - id: 458
+	   - view id: 2113055274
+	   - depth planes: 25
+	   - depths range: [1.53294-1.71537]
+	- T cameras:
+	   - T camera (1/10):
+	      - id: 437
+	      - view id: 2035126263
+	      - depth planes: 25
+	      - depths range: [1.53294-1.71537]
+	      - depth indexes range: [0-25]
+	   - T camera (2/10):
+	      - id: 435
+	      - view id: 2030687873
+	      - depth planes: 25
+	      - depths range: [1.53294-1.71537]
+	      - depth indexes range: [0-25]
+	   - T camera (3/10):
+	      - id: 436
+	      - view id: 2032966634
+	      - depth planes: 25
+	      - depths range: [1.53294-1.71537]
+	      - depth indexes range: [0-25]
+	   - T camera (4/10):
+	      - id: 108
+	      - view id: 516357712
+	      - depth planes: 25
+	      - depths range: [1.53294-1.71537]
+	      - depth indexes range: [0-25]
+	   - T camera (5/10):
+	      - id: 73
+	      - view id: 377384666
+	      - depth planes: 25
+	      - depths range: [1.53294-1.71537]
+	      - depth indexes range: [0-25]
+	   - T camera (6/10):
+	      - id: 107
+	      - view id: 516095249
+	      - depth planes: 25
+	      - depths range: [1.53294-1.71537]
+	      - depth indexes range: [0-25]
+	   - T camera (7/10):
+	      - id: 453
+	      - view id: 2101605984
+	      - depth planes: 25
+	      - depths range: [1.53294-1.71537]
+	      - depth indexes range: [0-25]
+	   - T camera (8/10):
+	      - id: 104
+	      - view id: 512761770
+	      - depth planes: 25
+	      - depths range: [1.53294-1.71537]
+	      - depth indexes range: [0-25]
+	   - T camera (9/10):
+	      - id: 200
+	      - view id: 980879293
+	      - depth planes: 25
+	      - depths range: [1.53294-1.71537]
+	      - depth indexes range: [0-25]
+	   - T camera (10/10):
+	      - id: 452
+	      - view id: 2095913543
+	      - depth planes: 25
+	      - depths range: [1.53294-1.71537]
+	      - depth indexes range: [0-25]
+[10:45:22.684098][info] (rc: 458, tile: 1/1) SGM depth/thickness map of view id: 2113055274, rc: 458 (459 / 471).
+[10:45:22.684098][info] (rc: 458, tile: 1/1) SGM Compute similarity volume.
+[10:45:22.685095][info] (rc: 458, tile: 1/1) SGM Compute similarity volume done.
+[10:45:22.685095][info] (rc: 458, tile: 1/1) SGM Optimizing volume (filtering axes: YX).
+[10:45:23.176388][info] (rc: 458, tile: 1/1) SGM Optimizing volume done.
+[10:45:23.176388][info] (rc: 458, tile: 1/1) SGM Retrieve best depth in volume.
+[10:45:23.176388][info] (rc: 458, tile: 1/1) SGM Retrieve best depth in volume done.
+[10:45:23.176388][info] (rc: 458, tile: 1/1) SGM depth/thickness map done.
+[10:45:23.176388][info] (rc: 458, tile: 1/1) SGM Smooth thickness map.
+[10:45:23.177254][info] (rc: 458, tile: 1/1) SGM Smooth thickness map done.
+[10:45:23.177254][info] (rc: 458, tile: 1/1) Refine depth/sim map of view id: 2113055274, rc: 458 (459 / 471).
+[10:45:23.177254][info] (rc: 458, tile: 1/1) Refine and fuse depth/sim map volume.
+[10:45:23.178375][info] (rc: 458, tile: 1/1) Refine and fuse depth/sim map volume done.
+[10:45:23.178375][info] (rc: 458, tile: 1/1) Color optimize depth/sim map.
+[10:45:23.180390][info] (rc: 458, tile: 1/1) Color optimize depth/sim map done.
+[10:45:23.180390][info] (rc: 458, tile: 1/1) Refine depth/sim map done.
+[10:45:25.685148][info] (rc: 459, tile: 1/1) Camera / Depth information: 
+	- R camera:
+	   - id: 459
+	   - view id: 2114403589
+	   - depth planes: 20
+	   - depths range: [1.50984-1.68111]
+	- T cameras:
+	   - T camera (1/10):
+	      - id: 427
+	      - view id: 1978544813
+	      - depth planes: 20
+	      - depths range: [1.50984-1.68111]
+	      - depth indexes range: [0-20]
+	   - T camera (2/10):
+	      - id: 319
+	      - view id: 1558147869
+	      - depth planes: 20
+	      - depths range: [1.50984-1.68111]
+	      - depth indexes range: [0-20]
+	   - T camera (3/10):
+	      - id: 324
+	      - view id: 1594219716
+	      - depth planes: 20
+	      - depths range: [1.50984-1.68111]
+	      - depth indexes range: [0-20]
+	   - T camera (4/10):
+	      - id: 321
+	      - view id: 1559945405
+	      - depth planes: 20
+	      - depths range: [1.50984-1.68111]
+	      - depth indexes range: [0-20]
+	   - T camera (5/10):
+	      - id: 426
+	      - view id: 1975909490
+	      - depth planes: 20
+	      - depths range: [1.50984-1.68111]
+	      - depth indexes range: [0-20]
+	   - T camera (6/10):
+	      - id: 422
+	      - view id: 1965192021
+	      - depth planes: 20
+	      - depths range: [1.50984-1.68111]
+	      - depth indexes range: [0-20]
+	   - T camera (7/10):
+	      - id: 434
+	      - view id: 2029326337
+	      - depth planes: 20
+	      - depths range: [1.50984-1.68111]
+	      - depth indexes range: [0-20]
+	   - T camera (8/10):
+	      - id: 325
+	      - view id: 1595991900
+	      - depth planes: 20
+	      - depths range: [1.50984-1.68111]
+	      - depth indexes range: [0-20]
+	   - T camera (9/10):
+	      - id: 378
+	      - view id: 1775250928
+	      - depth planes: 20
+	      - depths range: [1.50984-1.68111]
+	      - depth indexes range: [0-20]
+	   - T camera (10/10):
+	      - id: 397
+	      - view id: 1829672511
+	      - depth planes: 20
+	      - depths range: [1.50984-1.68111]
+	      - depth indexes range: [0-20]
+[10:45:25.686148][info] (rc: 459, tile: 1/1) SGM depth/thickness map of view id: 2114403589, rc: 459 (460 / 471).
+[10:45:25.686148][info] (rc: 459, tile: 1/1) SGM Compute similarity volume.
+[10:45:25.688150][info] (rc: 459, tile: 1/1) SGM Compute similarity volume done.
+[10:45:25.688150][info] (rc: 459, tile: 1/1) SGM Optimizing volume (filtering axes: YX).
+[10:45:26.128208][info] (rc: 459, tile: 1/1) SGM Optimizing volume done.
+[10:45:26.128208][info] (rc: 459, tile: 1/1) SGM Retrieve best depth in volume.
+[10:45:26.128208][info] (rc: 459, tile: 1/1) SGM Retrieve best depth in volume done.
+[10:45:26.128208][info] (rc: 459, tile: 1/1) SGM depth/thickness map done.
+[10:45:26.128208][info] (rc: 459, tile: 1/1) SGM Smooth thickness map.
+[10:45:26.128208][info] (rc: 459, tile: 1/1) SGM Smooth thickness map done.
+[10:45:26.128208][info] (rc: 459, tile: 1/1) Refine depth/sim map of view id: 2114403589, rc: 459 (460 / 471).
+[10:45:26.128208][info] (rc: 459, tile: 1/1) Refine and fuse depth/sim map volume.
+[10:45:26.128208][info] (rc: 459, tile: 1/1) Refine and fuse depth/sim map volume done.
+[10:45:26.128208][info] (rc: 459, tile: 1/1) Color optimize depth/sim map.
+[10:45:26.131207][info] (rc: 459, tile: 1/1) Color optimize depth/sim map done.
+[10:45:26.131207][info] (rc: 459, tile: 1/1) Refine depth/sim map done.
+[10:45:26.141964][info] (rc: 460, tile: 1/1) Camera / Depth information: 
+	- R camera:
+	   - id: 460
+	   - view id: 2115178513
+	   - depth planes: 18
+	   - depths range: [1.50543-1.67466]
+	- T cameras:
+	   - T camera (1/10):
+	      - id: 321
+	      - view id: 1559945405
+	      - depth planes: 18
+	      - depths range: [1.50543-1.67466]
+	      - depth indexes range: [0-18]
+	   - T camera (2/10):
+	      - id: 319
+	      - view id: 1558147869
+	      - depth planes: 18
+	      - depths range: [1.50543-1.67466]
+	      - depth indexes range: [0-18]
+	   - T camera (3/10):
+	      - id: 324
+	      - view id: 1594219716
+	      - depth planes: 18
+	      - depths range: [1.50543-1.67466]
+	      - depth indexes range: [0-18]
+	   - T camera (4/10):
+	      - id: 434
+	      - view id: 2029326337
+	      - depth planes: 18
+	      - depths range: [1.50543-1.67466]
+	      - depth indexes range: [0-18]
+	   - T camera (5/10):
+	      - id: 422
+	      - view id: 1965192021
+	      - depth planes: 18
+	      - depths range: [1.50543-1.67466]
+	      - depth indexes range: [0-18]
+	   - T camera (6/10):
+	      - id: 325
+	      - view id: 1595991900
+	      - depth planes: 18
+	      - depths range: [1.50543-1.67466]
+	      - depth indexes range: [0-18]
+	   - T camera (7/10):
+	      - id: 426
+	      - view id: 1975909490
+	      - depth planes: 18
+	      - depths range: [1.50543-1.67466]
+	      - depth indexes range: [0-18]
+	   - T camera (8/10):
+	      - id: 378
+	      - view id: 1775250928
+	      - depth planes: 18
+	      - depths range: [1.50543-1.67466]
+	      - depth indexes range: [0-18]
+	   - T camera (9/10):
+	      - id: 397
+	      - view id: 1829672511
+	      - depth planes: 18
+	      - depths range: [1.50543-1.67466]
+	      - depth indexes range: [0-18]
+	   - T camera (10/10):
+	      - id: 390
+	      - view id: 1822456851
+	      - depth planes: 17
+	      - depths range: [1.50543-1.66367]
+	      - depth indexes range: [0-17]
+[10:45:26.141964][info] (rc: 460, tile: 1/1) SGM depth/thickness map of view id: 2115178513, rc: 460 (461 / 471).
+[10:45:26.141964][info] (rc: 460, tile: 1/1) SGM Compute similarity volume.
+[10:45:26.141964][info] (rc: 460, tile: 1/1) SGM Compute similarity volume done.
+[10:45:26.142995][info] (rc: 460, tile: 1/1) SGM Optimizing volume (filtering axes: YX).
+[10:45:26.736019][info] (rc: 460, tile: 1/1) SGM Optimizing volume done.
+[10:45:26.736019][info] (rc: 460, tile: 1/1) SGM Retrieve best depth in volume.
+[10:45:26.736019][info] (rc: 460, tile: 1/1) SGM Retrieve best depth in volume done.
+[10:45:26.736019][info] (rc: 460, tile: 1/1) SGM depth/thickness map done.
+[10:45:26.736019][info] (rc: 460, tile: 1/1) SGM Smooth thickness map.
+[10:45:26.736019][info] (rc: 460, tile: 1/1) SGM Smooth thickness map done.
+[10:45:26.736019][info] (rc: 460, tile: 1/1) Refine depth/sim map of view id: 2115178513, rc: 460 (461 / 471).
+[10:45:26.736019][info] (rc: 460, tile: 1/1) Refine and fuse depth/sim map volume.
+[10:45:26.736019][info] (rc: 460, tile: 1/1) Refine and fuse depth/sim map volume done.
+[10:45:26.736019][info] (rc: 460, tile: 1/1) Color optimize depth/sim map.
+[10:45:26.738013][info] (rc: 460, tile: 1/1) Color optimize depth/sim map done.
+[10:45:26.738013][info] (rc: 460, tile: 1/1) Refine depth/sim map done.
+[10:45:26.748119][info] (rc: 461, tile: 1/1) Camera / Depth information: 
+	- R camera:
+	   - id: 461
+	   - view id: 2115477492
+	   - depth planes: 18
+	   - depths range: [1.51223-1.67659]
+	- T cameras:
+	   - T camera (1/10):
+	      - id: 319
+	      - view id: 1558147869
+	      - depth planes: 18
+	      - depths range: [1.51223-1.67659]
+	      - depth indexes range: [0-18]
+	   - T camera (2/10):
+	      - id: 321
+	      - view id: 1559945405
+	      - depth planes: 18
+	      - depths range: [1.51223-1.67659]
+	      - depth indexes range: [0-18]
+	   - T camera (3/10):
+	      - id: 324
+	      - view id: 1594219716
+	      - depth planes: 18
+	      - depths range: [1.51223-1.67659]
+	      - depth indexes range: [0-18]
+	   - T camera (4/10):
+	      - id: 325
+	      - view id: 1595991900
+	      - depth planes: 18
+	      - depths range: [1.51223-1.67659]
+	      - depth indexes range: [0-18]
+	   - T camera (5/10):
+	      - id: 422
+	      - view id: 1965192021
+	      - depth planes: 18
+	      - depths range: [1.51223-1.67659]
+	      - depth indexes range: [0-18]
+	   - T camera (6/10):
+	      - id: 426
+	      - view id: 1975909490
+	      - depth planes: 18
+	      - depths range: [1.51223-1.67659]
+	      - depth indexes range: [0-18]
+	   - T camera (7/10):
+	      - id: 434
+	      - view id: 2029326337
+	      - depth planes: 18
+	      - depths range: [1.51223-1.67659]
+	      - depth indexes range: [0-18]
+	   - T camera (8/10):
+	      - id: 378
+	      - view id: 1775250928
+	      - depth planes: 18
+	      - depths range: [1.51223-1.67659]
+	      - depth indexes range: [0-18]
+	   - T camera (9/10):
+	      - id: 397
+	      - view id: 1829672511
+	      - depth planes: 18
+	      - depths range: [1.51223-1.67659]
+	      - depth indexes range: [0-18]
+	   - T camera (10/10):
+	      - id: 375
+	      - view id: 1772951300
+	      - depth planes: 15
+	      - depths range: [1.51223-1.64504]
+	      - depth indexes range: [0-15]
+[10:45:26.748119][info] (rc: 461, tile: 1/1) SGM depth/thickness map of view id: 2115477492, rc: 461 (462 / 471).
+[10:45:26.748119][info] (rc: 461, tile: 1/1) SGM Compute similarity volume.
+[10:45:26.748119][info] (rc: 461, tile: 1/1) SGM Compute similarity volume done.
+[10:45:26.748119][info] (rc: 461, tile: 1/1) SGM Optimizing volume (filtering axes: YX).
+[10:45:27.123022][info] (rc: 461, tile: 1/1) SGM Optimizing volume done.
+[10:45:27.123022][info] (rc: 461, tile: 1/1) SGM Retrieve best depth in volume.
+[10:45:27.123022][info] (rc: 461, tile: 1/1) SGM Retrieve best depth in volume done.
+[10:45:27.123022][info] (rc: 461, tile: 1/1) SGM depth/thickness map done.
+[10:45:27.123022][info] (rc: 461, tile: 1/1) SGM Smooth thickness map.
+[10:45:27.123022][info] (rc: 461, tile: 1/1) SGM Smooth thickness map done.
+[10:45:27.123022][info] (rc: 461, tile: 1/1) Refine depth/sim map of view id: 2115477492, rc: 461 (462 / 471).
+[10:45:27.123022][info] (rc: 461, tile: 1/1) Refine and fuse depth/sim map volume.
+[10:45:27.124023][info] (rc: 461, tile: 1/1) Refine and fuse depth/sim map volume done.
+[10:45:27.124023][info] (rc: 461, tile: 1/1) Color optimize depth/sim map.
+[10:45:27.125024][info] (rc: 461, tile: 1/1) Color optimize depth/sim map done.
+[10:45:27.125024][info] (rc: 461, tile: 1/1) Refine depth/sim map done.
+[10:45:29.449177][info] (rc: 462, tile: 1/1) Camera / Depth information: 
+	- R camera:
+	   - id: 462
+	   - view id: 2117096263
+	   - depth planes: 25
+	   - depths range: [1.49891-1.71841]
+	- T cameras:
+	   - T camera (1/10):
+	      - id: 427
+	      - view id: 1978544813
+	      - depth planes: 25
+	      - depths range: [1.49891-1.71841]
+	      - depth indexes range: [0-25]
+	   - T camera (2/10):
+	      - id: 319
+	      - view id: 1558147869
+	      - depth planes: 25
+	      - depths range: [1.49891-1.71841]
+	      - depth indexes range: [0-25]
+	   - T camera (3/10):
+	      - id: 321
+	      - view id: 1559945405
+	      - depth planes: 25
+	      - depths range: [1.49891-1.71841]
+	      - depth indexes range: [0-25]
+	   - T camera (4/10):
+	      - id: 324
+	      - view id: 1594219716
+	      - depth planes: 25
+	      - depths range: [1.49891-1.71841]
+	      - depth indexes range: [0-25]
+	   - T camera (5/10):
+	      - id: 434
+	      - view id: 2029326337
+	      - depth planes: 25
+	      - depths range: [1.49891-1.71841]
+	      - depth indexes range: [0-25]
+	   - T camera (6/10):
+	      - id: 325
+	      - view id: 1595991900
+	      - depth planes: 25
+	      - depths range: [1.49891-1.71841]
+	      - depth indexes range: [0-25]
+	   - T camera (7/10):
+	      - id: 426
+	      - view id: 1975909490
+	      - depth planes: 25
+	      - depths range: [1.49891-1.71841]
+	      - depth indexes range: [0-25]
+	   - T camera (8/10):
+	      - id: 422
+	      - view id: 1965192021
+	      - depth planes: 25
+	      - depths range: [1.49891-1.71841]
+	      - depth indexes range: [0-25]
+	   - T camera (9/10):
+	      - id: 378
+	      - view id: 1775250928
+	      - depth planes: 25
+	      - depths range: [1.49891-1.71841]
+	      - depth indexes range: [0-25]
+	   - T camera (10/10):
+	      - id: 397
+	      - view id: 1829672511
+	      - depth planes: 25
+	      - depths range: [1.49891-1.71841]
+	      - depth indexes range: [0-25]
+[10:45:29.449177][info] (rc: 462, tile: 1/1) SGM depth/thickness map of view id: 2117096263, rc: 462 (463 / 471).
+[10:45:29.450184][info] (rc: 462, tile: 1/1) SGM Compute similarity volume.
+[10:45:29.451185][info] (rc: 462, tile: 1/1) SGM Compute similarity volume done.
+[10:45:29.451185][info] (rc: 462, tile: 1/1) SGM Optimizing volume (filtering axes: YX).
+[10:45:30.071152][info] (rc: 462, tile: 1/1) SGM Optimizing volume done.
+[10:45:30.071152][info] (rc: 462, tile: 1/1) SGM Retrieve best depth in volume.
+[10:45:30.071152][info] (rc: 462, tile: 1/1) SGM Retrieve best depth in volume done.
+[10:45:30.071152][info] (rc: 462, tile: 1/1) SGM depth/thickness map done.
+[10:45:30.071152][info] (rc: 462, tile: 1/1) SGM Smooth thickness map.
+[10:45:30.071152][info] (rc: 462, tile: 1/1) SGM Smooth thickness map done.
+[10:45:30.071152][info] (rc: 462, tile: 1/1) Refine depth/sim map of view id: 2117096263, rc: 462 (463 / 471).
+[10:45:30.071152][info] (rc: 462, tile: 1/1) Refine and fuse depth/sim map volume.
+[10:45:30.072168][info] (rc: 462, tile: 1/1) Refine and fuse depth/sim map volume done.
+[10:45:30.072168][info] (rc: 462, tile: 1/1) Color optimize depth/sim map.
+[10:45:30.074144][info] (rc: 462, tile: 1/1) Color optimize depth/sim map done.
+[10:45:30.074144][info] (rc: 462, tile: 1/1) Refine depth/sim map done.
+[10:45:30.086111][info] (rc: 463, tile: 1/1) Camera / Depth information: 
+	- R camera:
+	   - id: 463
+	   - view id: 2118372128
+	   - depth planes: 63
+	   - depths range: [1.38624-2.41949]
+	- T cameras:
+	   - T camera (1/10):
+	      - id: 235
+	      - view id: 1162224339
+	      - depth planes: 63
+	      - depths range: [1.38624-2.41949]
+	      - depth indexes range: [0-63]
+	   - T camera (2/10):
+	      - id: 429
+	      - view id: 2008196400
+	      - depth planes: 63
+	      - depths range: [1.38624-2.41949]
+	      - depth indexes range: [0-63]
+	   - T camera (3/10):
+	      - id: 239
+	      - view id: 1178070969
+	      - depth planes: 63
+	      - depths range: [1.38624-2.41949]
+	      - depth indexes range: [0-63]
+	   - T camera (4/10):
+	      - id: 428
+	      - view id: 1998527084
+	      - depth planes: 63
+	      - depths range: [1.38624-2.41949]
+	      - depth indexes range: [0-63]
+	   - T camera (5/10):
+	      - id: 241
+	      - view id: 1199410991
+	      - depth planes: 63
+	      - depths range: [1.38624-2.41949]
+	      - depth indexes range: [0-63]
+	   - T camera (6/10):
+	      - id: 450
+	      - view id: 2086272894
+	      - depth planes: 48
+	      - depths range: [1.38624-2.05006]
+	      - depth indexes range: [0-48]
+	   - T camera (7/10):
+	      - id: 447
+	      - view id: 2082737869
+	      - depth planes: 31
+	      - depths range: [1.38624-1.74751]
+	      - depth indexes range: [0-31]
+	   - T camera (8/10):
+	      - id: 256
+	      - view id: 1256772442
+	      - depth planes: 35
+	      - depths range: [1.38624-1.81039]
+	      - depth indexes range: [0-35]
+	   - T camera (9/10):
+	      - id: 36
+	      - view id: 179061950
+	      - depth planes: 46
+	      - depths range: [1.38624-2.00915]
+	      - depth indexes range: [0-46]
+	   - T camera (10/10):
+	      - id: 35
+	      - view id: 169096327
+	      - depth planes: 56
+	      - depths range: [1.38624-2.23183]
+	      - depth indexes range: [0-56]
+[10:45:30.086111][info] (rc: 463, tile: 1/1) SGM depth/thickness map of view id: 2118372128, rc: 463 (464 / 471).
+[10:45:30.086111][info] (rc: 463, tile: 1/1) SGM Compute similarity volume.
+[10:45:30.087167][info] (rc: 463, tile: 1/1) SGM Compute similarity volume done.
+[10:45:30.087167][info] (rc: 463, tile: 1/1) SGM Optimizing volume (filtering axes: YX).
+[10:45:30.743183][info] (rc: 463, tile: 1/1) SGM Optimizing volume done.
+[10:45:30.743183][info] (rc: 463, tile: 1/1) SGM Retrieve best depth in volume.
+[10:45:30.743830][info] (rc: 463, tile: 1/1) SGM Retrieve best depth in volume done.
+[10:45:30.743889][info] (rc: 463, tile: 1/1) SGM depth/thickness map done.
+[10:45:30.743889][info] (rc: 463, tile: 1/1) SGM Smooth thickness map.
+[10:45:30.743889][info] (rc: 463, tile: 1/1) SGM Smooth thickness map done.
+[10:45:30.743889][info] (rc: 463, tile: 1/1) Refine depth/sim map of view id: 2118372128, rc: 463 (464 / 471).
+[10:45:30.743889][info] (rc: 463, tile: 1/1) Refine and fuse depth/sim map volume.
+[10:45:30.744637][info] (rc: 463, tile: 1/1) Refine and fuse depth/sim map volume done.
+[10:45:30.744637][info] (rc: 463, tile: 1/1) Color optimize depth/sim map.
+[10:45:30.749419][info] (rc: 463, tile: 1/1) Color optimize depth/sim map done.
+[10:45:30.749522][info] (rc: 463, tile: 1/1) Refine depth/sim map done.
+[10:45:30.769079][info] (rc: 464, tile: 1/1) Camera / Depth information: 
+	- R camera:
+	   - id: 464
+	   - view id: 2118959901
+	   - depth planes: 29
+	   - depths range: [1.46582-1.73409]
+	- T cameras:
+	   - T camera (1/10):
+	      - id: 319
+	      - view id: 1558147869
+	      - depth planes: 29
+	      - depths range: [1.46582-1.73409]
+	      - depth indexes range: [0-29]
+	   - T camera (2/10):
+	      - id: 321
+	      - view id: 1559945405
+	      - depth planes: 29
+	      - depths range: [1.46582-1.73409]
+	      - depth indexes range: [0-29]
+	   - T camera (3/10):
+	      - id: 324
+	      - view id: 1594219716
+	      - depth planes: 29
+	      - depths range: [1.46582-1.73409]
+	      - depth indexes range: [0-29]
+	   - T camera (4/10):
+	      - id: 325
+	      - view id: 1595991900
+	      - depth planes: 29
+	      - depths range: [1.46582-1.73409]
+	      - depth indexes range: [0-29]
+	   - T camera (5/10):
+	      - id: 434
+	      - view id: 2029326337
+	      - depth planes: 29
+	      - depths range: [1.46582-1.73409]
+	      - depth indexes range: [0-29]
+	   - T camera (6/10):
+	      - id: 426
+	      - view id: 1975909490
+	      - depth planes: 29
+	      - depths range: [1.46582-1.73409]
+	      - depth indexes range: [0-29]
+	   - T camera (7/10):
+	      - id: 422
+	      - view id: 1965192021
+	      - depth planes: 29
+	      - depths range: [1.46582-1.73409]
+	      - depth indexes range: [0-29]
+	   - T camera (8/10):
+	      - id: 378
+	      - view id: 1775250928
+	      - depth planes: 29
+	      - depths range: [1.46582-1.73409]
+	      - depth indexes range: [0-29]
+	   - T camera (9/10):
+	      - id: 397
+	      - view id: 1829672511
+	      - depth planes: 29
+	      - depths range: [1.46582-1.73409]
+	      - depth indexes range: [0-29]
+	   - T camera (10/10):
+	      - id: 375
+	      - view id: 1772951300
+	      - depth planes: 26
+	      - depths range: [1.46582-1.70075]
+	      - depth indexes range: [0-26]
+[10:45:30.770073][info] (rc: 464, tile: 1/1) SGM depth/thickness map of view id: 2118959901, rc: 464 (465 / 471).
+[10:45:30.770073][info] (rc: 464, tile: 1/1) SGM Compute similarity volume.
+[10:45:30.771072][info] (rc: 464, tile: 1/1) SGM Compute similarity volume done.
+[10:45:30.771072][info] (rc: 464, tile: 1/1) SGM Optimizing volume (filtering axes: YX).
+[10:45:31.283986][info] (rc: 464, tile: 1/1) SGM Optimizing volume done.
+[10:45:31.283986][info] (rc: 464, tile: 1/1) SGM Retrieve best depth in volume.
+[10:45:31.284851][info] (rc: 464, tile: 1/1) SGM Retrieve best depth in volume done.
+[10:45:31.284851][info] (rc: 464, tile: 1/1) SGM depth/thickness map done.
+[10:45:31.284851][info] (rc: 464, tile: 1/1) SGM Smooth thickness map.
+[10:45:31.284851][info] (rc: 464, tile: 1/1) SGM Smooth thickness map done.
+[10:45:31.284851][info] (rc: 464, tile: 1/1) Refine depth/sim map of view id: 2118959901, rc: 464 (465 / 471).
+[10:45:31.285910][info] (rc: 464, tile: 1/1) Refine and fuse depth/sim map volume.
+[10:45:31.286908][info] (rc: 464, tile: 1/1) Refine and fuse depth/sim map volume done.
+[10:45:31.286908][info] (rc: 464, tile: 1/1) Color optimize depth/sim map.
+[10:45:31.290007][info] (rc: 464, tile: 1/1) Color optimize depth/sim map done.
+[10:45:31.290007][info] (rc: 464, tile: 1/1) Refine depth/sim map done.
+[10:45:34.092610][info] (rc: 465, tile: 1/1) Camera / Depth information: 
+	- R camera:
+	   - id: 465
+	   - view id: 2121094510
+	   - depth planes: 18
+	   - depths range: [1.50398-1.67391]
+	- T cameras:
+	   - T camera (1/10):
+	      - id: 319
+	      - view id: 1558147869
+	      - depth planes: 18
+	      - depths range: [1.50398-1.67391]
+	      - depth indexes range: [0-18]
+	   - T camera (2/10):
+	      - id: 324
+	      - view id: 1594219716
+	      - depth planes: 18
+	      - depths range: [1.50398-1.67391]
+	      - depth indexes range: [0-18]
+	   - T camera (3/10):
+	      - id: 321
+	      - view id: 1559945405
+	      - depth planes: 18
+	      - depths range: [1.50398-1.67391]
+	      - depth indexes range: [0-18]
+	   - T camera (4/10):
+	      - id: 422
+	      - view id: 1965192021
+	      - depth planes: 18
+	      - depths range: [1.50398-1.67391]
+	      - depth indexes range: [0-18]
+	   - T camera (5/10):
+	      - id: 325
+	      - view id: 1595991900
+	      - depth planes: 18
+	      - depths range: [1.50398-1.67391]
+	      - depth indexes range: [0-18]
+	   - T camera (6/10):
+	      - id: 426
+	      - view id: 1975909490
+	      - depth planes: 18
+	      - depths range: [1.50398-1.67391]
+	      - depth indexes range: [0-18]
+	   - T camera (7/10):
+	      - id: 434
+	      - view id: 2029326337
+	      - depth planes: 18
+	      - depths range: [1.50398-1.67391]
+	      - depth indexes range: [0-18]
+	   - T camera (8/10):
+	      - id: 378
+	      - view id: 1775250928
+	      - depth planes: 18
+	      - depths range: [1.50398-1.67391]
+	      - depth indexes range: [0-18]
+	   - T camera (9/10):
+	      - id: 397
+	      - view id: 1829672511
+	      - depth planes: 18
+	      - depths range: [1.50398-1.67391]
+	      - depth indexes range: [0-18]
+	   - T camera (10/10):
+	      - id: 390
+	      - view id: 1822456851
+	      - depth planes: 17
+	      - depths range: [1.50398-1.66287]
+	      - depth indexes range: [0-17]
+[10:45:34.092610][info] (rc: 465, tile: 1/1) SGM depth/thickness map of view id: 2121094510, rc: 465 (466 / 471).
+[10:45:34.093121][info] (rc: 465, tile: 1/1) SGM Compute similarity volume.
+[10:45:34.094423][info] (rc: 465, tile: 1/1) SGM Compute similarity volume done.
+[10:45:34.094423][info] (rc: 465, tile: 1/1) SGM Optimizing volume (filtering axes: YX).
+[10:45:34.630118][info] (rc: 465, tile: 1/1) SGM Optimizing volume done.
+[10:45:34.630118][info] (rc: 465, tile: 1/1) SGM Retrieve best depth in volume.
+[10:45:34.630118][info] (rc: 465, tile: 1/1) SGM Retrieve best depth in volume done.
+[10:45:34.630118][info] (rc: 465, tile: 1/1) SGM depth/thickness map done.
+[10:45:34.630118][info] (rc: 465, tile: 1/1) SGM Smooth thickness map.
+[10:45:34.631150][info] (rc: 465, tile: 1/1) SGM Smooth thickness map done.
+[10:45:34.631150][info] (rc: 465, tile: 1/1) Refine depth/sim map of view id: 2121094510, rc: 465 (466 / 471).
+[10:45:34.631150][info] (rc: 465, tile: 1/1) Refine and fuse depth/sim map volume.
+[10:45:34.631150][info] (rc: 465, tile: 1/1) Refine and fuse depth/sim map volume done.
+[10:45:34.631150][info] (rc: 465, tile: 1/1) Color optimize depth/sim map.
+[10:45:34.635150][info] (rc: 465, tile: 1/1) Color optimize depth/sim map done.
+[10:45:34.635150][info] (rc: 465, tile: 1/1) Refine depth/sim map done.
+[10:45:34.658686][info] (rc: 466, tile: 1/1) Camera / Depth information: 
+	- R camera:
+	   - id: 466
+	   - view id: 2126841928
+	   - depth planes: 96
+	   - depths range: [1.1336-2.01395]
+	- T cameras:
+	   - T camera (1/10):
+	      - id: 37
+	      - view id: 195893704
+	      - depth planes: 96
+	      - depths range: [1.1336-2.01395]
+	      - depth indexes range: [0-96]
+	   - T camera (2/10):
+	      - id: 40
+	      - view id: 214018768
+	      - depth planes: 96
+	      - depths range: [1.1336-2.01395]
+	      - depth indexes range: [0-96]
+	   - T camera (3/10):
+	      - id: 173
+	      - view id: 822263608
+	      - depth planes: 96
+	      - depths range: [1.1336-2.01395]
+	      - depth indexes range: [0-96]
+	   - T camera (4/10):
+	      - id: 178
+	      - view id: 838722640
+	      - depth planes: 96
+	      - depths range: [1.1336-2.01395]
+	      - depth indexes range: [0-96]
+	   - T camera (5/10):
+	      - id: 174
+	      - view id: 823538995
+	      - depth planes: 96
+	      - depths range: [1.1336-2.01395]
+	      - depth indexes range: [0-96]
+	   - T camera (6/10):
+	      - id: 177
+	      - view id: 837525068
+	      - depth planes: 96
+	      - depths range: [1.1336-2.01395]
+	      - depth indexes range: [0-96]
+	   - T camera (7/10):
+	      - id: 176
+	      - view id: 836612083
+	      - depth planes: 96
+	      - depths range: [1.1336-2.01395]
+	      - depth indexes range: [0-96]
+	   - T camera (8/10):
+	      - id: 170
+	      - view id: 817469461
+	      - depth planes: 96
+	      - depths range: [1.1336-2.01395]
+	      - depth indexes range: [0-96]
+	   - T camera (9/10):
+	      - id: 285
+	      - view id: 1330868845
+	      - depth planes: 96
+	      - depths range: [1.1336-2.01395]
+	      - depth indexes range: [0-96]
+	   - T camera (10/10):
+	      - id: 175
+	      - view id: 829049733
+	      - depth planes: 83
+	      - depths range: [1.1336-1.82051]
+	      - depth indexes range: [0-83]
+[10:45:34.658686][info] (rc: 466, tile: 1/1) SGM depth/thickness map of view id: 2126841928, rc: 466 (467 / 471).
+[10:45:34.658686][info] (rc: 466, tile: 1/1) SGM Compute similarity volume.
+[10:45:34.659690][info] (rc: 466, tile: 1/1) SGM Compute similarity volume done.
+[10:45:34.659690][info] (rc: 466, tile: 1/1) SGM Optimizing volume (filtering axes: YX).
+[10:45:35.316271][info] (rc: 466, tile: 1/1) SGM Optimizing volume done.
+[10:45:35.317276][info] (rc: 466, tile: 1/1) SGM Retrieve best depth in volume.
+[10:45:35.317276][info] (rc: 466, tile: 1/1) SGM Retrieve best depth in volume done.
+[10:45:35.317276][info] (rc: 466, tile: 1/1) SGM depth/thickness map done.
+[10:45:35.317276][info] (rc: 466, tile: 1/1) SGM Smooth thickness map.
+[10:45:35.317276][info] (rc: 466, tile: 1/1) SGM Smooth thickness map done.
+[10:45:35.317276][info] (rc: 466, tile: 1/1) Refine depth/sim map of view id: 2126841928, rc: 466 (467 / 471).
+[10:45:35.317276][info] (rc: 466, tile: 1/1) Refine and fuse depth/sim map volume.
+[10:45:35.317276][info] (rc: 466, tile: 1/1) Refine and fuse depth/sim map volume done.
+[10:45:35.317276][info] (rc: 466, tile: 1/1) Color optimize depth/sim map.
+[10:45:35.320272][info] (rc: 466, tile: 1/1) Color optimize depth/sim map done.
+[10:45:35.320272][info] (rc: 466, tile: 1/1) Refine depth/sim map done.
+[10:45:35.337302][info] (rc: 467, tile: 1/1) Camera / Depth information: 
+	- R camera:
+	   - id: 467
+	   - view id: 2128589428
+	   - depth planes: 32
+	   - depths range: [1.47696-1.67081]
+	- T cameras:
+	   - T camera (1/10):
+	      - id: 42
+	      - view id: 220125103
+	      - depth planes: 32
+	      - depths range: [1.47696-1.67081]
+	      - depth indexes range: [0-32]
+	   - T camera (2/10):
+	      - id: 44
+	      - view id: 224974560
+	      - depth planes: 32
+	      - depths range: [1.47696-1.67081]
+	      - depth indexes range: [0-32]
+	   - T camera (3/10):
+	      - id: 174
+	      - view id: 823538995
+	      - depth planes: 32
+	      - depths range: [1.47696-1.67081]
+	      - depth indexes range: [0-32]
+	   - T camera (4/10):
+	      - id: 173
+	      - view id: 822263608
+	      - depth planes: 32
+	      - depths range: [1.47696-1.67081]
+	      - depth indexes range: [0-32]
+	   - T camera (5/10):
+	      - id: 37
+	      - view id: 195893704
+	      - depth planes: 32
+	      - depths range: [1.47696-1.67081]
+	      - depth indexes range: [0-32]
+	   - T camera (6/10):
+	      - id: 40
+	      - view id: 214018768
+	      - depth planes: 32
+	      - depths range: [1.47696-1.67081]
+	      - depth indexes range: [0-32]
+	   - T camera (7/10):
+	      - id: 177
+	      - view id: 837525068
+	      - depth planes: 32
+	      - depths range: [1.47696-1.67081]
+	      - depth indexes range: [0-32]
+	   - T camera (8/10):
+	      - id: 178
+	      - view id: 838722640
+	      - depth planes: 32
+	      - depths range: [1.47696-1.67081]
+	      - depth indexes range: [0-32]
+	   - T camera (9/10):
+	      - id: 176
+	      - view id: 836612083
+	      - depth planes: 32
+	      - depths range: [1.47696-1.67081]
+	      - depth indexes range: [0-32]
+	   - T camera (10/10):
+	      - id: 139
+	      - view id: 674755697
+	      - depth planes: 32
+	      - depths range: [1.47696-1.67081]
+	      - depth indexes range: [0-32]
+[10:45:35.338394][info] (rc: 467, tile: 1/1) SGM depth/thickness map of view id: 2128589428, rc: 467 (468 / 471).
+[10:45:35.338394][info] (rc: 467, tile: 1/1) SGM Compute similarity volume.
+[10:45:35.339248][info] (rc: 467, tile: 1/1) SGM Compute similarity volume done.
+[10:45:35.339248][info] (rc: 467, tile: 1/1) SGM Optimizing volume (filtering axes: YX).
+[10:45:35.821910][info] (rc: 467, tile: 1/1) SGM Optimizing volume done.
+[10:45:35.821910][info] (rc: 467, tile: 1/1) SGM Retrieve best depth in volume.
+[10:45:35.821910][info] (rc: 467, tile: 1/1) SGM Retrieve best depth in volume done.
+[10:45:35.821910][info] (rc: 467, tile: 1/1) SGM depth/thickness map done.
+[10:45:35.821910][info] (rc: 467, tile: 1/1) SGM Smooth thickness map.
+[10:45:35.822914][info] (rc: 467, tile: 1/1) SGM Smooth thickness map done.
+[10:45:35.822914][info] (rc: 467, tile: 1/1) Refine depth/sim map of view id: 2128589428, rc: 467 (468 / 471).
+[10:45:35.822914][info] (rc: 467, tile: 1/1) Refine and fuse depth/sim map volume.
+[10:45:35.823908][info] (rc: 467, tile: 1/1) Refine and fuse depth/sim map volume done.
+[10:45:35.823908][info] (rc: 467, tile: 1/1) Color optimize depth/sim map.
+[10:45:35.828914][info] (rc: 467, tile: 1/1) Color optimize depth/sim map done.
+[10:45:35.830910][info] (rc: 467, tile: 1/1) Refine depth/sim map done.
+[10:45:36.251618][info] Task done in (s): 36.647000

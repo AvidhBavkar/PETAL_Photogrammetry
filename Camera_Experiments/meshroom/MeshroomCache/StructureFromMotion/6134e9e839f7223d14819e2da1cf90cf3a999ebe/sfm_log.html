@@ -1,0 +1,988 @@
+<html><head>
+<link rel="stylesheet" type="text/css" href="http://jsxgraph.uni-bayreuth.de/distrib/jsxgraph.css" />
+<link rel="stylesheet" type="text/css" href="http://imagine.enpc.fr/~moulonp/style.css" /><script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jsxgraph/0.93/jsxgraphcore.js"></script>
+<title>[log] Sequential SfM reconstruction</title>
+</head>
+<h1>[log] Sequential SfM reconstruction</h1>
+<hr>Dataset info:Views count: 471<br><h3>Essential Matrix.</h3>
+
+<b>Robust Essential matrix:</b><br>-> View I:<br>id: 77316084<br>image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame107.jpg<br>-> View J:<br>id: 924275644<br>image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame114.jpg<br><br>- Threshold: 10.7373<br>- Resection status: OK<br>- # points used for robust Essential matrix estimation: 152<br>- # points validated by robust estimation: 139<br>- % points validated: 0.914474<br><h3>Initial triangulation - Residual of the robust estimation.<br>Thresholded at: 10.7373</h3>
+<h3>Histogram of residuals</h3>
+
+<div id="InitialPairTriangulationKeptInfo" class="jxgbox" style="width:600px; height:300px;"></div>
+<script type="text/javascript">
+var board = JXG.JSXGraph.initBoard('InitialPairTriangulationKeptInfo', {boundingbox: [-10, 10, 10, -10], axis:true,showCopyright:false});
+board.suspendUpdate();
+var data0= [0.00000,0.54545,1.09091,1.63636,2.18182,2.72727,3.27273,3.81818,4.36364,4.90909,5.45455,6.00000,];
+var data1= [132.00000,57.00000,23.00000,20.00000,17.00000,12.00000,8.00000,4.00000,2.00000,2.00000,1.00000,0.00000,];
+board.createElement('chart', [ data0,data1], {chartStyle:'line,point',labels:[ data0,data1],strokeColor:'#0000ff',highlightStrokeColor:'#0000ff'});
+var p2 = board.create('point',[10.73726,0.00000], {fixed:true});
+var p3 = board.create('point',[10.73726,132.00000], {fixed:true});
+var li = board.create('line',[p2,p3], {strokeColor:'00ff00',strokeWidth:2});
+board.unsuspendUpdate();
+board.setBoundingBox([-1.20000,158.40000,7.20000,-26.40000]);
+</script>
+<hr><h4>Robust resection of view 1166327660: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame99.jpg<br>- Threshold (error max): 6.79653<br>- Resection status: OK<br>- # points used for Resection: 104<br>- # points validated by robust estimation: 91<br>- % points validated: 0.875<br><h4>Robust resection of view 1167649107: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame98.jpg<br>- Threshold (error max): 4.56946<br>- Resection status: OK<br>- # points used for Resection: 112<br>- # points validated by robust estimation: 98<br>- % points validated: 0.875<br><h4>Robust resection of view 1143435178: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame97.jpg<br>- Threshold (error max): 5.05955<br>- Resection status: OK<br>- # points used for Resection: 156<br>- # points validated by robust estimation: 140<br>- % points validated: 0.897436<br><h4>Robust resection of view 97533119: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame100.jpg<br>- Threshold (error max): 4.14048<br>- Resection status: OK<br>- # points used for Resection: 155<br>- # points validated by robust estimation: 143<br>- % points validated: 0.922581<br><h4>Robust resection of view 96826009: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame101.jpg<br>- Threshold (error max): 3.84584<br>- Resection status: OK<br>- # points used for Resection: 154<br>- # points validated by robust estimation: 140<br>- % points validated: 0.909091<br><h4>Robust resection of view 67171753: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame102.jpg<br>- Threshold (error max): 2.51361<br>- Resection status: OK<br>- # points used for Resection: 157<br>- # points validated by robust estimation: 138<br>- % points validated: 0.878981<br><h4>Robust resection of view 68926602: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame103.jpg<br>- Threshold (error max): 2.87082<br>- Resection status: OK<br>- # points used for Resection: 157<br>- # points validated by robust estimation: 142<br>- % points validated: 0.904459<br><h4>Robust resection of view 83508716: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame104.jpg<br>- Threshold (error max): 2.73361<br>- Resection status: OK<br>- # points used for Resection: 163<br>- # points validated by robust estimation: 146<br>- % points validated: 0.895706<br><h4>Robust resection of view 90586369: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame108.jpg<br>- Threshold (error max): 5.21606<br>- Resection status: OK<br>- # points used for Resection: 178<br>- # points validated by robust estimation: 166<br>- % points validated: 0.932584<br><h4>Robust resection of view 1770484637: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame91.jpg<br>- Threshold (error max): 10.2064<br>- Resection status: OK<br>- # points used for Resection: 125<br>- # points validated by robust estimation: 102<br>- % points validated: 0.816<br><h4>Robust resection of view 1206848170: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame95.jpg<br>- Threshold (error max): 4.50228<br>- Resection status: OK<br>- # points used for Resection: 168<br>- # points validated by robust estimation: 148<br>- % points validated: 0.880952<br><h4>Robust resection of view 1146831598: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame96.jpg<br>- Threshold (error max): 3.98781<br>- Resection status: OK<br>- # points used for Resection: 176<br>- # points validated by robust estimation: 158<br>- % points validated: 0.897727<br><h4>Robust resection of view 1775276919: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame92.jpg<br>- Threshold (error max): 6.97886<br>- Resection status: OK<br>- # points used for Resection: 155<br>- # points validated by robust estimation: 134<br>- % points validated: 0.864516<br><h4>Robust resection of view 1775441569: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame93.jpg<br>- Threshold (error max): 5.3948<br>- Resection status: OK<br>- # points used for Resection: 175<br>- # points validated by robust estimation: 155<br>- % points validated: 0.885714<br><h4>Robust resection of view 1773692128: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame90.jpg<br>- Threshold (error max): 5.08646<br>- Resection status: OK<br>- # points used for Resection: 170<br>- # points validated by robust estimation: 143<br>- % points validated: 0.841176<br><h4>Robust resection of view 1764792200: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame94.jpg<br>- Threshold (error max): 3.77191<br>- Resection status: OK<br>- # points used for Resection: 181<br>- # points validated by robust estimation: 155<br>- % points validated: 0.856354<br><h4>Robust resection of view 689525911: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame89.jpg<br>- Threshold (error max): 5.13716<br>- Resection status: OK<br>- # points used for Resection: 152<br>- # points validated by robust estimation: 129<br>- % points validated: 0.848684<br><h4>Robust resection of view 688154321: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame88.jpg<br>- Threshold (error max): 5.43418<br>- Resection status: OK<br>- # points used for Resection: 158<br>- # points validated by robust estimation: 132<br>- % points validated: 0.835443<br><h4>Robust resection of view 1727963742: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame87.jpg<br>- Threshold (error max): 7.51639<br>- Resection status: OK<br>- # points used for Resection: 166<br>- # points validated by robust estimation: 147<br>- % points validated: 0.885542<br><h4>Robust resection of view 518285018: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame109.jpg<br>- Threshold (error max): 4.44155<br>- Resection status: OK<br>- # points used for Resection: 211<br>- # points validated by robust estimation: 183<br>- % points validated: 0.867299<br><h4>Robust resection of view 1758874427: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame85.jpg<br>- Threshold (error max): 5.92614<br>- Resection status: OK<br>- # points used for Resection: 161<br>- # points validated by robust estimation: 132<br>- % points validated: 0.819876<br><h4>Robust resection of view 1728092725: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame82.jpg<br>- Threshold (error max): 7.3813<br>- Resection status: OK<br>- # points used for Resection: 163<br>- # points validated by robust estimation: 139<br>- % points validated: 0.852761<br><h4>Robust resection of view 860527150: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame80.jpg<br>- Threshold (error max): 7.03526<br>- Resection status: OK<br>- # points used for Resection: 170<br>- # points validated by robust estimation: 144<br>- % points validated: 0.847059<br><h4>Robust resection of view 811409618: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame69.jpg<br>- Threshold (error max): 17.3248<br>- Resection status: OK<br>- # points used for Resection: 132<br>- # points validated by robust estimation: 114<br>- % points validated: 0.863636<br><h4>Robust resection of view 1897024024: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame73.jpg<br>- Threshold (error max): 11.1742<br>- Resection status: OK<br>- # points used for Resection: 168<br>- # points validated by robust estimation: 147<br>- % points validated: 0.875<br><h4>Robust resection of view 1911888489: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame71.jpg<br>- Threshold (error max): 9.60439<br>- Resection status: OK<br>- # points used for Resection: 200<br>- # points validated by robust estimation: 178<br>- % points validated: 0.89<br><h4>Robust resection of view 1908604899: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame70.jpg<br>- Threshold (error max): 6.42318<br>- Resection status: OK<br>- # points used for Resection: 176<br>- # points validated by robust estimation: 146<br>- % points validated: 0.829545<br><h4>Robust resection of view 865594889: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame68.jpg<br>- Threshold (error max): 7.10903<br>- Resection status: OK<br>- # points used for Resection: 171<br>- # points validated by robust estimation: 146<br>- % points validated: 0.853801<br><h4>Robust resection of view 1896975152: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame72.jpg<br>- Threshold (error max): 7.62979<br>- Resection status: OK<br>- # points used for Resection: 164<br>- # points validated by robust estimation: 140<br>- % points validated: 0.853659<br><h4>Robust resection of view 240632771: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame65.jpg<br>- Threshold (error max): 12.5726<br>- Resection status: OK<br>- # points used for Resection: 164<br>- # points validated by robust estimation: 145<br>- % points validated: 0.884146<br><h4>Robust resection of view 240009292: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame64.jpg<br>- Threshold (error max): 11.7633<br>- Resection status: OK<br>- # points used for Resection: 155<br>- # points validated by robust estimation: 132<br>- % points validated: 0.851613<br><h4>Robust resection of view 241661681: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame62.jpg<br>- Threshold (error max): 13.0524<br>- Resection status: OK<br>- # points used for Resection: 150<br>- # points validated by robust estimation: 125<br>- % points validated: 0.833333<br><h4>Robust resection of view 864810314: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame67.jpg<br>- Threshold (error max): 8.92263<br>- Resection status: OK<br>- # points used for Resection: 161<br>- # points validated by robust estimation: 138<br>- % points validated: 0.857143<br><h4>Robust resection of view 240190079: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame66.jpg<br>- Threshold (error max): 9.30983<br>- Resection status: OK<br>- # points used for Resection: 162<br>- # points validated by robust estimation: 134<br>- % points validated: 0.82716<br><h4>Robust resection of view 238686383: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame63.jpg<br>- Threshold (error max): 11.8854<br>- Resection status: OK<br>- # points used for Resection: 156<br>- # points validated by robust estimation: 137<br>- % points validated: 0.878205<br><h4>Robust resection of view 255794849: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame77.jpg<br>- Threshold (error max): 9.52299<br>- Resection status: OK<br>- # points used for Resection: 199<br>- # points validated by robust estimation: 181<br>- % points validated: 0.909548<br><h4>Robust resection of view 267283454: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame74.jpg<br>- Threshold (error max): 5.46167<br>- Resection status: OK<br>- # points used for Resection: 182<br>- # points validated by robust estimation: 156<br>- % points validated: 0.857143<br><h4>Robust resection of view 224974560: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame44.jpg<br>- Threshold (error max): 14.3073<br>- Resection status: OK<br>- # points used for Resection: 140<br>- # points validated by robust estimation: 117<br>- % points validated: 0.835714<br><h4>Robust resection of view 201551044: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame43.jpg<br>- Threshold (error max): 13.39<br>- Resection status: OK<br>- # points used for Resection: 131<br>- # points validated by robust estimation: 102<br>- % points validated: 0.778626<br><h4>Robust resection of view 222943684: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame45.jpg<br>- Threshold (error max): 15.5881<br>- Resection status: OK<br>- # points used for Resection: 143<br>- # points validated by robust estimation: 124<br>- % points validated: 0.867133<br><h4>Robust resection of view 106843816: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame50.jpg<br>- Threshold (error max): 14.2456<br>- Resection status: OK<br>- # points used for Resection: 154<br>- # points validated by robust estimation: 132<br>- % points validated: 0.857143<br><h4>Robust resection of view 106131753: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame52.jpg<br>- Threshold (error max): 10.9446<br>- Resection status: OK<br>- # points used for Resection: 168<br>- # points validated by robust estimation: 143<br>- % points validated: 0.85119<br><h4>Robust resection of view 220125103: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame46.jpg<br>- Threshold (error max): 13.2712<br>- Resection status: OK<br>- # points used for Resection: 150<br>- # points validated by robust estimation: 126<br>- % points validated: 0.84<br><h4>Robust resection of view 1745221732: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame47.jpg<br>- Threshold (error max): 13.6033<br>- Resection status: OK<br>- # points used for Resection: 155<br>- # points validated by robust estimation: 131<br>- % points validated: 0.845161<br><h4>Robust resection of view 379863358: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame48.jpg<br>- Threshold (error max): 13.4117<br>- Resection status: OK<br>- # points used for Resection: 160<br>- # points validated by robust estimation: 138<br>- % points validated: 0.8625<br><h4>Robust resection of view 92208979: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame51.jpg<br>- Threshold (error max): 11.6223<br>- Resection status: OK<br>- # points used for Resection: 160<br>- # points validated by robust estimation: 135<br>- % points validated: 0.84375<br><h4>Robust resection of view 1219975090: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame56.jpg<br>- Threshold (error max): 10.3037<br>- Resection status: OK<br>- # points used for Resection: 188<br>- # points validated by robust estimation: 159<br>- % points validated: 0.845745<br><h4>Robust resection of view 1326952530: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame53.jpg<br>- Threshold (error max): 13.7479<br>- Resection status: OK<br>- # points used for Resection: 170<br>- # points validated by robust estimation: 146<br>- % points validated: 0.858824<br><h4>Robust resection of view 1333750311: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame54.jpg<br>- Threshold (error max): 11.5285<br>- Resection status: OK<br>- # points used for Resection: 172<br>- # points validated by robust estimation: 147<br>- % points validated: 0.854651<br><h4>Robust resection of view 379106790: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame49.jpg<br>- Threshold (error max): 11.8311<br>- Resection status: OK<br>- # points used for Resection: 159<br>- # points validated by robust estimation: 135<br>- % points validated: 0.849057<br><h4>Robust resection of view 1331418914: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame55.jpg<br>- Threshold (error max): 11.8549<br>- Resection status: OK<br>- # points used for Resection: 176<br>- # points validated by robust estimation: 151<br>- % points validated: 0.857955<br><h4>Robust resection of view 1311628516: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame58.jpg<br>- Threshold (error max): 9.99674<br>- Resection status: OK<br>- # points used for Resection: 195<br>- # points validated by robust estimation: 172<br>- % points validated: 0.882051<br><h4>Robust resection of view 1219391490: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame57.jpg<br>- Threshold (error max): 8.87831<br>- Resection status: OK<br>- # points used for Resection: 200<br>- # points validated by robust estimation: 177<br>- % points validated: 0.885<br><h4>Robust resection of view 204851431: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame42.jpg<br>- Threshold (error max): 15.0909<br>- Resection status: OK<br>- # points used for Resection: 133<br>- # points validated by robust estimation: 113<br>- % points validated: 0.849624<br><h4>Robust resection of view 253540468: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame76.jpg<br>- Threshold (error max): 7.97558<br>- Resection status: OK<br>- # points used for Resection: 242<br>- # points validated by robust estimation: 225<br>- % points validated: 0.929752<br><h4>Robust resection of view 30969912: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame61.jpg<br>- Threshold (error max): 7.27082<br>- Resection status: OK<br>- # points used for Resection: 239<br>- # points validated by robust estimation: 202<br>- % points validated: 0.845188<br><h4>Robust resection of view 267488622: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame75.jpg<br>- Threshold (error max): 5.86979<br>- Resection status: OK<br>- # points used for Resection: 246<br>- # points validated by robust estimation: 224<br>- % points validated: 0.910569<br><h4>Robust resection of view 1310267620: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame59.jpg<br>- Threshold (error max): 6.92683<br>- Resection status: OK<br>- # points used for Resection: 223<br>- # points validated by robust estimation: 189<br>- % points validated: 0.847534<br><h4>Robust resection of view 28531450: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame60.jpg<br>- Threshold (error max): 5.8972<br>- Resection status: OK<br>- # points used for Resection: 220<br>- # points validated by robust estimation: 183<br>- % points validated: 0.831818<br><h4>Robust resection of view 1295664596: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame22.jpg<br>- Threshold (error max): 15.7714<br>- Resection status: OK<br>- # points used for Resection: 155<br>- # points validated by robust estimation: 135<br>- % points validated: 0.870968<br><h4>Robust resection of view 784921751: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame26.jpg<br>- Threshold (error max): 16.082<br>- Resection status: OK<br>- # points used for Resection: 169<br>- # points validated by robust estimation: 151<br>- % points validated: 0.893491<br><h4>Robust resection of view 1330868845: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame25.jpg<br>- Threshold (error max): 17.8616<br>- Resection status: OK<br>- # points used for Resection: 177<br>- # points validated by robust estimation: 161<br>- % points validated: 0.909605<br><h4>Robust resection of view 792727664: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame29.jpg<br>- Threshold (error max): 13.4788<br>- Resection status: OK<br>- # points used for Resection: 177<br>- # points validated by robust estimation: 159<br>- % points validated: 0.898305<br><h4>Robust resection of view 2128589428: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame31.jpg<br>- Threshold (error max): 11.5436<br>- Resection status: OK<br>- # points used for Resection: 185<br>- # points validated by robust estimation: 159<br>- % points validated: 0.859459<br><h4>Robust resection of view 1317086510: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame24.jpg<br>- Threshold (error max): 18.2912<br>- Resection status: OK<br>- # points used for Resection: 166<br>- # points validated by robust estimation: 148<br>- % points validated: 0.891566<br><h4>Robust resection of view 829049733: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame33.jpg<br>- Threshold (error max): 10.9161<br>- Resection status: OK<br>- # points used for Resection: 198<br>- # points validated by robust estimation: 169<br>- % points validated: 0.853535<br><h4>Robust resection of view 1293984949: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame21.jpg<br>- Threshold (error max): 15.6984<br>- Resection status: OK<br>- # points used for Resection: 147<br>- # points validated by robust estimation: 130<br>- % points validated: 0.884354<br><h4>Robust resection of view 674755697: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame27.jpg<br>- Threshold (error max): 13.6951<br>- Resection status: OK<br>- # points used for Resection: 179<br>- # points validated by robust estimation: 152<br>- % points validated: 0.849162<br><h4>Robust resection of view 836612083: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame35.jpg<br>- Threshold (error max): 11.6945<br>- Resection status: OK<br>- # points used for Resection: 214<br>- # points validated by robust estimation: 197<br>- % points validated: 0.920561<br><h4>Robust resection of view 195893704: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame41.jpg<br>- Threshold (error max): 7.10202<br>- Resection status: OK<br>- # points used for Resection: 219<br>- # points validated by robust estimation: 186<br>- % points validated: 0.849315<br><h4>Robust resection of view 817469461: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame34.jpg<br>- Threshold (error max): 8.78079<br>- Resection status: OK<br>- # points used for Resection: 213<br>- # points validated by robust estimation: 181<br>- % points validated: 0.849765<br><h4>Robust resection of view 838722640: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame36.jpg<br>- Threshold (error max): 9.61585<br>- Resection status: OK<br>- # points used for Resection: 215<br>- # points validated by robust estimation: 192<br>- % points validated: 0.893023<br><h4>Robust resection of view 823538995: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame37.jpg<br>- Threshold (error max): 10.4812<br>- Resection status: OK<br>- # points used for Resection: 221<br>- # points validated by robust estimation: 200<br>- % points validated: 0.904977<br><h4>Robust resection of view 1722863191: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame81.jpg<br>- Threshold (error max): 7.71999<br>- Resection status: OK<br>- # points used for Resection: 246<br>- # points validated by robust estimation: 222<br>- % points validated: 0.902439<br><h4>Robust resection of view 2040652381: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame32.jpg<br>- Threshold (error max): 13.1357<br>- Resection status: OK<br>- # points used for Resection: 204<br>- # points validated by robust estimation: 180<br>- % points validated: 0.882353<br><h4>Robust resection of view 837525068: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame38.jpg<br>- Threshold (error max): 10.0686<br>- Resection status: OK<br>- # points used for Resection: 228<br>- # points validated by robust estimation: 203<br>- % points validated: 0.890351<br><h4>Robust resection of view 795649385: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame28.jpg<br>- Threshold (error max): 13.4805<br>- Resection status: OK<br>- # points used for Resection: 182<br>- # points validated by robust estimation: 158<br>- % points validated: 0.868132<br><h4>Robust resection of view 243239843: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame78.jpg<br>- Threshold (error max): 6.73847<br>- Resection status: OK<br>- # points used for Resection: 243<br>- # points validated by robust estimation: 221<br>- % points validated: 0.909465<br><h4>Robust resection of view 2126841928: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame30.jpg<br>- Threshold (error max): 15.7708<br>- Resection status: OK<br>- # points used for Resection: 195<br>- # points validated by robust estimation: 171<br>- % points validated: 0.876923<br><h4>Robust resection of view 214018768: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame40.jpg<br>- Threshold (error max): 13.502<br>- Resection status: OK<br>- # points used for Resection: 206<br>- # points validated by robust estimation: 193<br>- % points validated: 0.936893<br><h4>Robust resection of view 822263608: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame39.jpg<br>- Threshold (error max): 11.5937<br>- Resection status: OK<br>- # points used for Resection: 235<br>- # points validated by robust estimation: 214<br>- % points validated: 0.910638<br><h4>Robust resection of view 1781477302: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame18.jpg<br>- Threshold (error max): 10.5124<br>- Resection status: OK<br>- # points used for Resection: 167<br>- # points validated by robust estimation: 137<br>- % points validated: 0.820359<br><h4>Robust resection of view 1305954736: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame23.jpg<br>- Threshold (error max): 7.89361<br>- Resection status: OK<br>- # points used for Resection: 234<br>- # points validated by robust estimation: 198<br>- % points validated: 0.846154<br><h4>Robust resection of view 458292886: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame19.jpg<br>- Threshold (error max): 7.37742<br>- Resection status: OK<br>- # points used for Resection: 192<br>- # points validated by robust estimation: 161<br>- % points validated: 0.838542<br><h4>Robust resection of view 1292171348: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame20.jpg<br>- Threshold (error max): 7.45229<br>- Resection status: OK<br>- # points used for Resection: 216<br>- # points validated by robust estimation: 178<br>- % points validated: 0.824074<br><h4>Robust resection of view 28978285: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame79.jpg<br>- Threshold (error max): 10.0165<br>- Resection status: OK<br>- # points used for Resection: 224<br>- # points validated by robust estimation: 206<br>- % points validated: 0.919643<br><h4>Robust resection of view 1729551748: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame83.jpg<br>- Threshold (error max): 8.77666<br>- Resection status: OK<br>- # points used for Resection: 237<br>- # points validated by robust estimation: 220<br>- % points validated: 0.92827<br><h4>Robust resection of view 1747237197: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame84.jpg<br>- Threshold (error max): 7.94243<br>- Resection status: OK<br>- # points used for Resection: 220<br>- # points validated by robust estimation: 201<br>- % points validated: 0.913636<br><h4>Robust resection of view 1721921389: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame86.jpg<br>- Threshold (error max): 10.1025<br>- Resection status: OK<br>- # points used for Resection: 230<br>- # points validated by robust estimation: 212<br>- % points validated: 0.921739<br><h4>Robust resection of view 1828234600: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame16.jpg<br>- Threshold (error max): 12.688<br>- Resection status: OK<br>- # points used for Resection: 144<br>- # points validated by robust estimation: 124<br>- % points validated: 0.861111<br><h4>Robust resection of view 1824896196: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame17.jpg<br>- Threshold (error max): 9.50223<br>- Resection status: OK<br>- # points used for Resection: 154<br>- # points validated by robust estimation: 126<br>- % points validated: 0.818182<br><h4>Robust resection of view 1822456851: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame14.jpg<br>- Threshold (error max): 14.7322<br>- Resection status: OK<br>- # points used for Resection: 150<br>- # points validated by robust estimation: 138<br>- % points validated: 0.92<br><h4>Robust resection of view 1825756429: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame15.jpg<br>- Threshold (error max): 12.2633<br>- Resection status: OK<br>- # points used for Resection: 149<br>- # points validated by robust estimation: 130<br>- % points validated: 0.872483<br><h4>Robust resection of view 1801480956: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame13.jpg<br>- Threshold (error max): 15.6502<br>- Resection status: OK<br>- # points used for Resection: 148<br>- # points validated by robust estimation: 130<br>- % points validated: 0.878378<br><h4>Robust resection of view 1241144298: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame431.jpg<br>- Threshold (error max): 15.8982<br>- Resection status: OK<br>- # points used for Resection: 156<br>- # points validated by robust estimation: 136<br>- % points validated: 0.871795<br><h4>Robust resection of view 810198300: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame113.jpg<br>- Threshold (error max): 10.2021<br>- Resection status: OK<br>- # points used for Resection: 197<br>- # points validated by robust estimation: 166<br>- % points validated: 0.84264<br><h4>Robust resection of view 1800685516: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame12.jpg<br>- Threshold (error max): 16.6557<br>- Resection status: OK<br>- # points used for Resection: 144<br>- # points validated by robust estimation: 130<br>- % points validated: 0.902778<br><h4>Robust resection of view 71156788: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame105.jpg<br>- Threshold (error max): 6.49779<br>- Resection status: OK<br>- # points used for Resection: 203<br>- # points validated by robust estimation: 177<br>- % points validated: 0.871921<br><h4>Robust resection of view 321820492: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame462.jpg<br>- Threshold (error max): 17.5784<br>- Resection status: OK<br>- # points used for Resection: 144<br>- # points validated by robust estimation: 127<br>- % points validated: 0.881944<br><h4>Robust resection of view 378056512: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame444.jpg<br>- Threshold (error max): 13.4924<br>- Resection status: OK<br>- # points used for Resection: 146<br>- # points validated by robust estimation: 126<br>- % points validated: 0.863014<br><h4>Robust resection of view 413164761: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame437.jpg<br>- Threshold (error max): 14.8207<br>- Resection status: OK<br>- # points used for Resection: 147<br>- # points validated by robust estimation: 125<br>- % points validated: 0.85034<br><h4>Robust resection of view 1012223083: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame467.jpg<br>- Threshold (error max): 7.45423<br>- Resection status: OK<br>- # points used for Resection: 181<br>- # points validated by robust estimation: 151<br>- % points validated: 0.834254<br><h4>Robust resection of view 1676544566: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame458.jpg<br>- Threshold (error max): 10.6593<br>- Resection status: OK<br>- # points used for Resection: 182<br>- # points validated by robust estimation: 154<br>- % points validated: 0.846154<br><h4>Robust resection of view 1008530225: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame466.jpg<br>- Threshold (error max): 6.45647<br>- Resection status: OK<br>- # points used for Resection: 186<br>- # points validated by robust estimation: 151<br>- % points validated: 0.811828<br><h4>Robust resection of view 1655462924: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame457.jpg<br>- Threshold (error max): 6.56971<br>- Resection status: OK<br>- # points used for Resection: 182<br>- # points validated by robust estimation: 149<br>- % points validated: 0.818681<br><h4>Robust resection of view 1678469656: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame459.jpg<br>- Threshold (error max): 6.14871<br>- Resection status: OK<br>- # points used for Resection: 188<br>- # points validated by robust estimation: 156<br>- % points validated: 0.829787<br><h4>Robust resection of view 384648517: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame442.jpg<br>- Threshold (error max): 6.91073<br>- Resection status: OK<br>- # points used for Resection: 182<br>- # points validated by robust estimation: 150<br>- % points validated: 0.824176<br><h4>Robust resection of view 2117096263: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame452.jpg<br>- Threshold (error max): 6.26196<br>- Resection status: OK<br>- # points used for Resection: 183<br>- # points validated by robust estimation: 146<br>- % points validated: 0.797814<br><h4>Robust resection of view 2121094510: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame454.jpg<br>- Threshold (error max): 7.35692<br>- Resection status: OK<br>- # points used for Resection: 186<br>- # points validated by robust estimation: 155<br>- % points validated: 0.833333<br><h4>Robust resection of view 310442431: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame461.jpg<br>- Threshold (error max): 7.48902<br>- Resection status: OK<br>- # points used for Resection: 176<br>- # points validated by robust estimation: 145<br>- % points validated: 0.823864<br><h4>Robust resection of view 2114403589: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame451.jpg<br>- Threshold (error max): 7.34327<br>- Resection status: OK<br>- # points used for Resection: 187<br>- # points validated by robust estimation: 154<br>- % points validated: 0.823529<br><h4>Robust resection of view 820905650: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame11.jpg<br>- Threshold (error max): 6.47632<br>- Resection status: OK<br>- # points used for Resection: 172<br>- # points validated by robust estimation: 144<br>- % points validated: 0.837209<br><h4>Robust resection of view 1323581811: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame3.jpg<br>- Threshold (error max): 5.95379<br>- Resection status: OK<br>- # points used for Resection: 168<br>- # points validated by robust estimation: 137<br>- % points validated: 0.815476<br><h4>Robust resection of view 1009199228: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame464.jpg<br>- Threshold (error max): 5.7999<br>- Resection status: OK<br>- # points used for Resection: 178<br>- # points validated by robust estimation: 153<br>- % points validated: 0.859551<br><h4>Robust resection of view 1333727721: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame4.jpg<br>- Threshold (error max): 5.67777<br>- Resection status: OK<br>- # points used for Resection: 165<br>- # points validated by robust estimation: 133<br>- % points validated: 0.806061<br><h4>Robust resection of view 1825209049: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame425.jpg<br>- Threshold (error max): 4.92892<br>- Resection status: OK<br>- # points used for Resection: 163<br>- # points validated by robust estimation: 131<br>- % points validated: 0.803681<br><h4>Robust resection of view 1690218467: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame8.jpg<br>- Threshold (error max): 6.19068<br>- Resection status: OK<br>- # points used for Resection: 173<br>- # points validated by robust estimation: 144<br>- % points validated: 0.83237<br><h4>Robust resection of view 387626071: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame448.jpg<br>- Threshold (error max): 6.7732<br>- Resection status: OK<br>- # points used for Resection: 184<br>- # points validated by robust estimation: 160<br>- % points validated: 0.869565<br><h4>Robust resection of view 418760852: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame439.jpg<br>- Threshold (error max): 5.45567<br>- Resection status: OK<br>- # points used for Resection: 174<br>- # points validated by robust estimation: 148<br>- % points validated: 0.850575<br><h4>Robust resection of view 1317717598: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame2.jpg<br>- Threshold (error max): 7.54411<br>- Resection status: OK<br>- # points used for Resection: 171<br>- # points validated by robust estimation: 146<br>- % points validated: 0.853801<br><h4>Robust resection of view 1369049933: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame471.jpg<br>- Threshold (error max): 5.5991<br>- Resection status: OK<br>- # points used for Resection: 174<br>- # points validated by robust estimation: 153<br>- % points validated: 0.87931<br><h4>Robust resection of view 1712378675: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame7.jpg<br>- Threshold (error max): 5.69415<br>- Resection status: OK<br>- # points used for Resection: 175<br>- # points validated by robust estimation: 146<br>- % points validated: 0.834286<br><h4>Robust resection of view 1687844965: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame9.jpg<br>- Threshold (error max): 4.79865<br>- Resection status: OK<br>- # points used for Resection: 177<br>- # points validated by robust estimation: 148<br>- % points validated: 0.836158<br><h4>Robust resection of view 1705920442: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame5.jpg<br>- Threshold (error max): 4.72555<br>- Resection status: OK<br>- # points used for Resection: 177<br>- # points validated by robust estimation: 153<br>- % points validated: 0.864407<br><h4>Robust resection of view 1714571667: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame6.jpg<br>- Threshold (error max): 4.86604<br>- Resection status: OK<br>- # points used for Resection: 175<br>- # points validated by robust estimation: 142<br>- % points validated: 0.811429<br><h4>Robust resection of view 1325102475: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame1.jpg<br>- Threshold (error max): 4.83516<br>- Resection status: OK<br>- # points used for Resection: 179<br>- # points validated by robust estimation: 153<br>- % points validated: 0.854749<br><h4>Robust resection of view 818319163: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame10.jpg<br>- Threshold (error max): 5.50559<br>- Resection status: OK<br>- # points used for Resection: 172<br>- # points validated by robust estimation: 147<br>- % points validated: 0.854651<br><h4>Robust resection of view 2118959901: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame455.jpg<br>- Threshold (error max): 4.89307<br>- Resection status: OK<br>- # points used for Resection: 183<br>- # points validated by robust estimation: 160<br>- % points validated: 0.874317<br><h4>Robust resection of view 494465385: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame428.jpg<br>- Threshold (error max): 4.21536<br>- Resection status: OK<br>- # points used for Resection: 183<br>- # points validated by robust estimation: 155<br>- % points validated: 0.846995<br><h4>Robust resection of view 341785447: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame446.jpg<br>- Threshold (error max): 4.77174<br>- Resection status: OK<br>- # points used for Resection: 171<br>- # points validated by robust estimation: 151<br>- % points validated: 0.883041<br><h4>Robust resection of view 1758915103: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame432.jpg<br>- Threshold (error max): 5.04366<br>- Resection status: OK<br>- # points used for Resection: 183<br>- # points validated by robust estimation: 159<br>- % points validated: 0.868852<br><h4>Robust resection of view 1239378354: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame430.jpg<br>- Threshold (error max): 4.15817<br>- Resection status: OK<br>- # points used for Resection: 183<br>- # points validated by robust estimation: 163<br>- % points validated: 0.89071<br><h4>Robust resection of view 494192468: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame429.jpg<br>- Threshold (error max): 4.77427<br>- Resection status: OK<br>- # points used for Resection: 176<br>- # points validated by robust estimation: 154<br>- % points validated: 0.875<br><h4>Robust resection of view 1405795738: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame449.jpg<br>- Threshold (error max): 3.72943<br>- Resection status: OK<br>- # points used for Resection: 177<br>- # points validated by robust estimation: 156<br>- % points validated: 0.881356<br><h4>Robust resection of view 411798668: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame438.jpg<br>- Threshold (error max): 2.91726<br>- Resection status: OK<br>- # points used for Resection: 179<br>- # points validated by robust estimation: 152<br>- % points validated: 0.849162<br><h4>Robust resection of view 1653353040: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame456.jpg<br>- Threshold (error max): 3.74974<br>- Resection status: OK<br>- # points used for Resection: 176<br>- # points validated by robust estimation: 151<br>- % points validated: 0.857955<br><h4>Robust resection of view 1808854681: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame440.jpg<br>- Threshold (error max): 4.89576<br>- Resection status: OK<br>- # points used for Resection: 172<br>- # points validated by robust estimation: 154<br>- % points validated: 0.895349<br><h4>Robust resection of view 380151696: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame445.jpg<br>- Threshold (error max): 5.17462<br>- Resection status: OK<br>- # points used for Resection: 174<br>- # points validated by robust estimation: 155<br>- % points validated: 0.890805<br><h4>Robust resection of view 1371614603: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame470.jpg<br>- Threshold (error max): 3.56487<br>- Resection status: OK<br>- # points used for Resection: 170<br>- # points validated by robust estimation: 145<br>- % points validated: 0.852941<br><h4>Robust resection of view 1014072530: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame468.jpg<br>- Threshold (error max): 3.96107<br>- Resection status: OK<br>- # points used for Resection: 181<br>- # points validated by robust estimation: 160<br>- % points validated: 0.883978<br><h4>Robust resection of view 1072340907: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame463.jpg<br>- Threshold (error max): 5.28672<br>- Resection status: OK<br>- # points used for Resection: 181<br>- # points validated by robust estimation: 158<br>- % points validated: 0.872928<br><h4>Robust resection of view 406906200: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame436.jpg<br>- Threshold (error max): 4.66199<br>- Resection status: OK<br>- # points used for Resection: 182<br>- # points validated by robust estimation: 159<br>- % points validated: 0.873626<br><h4>Robust resection of view 1758100110: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame433.jpg<br>- Threshold (error max): 5.11703<br>- Resection status: OK<br>- # points used for Resection: 174<br>- # points validated by robust estimation: 153<br>- % points validated: 0.87931<br><h4>Robust resection of view 1069725499: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame465.jpg<br>- Threshold (error max): 4.11205<br>- Resection status: OK<br>- # points used for Resection: 176<br>- # points validated by robust estimation: 156<br>- % points validated: 0.886364<br><h4>Robust resection of view 1730880300: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame434.jpg<br>- Threshold (error max): 4.2739<br>- Resection status: OK<br>- # points used for Resection: 177<br>- # points validated by robust estimation: 158<br>- % points validated: 0.892655<br><h4>Robust resection of view 402744329: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame435.jpg<br>- Threshold (error max): 4.38035<br>- Resection status: OK<br>- # points used for Resection: 175<br>- # points validated by robust estimation: 157<br>- % points validated: 0.897143<br><h4>Robust resection of view 343829511: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame447.jpg<br>- Threshold (error max): 4.10552<br>- Resection status: OK<br>- # points used for Resection: 168<br>- # points validated by robust estimation: 147<br>- % points validated: 0.875<br><h4>Robust resection of view 2115477492: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame450.jpg<br>- Threshold (error max): 5.06991<br>- Resection status: OK<br>- # points used for Resection: 172<br>- # points validated by robust estimation: 155<br>- % points validated: 0.901163<br><h4>Robust resection of view 356138844: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame443.jpg<br>- Threshold (error max): 4.69656<br>- Resection status: OK<br>- # points used for Resection: 167<br>- # points validated by robust estimation: 151<br>- % points validated: 0.904192<br><h4>Robust resection of view 1836279308: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame427.jpg<br>- Threshold (error max): 3.87389<br>- Resection status: OK<br>- # points used for Resection: 167<br>- # points validated by robust estimation: 149<br>- % points validated: 0.892216<br><h4>Robust resection of view 1809681707: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame441.jpg<br>- Threshold (error max): 3.89903<br>- Resection status: OK<br>- # points used for Resection: 175<br>- # points validated by robust estimation: 154<br>- % points validated: 0.88<br><h4>Robust resection of view 2115178513: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame453.jpg<br>- Threshold (error max): 4.369<br>- Resection status: OK<br>- # points used for Resection: 180<br>- # points validated by robust estimation: 163<br>- % points validated: 0.905556<br><h4>Robust resection of view 307559079: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame460.jpg<br>- Threshold (error max): 2.70268<br>- Resection status: OK<br>- # points used for Resection: 172<br>- # points validated by robust estimation: 141<br>- % points validated: 0.819767<br><h4>Robust resection of view 2029326337: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame420.jpg<br>- Threshold (error max): 9.5648<br>- Resection status: OK<br>- # points used for Resection: 162<br>- # points validated by robust estimation: 136<br>- % points validated: 0.839506<br><h4>Robust resection of view 1830211028: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame424.jpg<br>- Threshold (error max): 6.17703<br>- Resection status: OK<br>- # points used for Resection: 167<br>- # points validated by robust estimation: 145<br>- % points validated: 0.868263<br><h4>Robust resection of view 1826428628: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame426.jpg<br>- Threshold (error max): 3.48166<br>- Resection status: OK<br>- # points used for Resection: 168<br>- # points validated by robust estimation: 142<br>- % points validated: 0.845238<br><h4>Robust resection of view 1775250928: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame422.jpg<br>- Threshold (error max): 7.84371<br>- Resection status: OK<br>- # points used for Resection: 162<br>- # points validated by robust estimation: 136<br>- % points validated: 0.839506<br><h4>Robust resection of view 1975909490: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame418.jpg<br>- Threshold (error max): 12.0043<br>- Resection status: OK<br>- # points used for Resection: 164<br>- # points validated by robust estimation: 150<br>- % points validated: 0.914634<br><h4>Robust resection of view 549414295: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame469.jpg<br>- Threshold (error max): 3.08396<br>- Resection status: OK<br>- # points used for Resection: 169<br>- # points validated by robust estimation: 146<br>- % points validated: 0.863905<br><h4>Robust resection of view 1965192021: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame419.jpg<br>- Threshold (error max): 10.1902<br>- Resection status: OK<br>- # points used for Resection: 164<br>- # points validated by robust estimation: 143<br>- % points validated: 0.871951<br><h4>Robust resection of view 1413523823: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame410.jpg<br>- Threshold (error max): 7.26109<br>- Resection status: OK<br>- # points used for Resection: 145<br>- # points validated by robust estimation: 121<br>- % points validated: 0.834483<br><h4>Robust resection of view 1595991900: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame417.jpg<br>- Threshold (error max): 6.4896<br>- Resection status: OK<br>- # points used for Resection: 208<br>- # points validated by robust estimation: 183<br>- % points validated: 0.879808<br><h4>Robust resection of view 1594219716: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame416.jpg<br>- Threshold (error max): 8.50974<br>- Resection status: OK<br>- # points used for Resection: 213<br>- # points validated by robust estimation: 192<br>- % points validated: 0.901408<br><h4>Robust resection of view 1829672511: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame421.jpg<br>- Threshold (error max): 4.88822<br>- Resection status: OK<br>- # points used for Resection: 210<br>- # points validated by robust estimation: 180<br>- % points validated: 0.857143<br><h4>Robust resection of view 1526636176: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame407.jpg<br>- Threshold (error max): 9.12232<br>- Resection status: OK<br>- # points used for Resection: 180<br>- # points validated by robust estimation: 157<br>- % points validated: 0.872222<br><h4>Robust resection of view 1972036839: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame412.jpg<br>- Threshold (error max): 6.16104<br>- Resection status: OK<br>- # points used for Resection: 188<br>- # points validated by robust estimation: 158<br>- % points validated: 0.840426<br><h4>Robust resection of view 1772951300: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame423.jpg<br>- Threshold (error max): 4.1145<br>- Resection status: OK<br>- # points used for Resection: 196<br>- # points validated by robust estimation: 166<br>- % points validated: 0.846939<br><h4>Robust resection of view 1559945405: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame415.jpg<br>- Threshold (error max): 6.28751<br>- Resection status: OK<br>- # points used for Resection: 203<br>- # points validated by robust estimation: 175<br>- % points validated: 0.862069<br><h4>Robust resection of view 1558147869: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame414.jpg<br>- Threshold (error max): 7.45066<br>- Resection status: OK<br>- # points used for Resection: 192<br>- # points validated by robust estimation: 170<br>- % points validated: 0.885417<br><h4>Robust resection of view 1421093310: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame411.jpg<br>- Threshold (error max): 7.09259<br>- Resection status: OK<br>- # points used for Resection: 184<br>- # points validated by robust estimation: 155<br>- % points validated: 0.842391<br><h4>Robust resection of view 1978544813: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame413.jpg<br>- Threshold (error max): 5.97486<br>- Resection status: OK<br>- # points used for Resection: 187<br>- # points validated by robust estimation: 160<br>- % points validated: 0.855615<br><h4>Robust resection of view 1495628105: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame405.jpg<br>- Threshold (error max): 10.4961<br>- Resection status: OK<br>- # points used for Resection: 198<br>- # points validated by robust estimation: 177<br>- % points validated: 0.893939<br><h4>Robust resection of view 1584799338: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame402.jpg<br>- Threshold (error max): 10.292<br>- Resection status: OK<br>- # points used for Resection: 192<br>- # points validated by robust estimation: 170<br>- % points validated: 0.885417<br><h4>Robust resection of view 1537059375: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame409.jpg<br>- Threshold (error max): 7.56036<br>- Resection status: OK<br>- # points used for Resection: 193<br>- # points validated by robust estimation: 169<br>- % points validated: 0.875648<br><h4>Robust resection of view 1507085479: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame404.jpg<br>- Threshold (error max): 8.36885<br>- Resection status: OK<br>- # points used for Resection: 198<br>- # points validated by robust estimation: 170<br>- % points validated: 0.858586<br><h4>Robust resection of view 1537492137: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame408.jpg<br>- Threshold (error max): 10.2825<br>- Resection status: OK<br>- # points used for Resection: 193<br>- # points validated by robust estimation: 177<br>- % points validated: 0.917098<br><h4>Robust resection of view 1502373120: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame406.jpg<br>- Threshold (error max): 6.30187<br>- Resection status: OK<br>- # points used for Resection: 182<br>- # points validated by robust estimation: 151<br>- % points validated: 0.82967<br><h4>Robust resection of view 1505735104: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame403.jpg<br>- Threshold (error max): 11.3083<br>- Resection status: OK<br>- # points used for Resection: 193<br>- # points validated by robust estimation: 176<br>- % points validated: 0.911917<br><h4>Robust resection of view 1050717738: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame396.jpg<br>- Threshold (error max): 8.96944<br>- Resection status: OK<br>- # points used for Resection: 165<br>- # points validated by robust estimation: 138<br>- % points validated: 0.836364<br><h4>Robust resection of view 1501889347: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame401.jpg<br>- Threshold (error max): 9.36396<br>- Resection status: OK<br>- # points used for Resection: 187<br>- # points validated by robust estimation: 161<br>- % points validated: 0.860963<br><h4>Robust resection of view 75994757: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame106.jpg<br>- Threshold (error max): 6.83518<br>- Resection status: OK<br>- # points used for Resection: 212<br>- # points validated by robust estimation: 177<br>- % points validated: 0.834906<br><h4>Robust resection of view 1041694916: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame398.jpg<br>- Threshold (error max): 10.3256<br>- Resection status: OK<br>- # points used for Resection: 223<br>- # points validated by robust estimation: 202<br>- % points validated: 0.90583<br><h4>Robust resection of view 1072142004: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame399.jpg<br>- Threshold (error max): 6.15375<br>- Resection status: OK<br>- # points used for Resection: 225<br>- # points validated by robust estimation: 193<br>- % points validated: 0.857778<br><h4>Robust resection of view 1049076845: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame397.jpg<br>- Threshold (error max): 7.36803<br>- Resection status: OK<br>- # points used for Resection: 215<br>- # points validated by robust estimation: 192<br>- % points validated: 0.893023<br><h4>Robust resection of view 555319438: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame393.jpg<br>- Threshold (error max): 10.3683<br>- Resection status: OK<br>- # points used for Resection: 179<br>- # points validated by robust estimation: 157<br>- % points validated: 0.877095<br><h4>Robust resection of view 1050624039: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame394.jpg<br>- Threshold (error max): 9.85469<br>- Resection status: OK<br>- # points used for Resection: 199<br>- # points validated by robust estimation: 171<br>- % points validated: 0.859297<br><h4>Robust resection of view 1504444037: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame400.jpg<br>- Threshold (error max): 8.21584<br>- Resection status: OK<br>- # points used for Resection: 215<br>- # points validated by robust estimation: 190<br>- % points validated: 0.883721<br><h4>Robust resection of view 934531524: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame110.jpg<br>- Threshold (error max): 5.48542<br>- Resection status: OK<br>- # points used for Resection: 225<br>- # points validated by robust estimation: 180<br>- % points validated: 0.8<br><h4>Robust resection of view 1048305445: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame395.jpg<br>- Threshold (error max): 9.42157<br>- Resection status: OK<br>- # points used for Resection: 192<br>- # points validated by robust estimation: 171<br>- % points validated: 0.890625<br><h4>Robust resection of view 516357712: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame120.jpg<br>- Threshold (error max): 17.9348<br>- Resection status: OK<br>- # points used for Resection: 129<br>- # points validated by robust estimation: 110<br>- % points validated: 0.852713<br><h4>Robust resection of view 934771345: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame111.jpg<br>- Threshold (error max): 13.4909<br>- Resection status: OK<br>- # points used for Resection: 200<br>- # points validated by robust estimation: 178<br>- % points validated: 0.89<br><h4>Robust resection of view 516095249: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame121.jpg<br>- Threshold (error max): 14.5136<br>- Resection status: OK<br>- # points used for Resection: 163<br>- # points validated by robust estimation: 135<br>- % points validated: 0.828221<br><h4>Robust resection of view 1643456648: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame389.jpg<br>- Threshold (error max): 11.6138<br>- Resection status: OK<br>- # points used for Resection: 176<br>- # points validated by robust estimation: 152<br>- % points validated: 0.863636<br><h4>Robust resection of view 2030687873: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame118.jpg<br>- Threshold (error max): 10.4804<br>- Resection status: OK<br>- # points used for Resection: 183<br>- # points validated by robust estimation: 149<br>- % points validated: 0.814208<br><h4>Robust resection of view 2032966634: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame119.jpg<br>- Threshold (error max): 8.27321<br>- Resection status: OK<br>- # points used for Resection: 186<br>- # points validated by robust estimation: 153<br>- % points validated: 0.822581<br><h4>Robust resection of view 933907424: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame112.jpg<br>- Threshold (error max): 8.28437<br>- Resection status: OK<br>- # points used for Resection: 214<br>- # points validated by robust estimation: 182<br>- % points validated: 0.850467<br><h4>Robust resection of view 1242696843: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame392.jpg<br>- Threshold (error max): 6.30753<br>- Resection status: OK<br>- # points used for Resection: 196<br>- # points validated by robust estimation: 169<br>- % points validated: 0.862245<br><h4>Robust resection of view 980879293: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame123.jpg<br>- Threshold (error max): 17.9349<br>- Resection status: OK<br>- # points used for Resection: 153<br>- # points validated by robust estimation: 122<br>- % points validated: 0.797386<br><h4>Robust resection of view 1249157774: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame390.jpg<br>- Threshold (error max): 7.45744<br>- Resection status: OK<br>- # points used for Resection: 188<br>- # points validated by robust estimation: 159<br>- % points validated: 0.845745<br><h4>Robust resection of view 1632972461: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame388.jpg<br>- Threshold (error max): 8.62541<br>- Resection status: OK<br>- # points used for Resection: 165<br>- # points validated by robust estimation: 137<br>- % points validated: 0.830303<br><h4>Robust resection of view 1249908770: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame391.jpg<br>- Threshold (error max): 6.74588<br>- Resection status: OK<br>- # points used for Resection: 184<br>- # points validated by robust estimation: 155<br>- % points validated: 0.842391<br><h4>Robust resection of view 908494615: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame115.jpg<br>- Threshold (error max): 6.38618<br>- Resection status: OK<br>- # points used for Resection: 209<br>- # points validated by robust estimation: 167<br>- % points validated: 0.799043<br><h4>Robust resection of view 2035126263: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame117.jpg<br>- Threshold (error max): 8.47116<br>- Resection status: OK<br>- # points used for Resection: 218<br>- # points validated by robust estimation: 189<br>- % points validated: 0.866973<br><h4>Robust resection of view 512761770: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame122.jpg<br>- Threshold (error max): 5.19063<br>- Resection status: OK<br>- # points used for Resection: 191<br>- # points validated by robust estimation: 141<br>- % points validated: 0.73822<br><h4>Robust resection of view 2024762161: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame116.jpg<br>- Threshold (error max): 9.48404<br>- Resection status: OK<br>- # points used for Resection: 228<br>- # points validated by robust estimation: 199<br>- % points validated: 0.872807<br><h4>Robust resection of view 993903862: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame125.jpg<br>- Threshold (error max): 4.96277<br>- Resection status: OK<br>- # points used for Resection: 179<br>- # points validated by robust estimation: 127<br>- % points validated: 0.709497<br><h4>Robust resection of view 987695446: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame124.jpg<br>- Threshold (error max): 6.97572<br>- Resection status: OK<br>- # points used for Resection: 167<br>- # points validated by robust estimation: 127<br>- % points validated: 0.760479<br><h4>Robust resection of view 981022859: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame126.jpg<br>- Threshold (error max): 5.41271<br>- Resection status: OK<br>- # points used for Resection: 166<br>- # points validated by robust estimation: 119<br>- % points validated: 0.716867<br><h4>Robust resection of view 1000266608: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame129.jpg<br>- Threshold (error max): 8.92512<br>- Resection status: OK<br>- # points used for Resection: 164<br>- # points validated by robust estimation: 125<br>- % points validated: 0.762195<br><h4>Robust resection of view 2108626645: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame130.jpg<br>- Threshold (error max): 10.3278<br>- Resection status: OK<br>- # points used for Resection: 162<br>- # points validated by robust estimation: 124<br>- % points validated: 0.765432<br><h4>Robust resection of view 987805185: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame127.jpg<br>- Threshold (error max): 5.73861<br>- Resection status: OK<br>- # points used for Resection: 157<br>- # points validated by robust estimation: 115<br>- % points validated: 0.732484<br><h4>Robust resection of view 1002600185: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame128.jpg<br>- Threshold (error max): 5.57201<br>- Resection status: OK<br>- # points used for Resection: 201<br>- # points validated by robust estimation: 155<br>- % points validated: 0.771144<br><h4>Robust resection of view 2113055274: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame132.jpg<br>- Threshold (error max): 5.25808<br>- Resection status: OK<br>- # points used for Resection: 205<br>- # points validated by robust estimation: 162<br>- % points validated: 0.790244<br><h4>Robust resection of view 2107795347: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame131.jpg<br>- Threshold (error max): 5.18048<br>- Resection status: OK<br>- # points used for Resection: 194<br>- # points validated by robust estimation: 150<br>- % points validated: 0.773196<br><h4>Robust resection of view 2104796759: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame134.jpg<br>- Threshold (error max): 6.82427<br>- Resection status: OK<br>- # points used for Resection: 174<br>- # points validated by robust estimation: 134<br>- % points validated: 0.770115<br><h4>Robust resection of view 2112397712: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame133.jpg<br>- Threshold (error max): 10.0275<br>- Resection status: OK<br>- # points used for Resection: 186<br>- # points validated by robust estimation: 154<br>- % points validated: 0.827957<br><h4>Robust resection of view 2095913543: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame135.jpg<br>- Threshold (error max): 14.477<br>- Resection status: OK<br>- # points used for Resection: 152<br>- # points validated by robust estimation: 124<br>- % points validated: 0.815789<br><h4>Robust resection of view 2101605984: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame136.jpg<br>- Threshold (error max): 16.4398<br>- Resection status: OK<br>- # points used for Resection: 133<br>- # points validated by robust estimation: 106<br>- % points validated: 0.796992<br><h4>Robust resection of view 1323399470: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame140.jpg<br>- Threshold (error max): 7.53894<br>- Resection status: OK<br>- # points used for Resection: 127<br>- # points validated by robust estimation: 90<br>- % points validated: 0.708661<br><h4>Robust resection of view 355107669: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame139.jpg<br>- Threshold (error max): 21.0321<br>- Resection status: OK<br>- # points used for Resection: 118<br>- # points validated by robust estimation: 96<br>- % points validated: 0.813559<br><h4>Robust resection of view 383165107: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame138.jpg<br>- Threshold (error max): 13.5154<br>- Resection status: OK<br>- # points used for Resection: 134<br>- # points validated by robust estimation: 102<br>- % points validated: 0.761194<br><h4>Robust resection of view 377384666: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame137.jpg<br>- Threshold (error max): 6.53165<br>- Resection status: OK<br>- # points used for Resection: 197<br>- # points validated by robust estimation: 156<br>- % points validated: 0.791878<br><h4>Robust resection of view 1362656405: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame142.jpg<br>- Threshold (error max): 15.7928<br>- Resection status: OK<br>- # points used for Resection: 161<br>- # points validated by robust estimation: 136<br>- % points validated: 0.84472<br><h4>Robust resection of view 1323284110: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame141.jpg<br>- Threshold (error max): 8.62398<br>- Resection status: OK<br>- # points used for Resection: 179<br>- # points validated by robust estimation: 137<br>- % points validated: 0.765363<br><h4>Robust resection of view 573144255: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame146.jpg<br>- Threshold (error max): 12.9612<br>- Resection status: OK<br>- # points used for Resection: 153<br>- # points validated by robust estimation: 125<br>- % points validated: 0.816993<br><h4>Robust resection of view 573584015: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame145.jpg<br>- Threshold (error max): 14.7098<br>- Resection status: OK<br>- # points used for Resection: 150<br>- # points validated by robust estimation: 122<br>- % points validated: 0.813333<br><h4>Robust resection of view 545348610: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame148.jpg<br>- Threshold (error max): 13.8632<br>- Resection status: OK<br>- # points used for Resection: 146<br>- # points validated by robust estimation: 115<br>- % points validated: 0.787671<br><h4>Robust resection of view 1322499927: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame143.jpg<br>- Threshold (error max): 12.5459<br>- Resection status: OK<br>- # points used for Resection: 159<br>- # points validated by robust estimation: 130<br>- % points validated: 0.81761<br><h4>Robust resection of view 574047937: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame144.jpg<br>- Threshold (error max): 11.0247<br>- Resection status: OK<br>- # points used for Resection: 140<br>- # points validated by robust estimation: 113<br>- % points validated: 0.807143<br><h4>Robust resection of view 633518862: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame147.jpg<br>- Threshold (error max): 12.7486<br>- Resection status: OK<br>- # points used for Resection: 134<br>- # points validated by robust estimation: 103<br>- % points validated: 0.768657<br><h4>Robust resection of view 577586774: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame149.jpg<br>- Threshold (error max): 11.4865<br>- Resection status: OK<br>- # points used for Resection: 128<br>- # points validated by robust estimation: 95<br>- % points validated: 0.742188<br><h4>Robust resection of view 1256187317: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame150.jpg<br>- Threshold (error max): 8.60143<br>- Resection status: OK<br>- # points used for Resection: 188<br>- # points validated by robust estimation: 154<br>- % points validated: 0.819149<br><h4>Robust resection of view 2065701511: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame157.jpg<br>- Threshold (error max): 10.6601<br>- Resection status: OK<br>- # points used for Resection: 156<br>- # points validated by robust estimation: 122<br>- % points validated: 0.782051<br><h4>Robust resection of view 2071587583: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame153.jpg<br>- Threshold (error max): 12.3757<br>- Resection status: OK<br>- # points used for Resection: 158<br>- # points validated by robust estimation: 129<br>- % points validated: 0.816456<br><h4>Robust resection of view 1670507791: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame164.jpg<br>- Threshold (error max): 12.2944<br>- Resection status: OK<br>- # points used for Resection: 135<br>- # points validated by robust estimation: 104<br>- % points validated: 0.77037<br><h4>Robust resection of view 2077170236: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame151.jpg<br>- Threshold (error max): 6.67105<br>- Resection status: OK<br>- # points used for Resection: 171<br>- # points validated by robust estimation: 131<br>- % points validated: 0.766082<br><h4>Robust resection of view 447529639: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame158.jpg<br>- Threshold (error max): 11.4804<br>- Resection status: OK<br>- # points used for Resection: 148<br>- # points validated by robust estimation: 116<br>- % points validated: 0.783784<br><h4>Robust resection of view 607138961: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame172.jpg<br>- Threshold (error max): 15.4628<br>- Resection status: OK<br>- # points used for Resection: 121<br>- # points validated by robust estimation: 89<br>- % points validated: 0.735537<br><h4>Robust resection of view 2071137864: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame154.jpg<br>- Threshold (error max): 9.91478<br>- Resection status: OK<br>- # points used for Resection: 157<br>- # points validated by robust estimation: 125<br>- % points validated: 0.796178<br><h4>Robust resection of view 1267647673: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame169.jpg<br>- Threshold (error max): 10.9261<br>- Resection status: OK<br>- # points used for Resection: 133<br>- # points validated by robust estimation: 97<br>- % points validated: 0.729323<br><h4>Robust resection of view 218983709: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame170.jpg<br>- Threshold (error max): 13.8029<br>- Resection status: OK<br>- # points used for Resection: 127<br>- # points validated by robust estimation: 95<br>- % points validated: 0.748031<br><h4>Robust resection of view 724394931: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame193.jpg<br>- Threshold (error max): 18.6841<br>- Resection status: OK<br>- # points used for Resection: 137<br>- # points validated by robust estimation: 114<br>- % points validated: 0.832117<br><h4>Robust resection of view 1182148334: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame199.jpg<br>- Threshold (error max): 11.3359<br>- Resection status: OK<br>- # points used for Resection: 125<br>- # points validated by robust estimation: 93<br>- % points validated: 0.744<br><h4>Robust resection of view 775674799: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame190.jpg<br>- Threshold (error max): 9.86542<br>- Resection status: OK<br>- # points used for Resection: 142<br>- # points validated by robust estimation: 109<br>- % points validated: 0.767606<br><h4>Robust resection of view 695267877: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame196.jpg<br>- Threshold (error max): 11.0642<br>- Resection status: OK<br>- # points used for Resection: 128<br>- # points validated by robust estimation: 99<br>- % points validated: 0.773438<br><h4>Robust resection of view 677963648: <br></h4>
+<h4>Robust resection of view 778489098: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame194.jpg<br>- Threshold (error max): 20.3184<br>- Resection status: OK<br>- # points used for Resection: 145<br>- # points validated by robust estimation: 121<br>- % points validated: 0.834483<br>
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame191.jpg<br>- Threshold (error max): 12.6268<br>- Resection status: OK<br>- # points used for Resection: 143<br>- # points validated by robust estimation: 112<br>- % points validated: 0.783217<br><h4>Robust resection of view 1043822160: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame178.jpg<br>- Threshold (error max): 8.4052<br>- Resection status: OK<br>- # points used for Resection: 172<br>- # points validated by robust estimation: 131<br>- % points validated: 0.761628<br><h4>Robust resection of view 1905621494: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame180.jpg<br>- Threshold (error max): 9.15402<br>- Resection status: OK<br>- # points used for Resection: 170<br>- # points validated by robust estimation: 134<br>- % points validated: 0.788235<br><h4>Robust resection of view 1907830410: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame181.jpg<br>- Threshold (error max): 10.484<br>- Resection status: OK<br>- # points used for Resection: 165<br>- # points validated by robust estimation: 129<br>- % points validated: 0.781818<br><h4>Robust resection of view 665071819: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame176.jpg<br>- Threshold (error max): 10.0443<br>- Resection status: OK<br>- # points used for Resection: 171<br>- # points validated by robust estimation: 137<br>- % points validated: 0.80117<br><h4>Robust resection of view 670821564: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame174.jpg<br>- Threshold (error max): 6.33888<br>- Resection status: OK<br>- # points used for Resection: 192<br>- # points validated by robust estimation: 146<br>- % points validated: 0.760417<br><h4>Robust resection of view 1274245695: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame168.jpg<br>- Threshold (error max): 11.4904<br>- Resection status: OK<br>- # points used for Resection: 220<br>- # points validated by robust estimation: 188<br>- % points validated: 0.854545<br><h4>Robust resection of view 627175210: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame171.jpg<br>- Threshold (error max): 8.89915<br>- Resection status: OK<br>- # points used for Resection: 208<br>- # points validated by robust estimation: 167<br>- % points validated: 0.802885<br><h4>Robust resection of view 1275146183: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame167.jpg<br>- Threshold (error max): 9.42731<br>- Resection status: OK<br>- # points used for Resection: 231<br>- # points validated by robust estimation: 194<br>- % points validated: 0.839827<br><h4>Robust resection of view 1283274903: <br></h4>
+<h4>Robust resection of view 1647260970: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame165.jpg<br>- Threshold (error max): 9.46332<br>- Resection status: OK<br>- # points used for Resection: 226<br>- # points validated by robust estimation: 196<br>- % points validated: 0.867257<br>
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame163.jpg<br>- Threshold (error max): 6.15962<br>- Resection status: OK<br>- # points used for Resection: 220<br>- # points validated by robust estimation: 175<br>- % points validated: 0.795455<br><h4>Robust resection of view 663198667: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame177.jpg<br>- Threshold (error max): 10.1039<br>- Resection status: OK<br>- # points used for Resection: 182<br>- # points validated by robust estimation: 148<br>- % points validated: 0.813187<br><h4>Robust resection of view 1044093876: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame179.jpg<br>- Threshold (error max): 7.57259<br>- Resection status: OK<br>- # points used for Resection: 179<br>- # points validated by robust estimation: 140<br>- % points validated: 0.782123<br><h4>Robust resection of view 1672962254: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame162.jpg<br>- Threshold (error max): 9.03375<br>- Resection status: OK<br>- # points used for Resection: 227<br>- # points validated by robust estimation: 191<br>- % points validated: 0.84141<br><h4>Robust resection of view 2067250175: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame155.jpg<br>- Threshold (error max): 6.64567<br>- Resection status: OK<br>- # points used for Resection: 225<br>- # points validated by robust estimation: 188<br>- % points validated: 0.835556<br><h4>Robust resection of view 606652960: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame173.jpg<br>- Threshold (error max): 14.5364<br>- Resection status: OK<br>- # points used for Resection: 192<br>- # points validated by robust estimation: 159<br>- % points validated: 0.828125<br><h4>Robust resection of view 700944441: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame192.jpg<br>- Threshold (error max): 11.7179<br>- Resection status: OK<br>- # points used for Resection: 145<br>- # points validated by robust estimation: 114<br>- % points validated: 0.786207<br><h4>Robust resection of view 618593956: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame175.jpg<br>- Threshold (error max): 10.9002<br>- Resection status: OK<br>- # points used for Resection: 189<br>- # points validated by robust estimation: 152<br>- % points validated: 0.804233<br><h4>Robust resection of view 1524782970: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame227.jpg<br>- Threshold (error max): 25.378<br>- Resection status: OK<br>- # points used for Resection: 182<br>- # points validated by robust estimation: 165<br>- % points validated: 0.906593<br><h4>Robust resection of view 109233208: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame213.jpg<br>- Threshold (error max): 14.5605<br>- Resection status: OK<br>- # points used for Resection: 195<br>- # points validated by robust estimation: 168<br>- % points validated: 0.861538<br><h4>Robust resection of view 533032502: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame208.jpg<br>- Threshold (error max): 15.3725<br>- Resection status: OK<br>- # points used for Resection: 206<br>- # points validated by robust estimation: 181<br>- % points validated: 0.878641<br><h4>Robust resection of view 1938092020: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame210.jpg<br>- Threshold (error max): 11.1261<br>- Resection status: OK<br>- # points used for Resection: 213<br>- # points validated by robust estimation: 178<br>- % points validated: 0.835681<br><h4>Robust resection of view 1848185156: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame203.jpg<br>- Threshold (error max): 9.32089<br>- Resection status: OK<br>- # points used for Resection: 233<br>- # points validated by robust estimation: 197<br>- % points validated: 0.845494<br><h4>Robust resection of view 1855120617: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame205.jpg<br>- Threshold (error max): 11.1518<br>- Resection status: OK<br>- # points used for Resection: 228<br>- # points validated by robust estimation: 195<br>- % points validated: 0.855263<br><h4>Robust resection of view 417351805: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame207.jpg<br>- Threshold (error max): 10.266<br>- Resection status: OK<br>- # points used for Resection: 223<br>- # points validated by robust estimation: 181<br>- % points validated: 0.811659<br><h4>Robust resection of view 110938157: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame214.jpg<br>- Threshold (error max): 11.7629<br>- Resection status: OK<br>- # points used for Resection: 198<br>- # points validated by robust estimation: 166<br>- % points validated: 0.838384<br><h4>Robust resection of view 2067438901: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame156.jpg<br>- Threshold (error max): 7.60423<br>- Resection status: OK<br>- # points used for Resection: 257<br>- # points validated by robust estimation: 221<br>- % points validated: 0.859922<br><h4>Robust resection of view 1945317872: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame212.jpg<br>- Threshold (error max): 22.3308<br>- Resection status: OK<br>- # points used for Resection: 200<br>- # points validated by robust estimation: 183<br>- % points validated: 0.915<br><h4>Robust resection of view 534338863: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame209.jpg<br>- Threshold (error max): 12.448<br>- Resection status: OK<br>- # points used for Resection: 219<br>- # points validated by robust estimation: 193<br>- % points validated: 0.881279<br><h4>Robust resection of view 1650704854: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame161.jpg<br>- Threshold (error max): 6.4235<br>- Resection status: OK<br>- # points used for Resection: 265<br>- # points validated by robust estimation: 228<br>- % points validated: 0.860377<br><h4>Robust resection of view 944129744: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame188.jpg<br>- Threshold (error max): 8.91009<br>- Resection status: OK<br>- # points used for Resection: 273<br>- # points validated by robust estimation: 235<br>- % points validated: 0.860806<br><h4>Robust resection of view 1856539475: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame200.jpg<br>- Threshold (error max): 7.57877<br>- Resection status: OK<br>- # points used for Resection: 261<br>- # points validated by robust estimation: 217<br>- % points validated: 0.831418<br><h4>Robust resection of view 1909499066: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame182.jpg<br>- Threshold (error max): 6.76271<br>- Resection status: OK<br>- # points used for Resection: 303<br>- # points validated by robust estimation: 258<br>- % points validated: 0.851485<br><h4>Robust resection of view 674215968: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame195.jpg<br>- Threshold (error max): 7.09472<br>- Resection status: OK<br>- # points used for Resection: 306<br>- # points validated by robust estimation: 261<br>- % points validated: 0.852941<br><h4>Robust resection of view 1898116886: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame184.jpg<br>- Threshold (error max): 6.31194<br>- Resection status: OK<br>- # points used for Resection: 308<br>- # points validated by robust estimation: 261<br>- % points validated: 0.847403<br><h4>Robust resection of view 1050775078: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame186.jpg<br>- Threshold (error max): 7.52284<br>- Resection status: OK<br>- # points used for Resection: 311<br>- # points validated by robust estimation: 270<br>- % points validated: 0.868167<br><h4>Robust resection of view 701580223: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame197.jpg<br>- Threshold (error max): 7.68934<br>- Resection status: OK<br>- # points used for Resection: 278<br>- # points validated by robust estimation: 235<br>- % points validated: 0.845324<br><h4>Robust resection of view 1897647903: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame183.jpg<br>- Threshold (error max): 8.14299<br>- Resection status: OK<br>- # points used for Resection: 306<br>- # points validated by robust estimation: 267<br>- % points validated: 0.872549<br><h4>Robust resection of view 1940264908: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame211.jpg<br>- Threshold (error max): 16.2035<br>- Resection status: OK<br>- # points used for Resection: 224<br>- # points validated by robust estimation: 196<br>- % points validated: 0.875<br><h4>Robust resection of view 1846521664: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame202.jpg<br>- Threshold (error max): 11.34<br>- Resection status: OK<br>- # points used for Resection: 241<br>- # points validated by robust estimation: 203<br>- % points validated: 0.842324<br><h4>Robust resection of view 404055359: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame206.jpg<br>- Threshold (error max): 13.1486<br>- Resection status: OK<br>- # points used for Resection: 226<br>- # points validated by robust estimation: 194<br>- % points validated: 0.858407<br><h4>Robust resection of view 1836140009: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame204.jpg<br>- Threshold (error max): 9.59987<br>- Resection status: OK<br>- # points used for Resection: 241<br>- # points validated by robust estimation: 201<br>- % points validated: 0.834025<br><h4>Robust resection of view 1052637839: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame185.jpg<br>- Threshold (error max): 7.46512<br>- Resection status: OK<br>- # points used for Resection: 291<br>- # points validated by robust estimation: 249<br>- % points validated: 0.85567<br><h4>Robust resection of view 945333196: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame189.jpg<br>- Threshold (error max): 8.05444<br>- Resection status: OK<br>- # points used for Resection: 284<br>- # points validated by robust estimation: 251<br>- % points validated: 0.883803<br><h4>Robust resection of view 1861040674: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame201.jpg<br>- Threshold (error max): 7.60048<br>- Resection status: OK<br>- # points used for Resection: 261<br>- # points validated by robust estimation: 212<br>- % points validated: 0.812261<br><h4>Robust resection of view 681852586: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame198.jpg<br>- Threshold (error max): 8.83121<br>- Resection status: OK<br>- # points used for Resection: 294<br>- # points validated by robust estimation: 256<br>- % points validated: 0.870748<br><h4>Robust resection of view 1052974616: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame187.jpg<br>- Threshold (error max): 6.47005<br>- Resection status: OK<br>- # points used for Resection: 310<br>- # points validated by robust estimation: 266<br>- % points validated: 0.858065<br><h4>Robust resection of view 1305161009: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame166.jpg<br>- Threshold (error max): 6.43883<br>- Resection status: OK<br>- # points used for Resection: 293<br>- # points validated by robust estimation: 256<br>- % points validated: 0.87372<br><h4>Robust resection of view 1972235731: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame248.jpg<br>- Threshold (error max): 14.0785<br>- Resection status: OK<br>- # points used for Resection: 257<br>- # points validated by robust estimation: 216<br>- % points validated: 0.840467<br><h4>Robust resection of view 598485424: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame242.jpg<br>- Threshold (error max): 10.7743<br>- Resection status: OK<br>- # points used for Resection: 278<br>- # points validated by robust estimation: 232<br>- % points validated: 0.834532<br><h4>Robust resection of view 597631376: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame243.jpg<br>- Threshold (error max): 15.8933<br>- Resection status: OK<br>- # points used for Resection: 279<br>- # points validated by robust estimation: 243<br>- % points validated: 0.870968<br><h4>Robust resection of view 60823139: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame237.jpg<br>- Threshold (error max): 13.007<br>- Resection status: OK<br>- # points used for Resection: 286<br>- # points validated by robust estimation: 251<br>- % points validated: 0.877622<br><h4>Robust resection of view 1553341877: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame240.jpg<br>- Threshold (error max): 13.1304<br>- Resection status: OK<br>- # points used for Resection: 281<br>- # points validated by robust estimation: 246<br>- % points validated: 0.875445<br><h4>Robust resection of view 1055152894: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame247.jpg<br>- Threshold (error max): 13.8048<br>- Resection status: OK<br>- # points used for Resection: 274<br>- # points validated by robust estimation: 236<br>- % points validated: 0.861314<br><h4>Robust resection of view 543043803: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame245.jpg<br>- Threshold (error max): 12.7671<br>- Resection status: OK<br>- # points used for Resection: 277<br>- # points validated by robust estimation: 235<br>- % points validated: 0.848375<br><h4>Robust resection of view 52866373: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame239.jpg<br>- Threshold (error max): 12.0583<br>- Resection status: OK<br>- # points used for Resection: 272<br>- # points validated by robust estimation: 233<br>- % points validated: 0.856618<br><h4>Robust resection of view 1528455296: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame228.jpg<br>- Threshold (error max): 9.70364<br>- Resection status: OK<br>- # points used for Resection: 307<br>- # points validated by robust estimation: 273<br>- % points validated: 0.889251<br><h4>Robust resection of view 544771410: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame244.jpg<br>- Threshold (error max): 13.204<br>- Resection status: OK<br>- # points used for Resection: 274<br>- # points validated by robust estimation: 234<br>- % points validated: 0.854015<br><h4>Robust resection of view 61160750: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame234.jpg<br>- Threshold (error max): 12.8687<br>- Resection status: OK<br>- # points used for Resection: 300<br>- # points validated by robust estimation: 265<br>- % points validated: 0.883333<br><h4>Robust resection of view 1721573006: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame226.jpg<br>- Threshold (error max): 9.85654<br>- Resection status: OK<br>- # points used for Resection: 306<br>- # points validated by robust estimation: 273<br>- % points validated: 0.892157<br><h4>Robust resection of view 45346087: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame235.jpg<br>- Threshold (error max): 9.7695<br>- Resection status: OK<br>- # points used for Resection: 285<br>- # points validated by robust estimation: 248<br>- % points validated: 0.870175<br><h4>Robust resection of view 1127964726: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame219.jpg<br>- Threshold (error max): 9.79702<br>- Resection status: OK<br>- # points used for Resection: 315<br>- # points validated by robust estimation: 290<br>- % points validated: 0.920635<br><h4>Robust resection of view 122675766: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame217.jpg<br>- Threshold (error max): 7.54879<br>- Resection status: OK<br>- # points used for Resection: 357<br>- # points validated by robust estimation: 319<br>- % points validated: 0.893557<br><h4>Robust resection of view 399674118: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame233.jpg<br>- Threshold (error max): 9.14113<br>- Resection status: OK<br>- # points used for Resection: 293<br>- # points validated by robust estimation: 258<br>- % points validated: 0.880546<br><h4>Robust resection of view 1733583250: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame222.jpg<br>- Threshold (error max): 9.12524<br>- Resection status: OK<br>- # points used for Resection: 327<br>- # points validated by robust estimation: 294<br>- % points validated: 0.899083<br><h4>Robust resection of view 125125336: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame216.jpg<br>- Threshold (error max): 6.66999<br>- Resection status: OK<br>- # points used for Resection: 361<br>- # points validated by robust estimation: 313<br>- % points validated: 0.867036<br><h4>Robust resection of view 1722496470: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame224.jpg<br>- Threshold (error max): 8.61301<br>- Resection status: OK<br>- # points used for Resection: 335<br>- # points validated by robust estimation: 299<br>- % points validated: 0.892537<br><h4>Robust resection of view 110466467: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame215.jpg<br>- Threshold (error max): 8.07791<br>- Resection status: OK<br>- # points used for Resection: 356<br>- # points validated by robust estimation: 319<br>- % points validated: 0.896067<br><h4>Robust resection of view 1543121960: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame229.jpg<br>- Threshold (error max): 10.561<br>- Resection status: OK<br>- # points used for Resection: 292<br>- # points validated by robust estimation: 263<br>- % points validated: 0.900685<br><h4>Robust resection of view 401803630: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame232.jpg<br>- Threshold (error max): 13.364<br>- Resection status: OK<br>- # points used for Resection: 303<br>- # points validated by robust estimation: 268<br>- % points validated: 0.884488<br><h4>Robust resection of view 1736336538: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame221.jpg<br>- Threshold (error max): 9.29221<br>- Resection status: OK<br>- # points used for Resection: 327<br>- # points validated by robust estimation: 292<br>- % points validated: 0.892966<br><h4>Robust resection of view 55053514: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame238.jpg<br>- Threshold (error max): 11.3174<br>- Resection status: OK<br>- # points used for Resection: 273<br>- # points validated by robust estimation: 229<br>- % points validated: 0.838828<br><h4>Robust resection of view 1734525654: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame220.jpg<br>- Threshold (error max): 9.22186<br>- Resection status: OK<br>- # points used for Resection: 332<br>- # points validated by robust estimation: 301<br>- % points validated: 0.906627<br><h4>Robust resection of view 396894163: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame230.jpg<br>- Threshold (error max): 11.8147<br>- Resection status: OK<br>- # points used for Resection: 290<br>- # points validated by robust estimation: 256<br>- % points validated: 0.882759<br><h4>Robust resection of view 1726878806: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame225.jpg<br>- Threshold (error max): 9.89917<br>- Resection status: OK<br>- # points used for Resection: 332<br>- # points validated by robust estimation: 295<br>- % points validated: 0.888554<br><h4>Robust resection of view 1121466958: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame218.jpg<br>- Threshold (error max): 6.77792<br>- Resection status: OK<br>- # points used for Resection: 320<br>- # points validated by robust estimation: 279<br>- % points validated: 0.871875<br><h4>Robust resection of view 377921806: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame231.jpg<br>- Threshold (error max): 10.8186<br>- Resection status: OK<br>- # points used for Resection: 308<br>- # points validated by robust estimation: 277<br>- % points validated: 0.899351<br><h4>Robust resection of view 1733283469: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame223.jpg<br>- Threshold (error max): 9.51849<br>- Resection status: OK<br>- # points used for Resection: 323<br>- # points validated by robust estimation: 291<br>- % points validated: 0.900929<br><h4>Robust resection of view 1427859669: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame272.jpg<br>- Threshold (error max): 15.2063<br>- Resection status: OK<br>- # points used for Resection: 258<br>- # points validated by robust estimation: 234<br>- % points validated: 0.906977<br><h4>Robust resection of view 776177938: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame267.jpg<br>- Threshold (error max): 12.785<br>- Resection status: OK<br>- # points used for Resection: 289<br>- # points validated by robust estimation: 255<br>- % points validated: 0.882353<br><h4>Robust resection of view 1431078217: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame274.jpg<br>- Threshold (error max): 15.1046<br>- Resection status: OK<br>- # points used for Resection: 251<br>- # points validated by robust estimation: 221<br>- % points validated: 0.880478<br><h4>Robust resection of view 1445073444: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame271.jpg<br>- Threshold (error max): 14.4496<br>- Resection status: OK<br>- # points used for Resection: 268<br>- # points validated by robust estimation: 245<br>- % points validated: 0.914179<br><h4>Robust resection of view 781287761: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame265.jpg<br>- Threshold (error max): 12.7535<br>- Resection status: OK<br>- # points used for Resection: 312<br>- # points validated by robust estimation: 275<br>- % points validated: 0.88141<br><h4>Robust resection of view 1674286607: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame160.jpg<br>- Threshold (error max): 6.90732<br>- Resection status: OK<br>- # points used for Resection: 286<br>- # points validated by robust estimation: 252<br>- % points validated: 0.881119<br><h4>Robust resection of view 783138067: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame262.jpg<br>- Threshold (error max): 9.64765<br>- Resection status: OK<br>- # points used for Resection: 319<br>- # points validated by robust estimation: 279<br>- % points validated: 0.874608<br><h4>Robust resection of view 451291922: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame159.jpg<br>- Threshold (error max): 6.53345<br>- Resection status: OK<br>- # points used for Resection: 267<br>- # points validated by robust estimation: 224<br>- % points validated: 0.838951<br><h4>Robust resection of view 1438773154: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame270.jpg<br>- Threshold (error max): 14.0243<br>- Resection status: OK<br>- # points used for Resection: 260<br>- # points validated by robust estimation: 232<br>- % points validated: 0.892308<br><h4>Robust resection of view 1561768986: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame261.jpg<br>- Threshold (error max): 10.5701<br>- Resection status: OK<br>- # points used for Resection: 329<br>- # points validated by robust estimation: 290<br>- % points validated: 0.881459<br><h4>Robust resection of view 778548831: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame264.jpg<br>- Threshold (error max): 11.032<br>- Resection status: OK<br>- # points used for Resection: 313<br>- # points validated by robust estimation: 271<br>- % points validated: 0.865815<br><h4>Robust resection of view 1820872116: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame258.jpg<br>- Threshold (error max): 11.7377<br>- Resection status: OK<br>- # points used for Resection: 348<br>- # points validated by robust estimation: 313<br>- % points validated: 0.899425<br><h4>Robust resection of view 1819771540: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame259.jpg<br>- Threshold (error max): 7.54839<br>- Resection status: OK<br>- # points used for Resection: 344<br>- # points validated by robust estimation: 288<br>- % points validated: 0.837209<br><h4>Robust resection of view 1461248643: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame269.jpg<br>- Threshold (error max): 10.2583<br>- Resection status: OK<br>- # points used for Resection: 265<br>- # points validated by robust estimation: 229<br>- % points validated: 0.864151<br><h4>Robust resection of view 592170711: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame241.jpg<br>- Threshold (error max): 7.66595<br>- Resection status: OK<br>- # points used for Resection: 434<br>- # points validated by robust estimation: 394<br>- % points validated: 0.907834<br><h4>Robust resection of view 1972083977: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame249.jpg<br>- Threshold (error max): 7.04504<br>- Resection status: OK<br>- # points used for Resection: 415<br>- # points validated by robust estimation: 371<br>- % points validated: 0.893976<br><h4>Robust resection of view 1874446037: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame257.jpg<br>- Threshold (error max): 13.7544<br>- Resection status: OK<br>- # points used for Resection: 339<br>- # points validated by robust estimation: 309<br>- % points validated: 0.911504<br><h4>Robust resection of view 539532734: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame246.jpg<br>- Threshold (error max): 7.06269<br>- Resection status: OK<br>- # points used for Resection: 429<br>- # points validated by robust estimation: 397<br>- % points validated: 0.925408<br><h4>Robust resection of view 1874613154: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame256.jpg<br>- Threshold (error max): 9.84135<br>- Resection status: OK<br>- # points used for Resection: 360<br>- # points validated by robust estimation: 321<br>- % points validated: 0.891667<br><h4>Robust resection of view 1633716463: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame252.jpg<br>- Threshold (error max): 9.61592<br>- Resection status: OK<br>- # points used for Resection: 395<br>- # points validated by robust estimation: 360<br>- % points validated: 0.911392<br><h4>Robust resection of view 776216707: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame266.jpg<br>- Threshold (error max): 11.4734<br>- Resection status: OK<br>- # points used for Resection: 299<br>- # points validated by robust estimation: 264<br>- % points validated: 0.882943<br><h4>Robust resection of view 791667198: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame268.jpg<br>- Threshold (error max): 12.1495<br>- Resection status: OK<br>- # points used for Resection: 290<br>- # points validated by robust estimation: 252<br>- % points validated: 0.868966<br><h4>Robust resection of view 1559251274: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame260.jpg<br>- Threshold (error max): 8.65616<br>- Resection status: OK<br>- # points used for Resection: 342<br>- # points validated by robust estimation: 291<br>- % points validated: 0.850877<br><h4>Robust resection of view 771299976: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame263.jpg<br>- Threshold (error max): 10.1279<br>- Resection status: OK<br>- # points used for Resection: 305<br>- # points validated by robust estimation: 267<br>- % points validated: 0.87541<br><h4>Robust resection of view 1723904574: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame254.jpg<br>- Threshold (error max): 7.12601<br>- Resection status: OK<br>- # points used for Resection: 365<br>- # points validated by robust estimation: 318<br>- % points validated: 0.871233<br><h4>Robust resection of view 1873867005: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame255.jpg<br>- Threshold (error max): 8.31735<br>- Resection status: OK<br>- # points used for Resection: 353<br>- # points validated by robust estimation: 315<br>- % points validated: 0.892351<br><h4>Robust resection of view 1637232402: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame253.jpg<br>- Threshold (error max): 9.38867<br>- Resection status: OK<br>- # points used for Resection: 379<br>- # points validated by robust estimation: 340<br>- % points validated: 0.897098<br><h4>Robust resection of view 1726285970: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame250.jpg<br>- Threshold (error max): 8.29093<br>- Resection status: OK<br>- # points used for Resection: 406<br>- # points validated by robust estimation: 359<br>- % points validated: 0.884236<br><h4>Robust resection of view 1627660062: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame251.jpg<br>- Threshold (error max): 10.3214<br>- Resection status: OK<br>- # points used for Resection: 383<br>- # points validated by robust estimation: 348<br>- % points validated: 0.908616<br><h4>Robust resection of view 65799229: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame236.jpg<br>- Threshold (error max): 3.57268<br>- Resection status: OK<br>- # points used for Resection: 468<br>- # points validated by robust estimation: 394<br>- % points validated: 0.84188<br><h4>Robust resection of view 1533079146: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame289.jpg<br>- Threshold (error max): 11.8888<br>- Resection status: OK<br>- # points used for Resection: 255<br>- # points validated by robust estimation: 235<br>- % points validated: 0.921569<br><h4>Robust resection of view 672863131: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame286.jpg<br>- Threshold (error max): 11.6893<br>- Resection status: OK<br>- # points used for Resection: 254<br>- # points validated by robust estimation: 226<br>- % points validated: 0.889764<br><h4>Robust resection of view 691009489: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame282.jpg<br>- Threshold (error max): 9.5994<br>- Resection status: OK<br>- # points used for Resection: 302<br>- # points validated by robust estimation: 273<br>- % points validated: 0.903974<br><h4>Robust resection of view 672652618: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame285.jpg<br>- Threshold (error max): 12.1513<br>- Resection status: OK<br>- # points used for Resection: 277<br>- # points validated by robust estimation: 248<br>- % points validated: 0.895307<br><h4>Robust resection of view 684444599: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame284.jpg<br>- Threshold (error max): 13.4202<br>- Resection status: OK<br>- # points used for Resection: 304<br>- # points validated by robust estimation: 285<br>- % points validated: 0.9375<br><h4>Robust resection of view 1824372845: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame281.jpg<br>- Threshold (error max): 11.1836<br>- Resection status: OK<br>- # points used for Resection: 337<br>- # points validated by robust estimation: 307<br>- % points validated: 0.910979<br><h4>Robust resection of view 1833037626: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame280.jpg<br>- Threshold (error max): 9.96024<br>- Resection status: OK<br>- # points used for Resection: 348<br>- # points validated by robust estimation: 317<br>- % points validated: 0.91092<br><h4>Robust resection of view 683226007: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame283.jpg<br>- Threshold (error max): 9.75926<br>- Resection status: OK<br>- # points used for Resection: 310<br>- # points validated by robust estimation: 279<br>- % points validated: 0.9<br><h4>Robust resection of view 354782865: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame279.jpg<br>- Threshold (error max): 10.331<br>- Resection status: OK<br>- # points used for Resection: 339<br>- # points validated by robust estimation: 306<br>- % points validated: 0.902655<br><h4>Robust resection of view 357622776: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame278.jpg<br>- Threshold (error max): 7.92987<br>- Resection status: OK<br>- # points used for Resection: 351<br>- # points validated by robust estimation: 307<br>- % points validated: 0.874644<br><h4>Robust resection of view 1434417523: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame273.jpg<br>- Threshold (error max): 8.18926<br>- Resection status: OK<br>- # points used for Resection: 399<br>- # points validated by robust estimation: 360<br>- % points validated: 0.902256<br><h4>Robust resection of view 353163664: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame277.jpg<br>- Threshold (error max): 8.2056<br>- Resection status: OK<br>- # points used for Resection: 355<br>- # points validated by robust estimation: 314<br>- % points validated: 0.884507<br><h4>Robust resection of view 1437140558: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame275.jpg<br>- Threshold (error max): 5.36376<br>- Resection status: OK<br>- # points used for Resection: 375<br>- # points validated by robust estimation: 322<br>- % points validated: 0.858667<br><h4>Robust resection of view 352546632: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame276.jpg<br>- Threshold (error max): 7.04356<br>- Resection status: OK<br>- # points used for Resection: 359<br>- # points validated by robust estimation: 312<br>- % points validated: 0.869081<br><h4>Robust resection of view 1755471681: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame307.jpg<br>- Threshold (error max): 23.6042<br>- Resection status: OK<br>- # points used for Resection: 193<br>- # points validated by robust estimation: 178<br>- % points validated: 0.92228<br><h4>Robust resection of view 1753499537: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame305.jpg<br>- Threshold (error max): 17.3546<br>- Resection status: OK<br>- # points used for Resection: 220<br>- # points validated by robust estimation: 198<br>- % points validated: 0.9<br><h4>Robust resection of view 930907230: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame298.jpg<br>- Threshold (error max): 11.7776<br>- Resection status: OK<br>- # points used for Resection: 259<br>- # points validated by robust estimation: 232<br>- % points validated: 0.895753<br><h4>Robust resection of view 889204867: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame300.jpg<br>- Threshold (error max): 10.2679<br>- Resection status: OK<br>- # points used for Resection: 241<br>- # points validated by robust estimation: 211<br>- % points validated: 0.875519<br><h4>Robust resection of view 918738918: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame296.jpg<br>- Threshold (error max): 14.2059<br>- Resection status: OK<br>- # points used for Resection: 265<br>- # points validated by robust estimation: 241<br>- % points validated: 0.909434<br><h4>Robust resection of view 1076952072: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame293.jpg<br>- Threshold (error max): 10.3792<br>- Resection status: OK<br>- # points used for Resection: 277<br>- # points validated by robust estimation: 252<br>- % points validated: 0.909747<br><h4>Robust resection of view 1075746634: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame294.jpg<br>- Threshold (error max): 13.035<br>- Resection status: OK<br>- # points used for Resection: 271<br>- # points validated by robust estimation: 247<br>- % points validated: 0.911439<br><h4>Robust resection of view 928405178: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame299.jpg<br>- Threshold (error max): 13.6403<br>- Resection status: OK<br>- # points used for Resection: 257<br>- # points validated by robust estimation: 234<br>- % points validated: 0.910506<br><h4>Robust resection of view 1076088150: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame295.jpg<br>- Threshold (error max): 12.6565<br>- Resection status: OK<br>- # points used for Resection: 277<br>- # points validated by robust estimation: 252<br>- % points validated: 0.909747<br><h4>Robust resection of view 1104695665: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame292.jpg<br>- Threshold (error max): 8.36169<br>- Resection status: OK<br>- # points used for Resection: 295<br>- # points validated by robust estimation: 260<br>- % points validated: 0.881356<br><h4>Robust resection of view 1101489580: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame290.jpg<br>- Threshold (error max): 6.4565<br>- Resection status: OK<br>- # points used for Resection: 304<br>- # points validated by robust estimation: 266<br>- % points validated: 0.875<br><h4>Robust resection of view 1099780320: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame291.jpg<br>- Threshold (error max): 8.34364<br>- Resection status: OK<br>- # points used for Resection: 296<br>- # points validated by robust estimation: 263<br>- % points validated: 0.888514<br><h4>Robust resection of view 803517795: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame288.jpg<br>- Threshold (error max): 9.74547<br>- Resection status: OK<br>- # points used for Resection: 331<br>- # points validated by robust estimation: 304<br>- % points validated: 0.918429<br><h4>Robust resection of view 692175877: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame287.jpg<br>- Threshold (error max): 8.05344<br>- Resection status: OK<br>- # points used for Resection: 341<br>- # points validated by robust estimation: 312<br>- % points validated: 0.914956<br><h4>Robust resection of view 1779884273: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame309.jpg<br>- Threshold (error max): 11.7962<br>- Resection status: OK<br>- # points used for Resection: 254<br>- # points validated by robust estimation: 225<br>- % points validated: 0.885827<br><h4>Robust resection of view 1781800058: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame308.jpg<br>- Threshold (error max): 11.0485<br>- Resection status: OK<br>- # points used for Resection: 273<br>- # points validated by robust estimation: 245<br>- % points validated: 0.897436<br><h4>Robust resection of view 902294514: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame301.jpg<br>- Threshold (error max): 8.33574<br>- Resection status: OK<br>- # points used for Resection: 332<br>- # points validated by robust estimation: 299<br>- % points validated: 0.900602<br><h4>Robust resection of view 1755702172: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame304.jpg<br>- Threshold (error max): 8.75447<br>- Resection status: OK<br>- # points used for Resection: 300<br>- # points validated by robust estimation: 263<br>- % points validated: 0.876667<br><h4>Robust resection of view 1775129895: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame306.jpg<br>- Threshold (error max): 9.98586<br>- Resection status: OK<br>- # points used for Resection: 256<br>- # points validated by robust estimation: 227<br>- % points validated: 0.886719<br><h4>Robust resection of view 515514491: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame310.jpg<br>- Threshold (error max): 9.64128<br>- Resection status: OK<br>- # points used for Resection: 267<br>- # points validated by robust estimation: 232<br>- % points validated: 0.868914<br><h4>Robust resection of view 1765406467: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame303.jpg<br>- Threshold (error max): 8.7614<br>- Resection status: OK<br>- # points used for Resection: 305<br>- # points validated by robust estimation: 271<br>- % points validated: 0.888525<br><h4>Robust resection of view 945765518: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame302.jpg<br>- Threshold (error max): 7.8422<br>- Resection status: OK<br>- # points used for Resection: 342<br>- # points validated by robust estimation: 300<br>- % points validated: 0.877193<br><h4>Robust resection of view 925377839: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame297.jpg<br>- Threshold (error max): 7.78927<br>- Resection status: OK<br>- # points used for Resection: 329<br>- # points validated by robust estimation: 296<br>- % points validated: 0.899696<br><h4>Robust resection of view 514720317: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame311.jpg<br>- Threshold (error max): 9.20038<br>- Resection status: OK<br>- # points used for Resection: 275<br>- # points validated by robust estimation: 242<br>- % points validated: 0.88<br><h4>Robust resection of view 35423680: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame313.jpg<br>- Threshold (error max): 8.92048<br>- Resection status: OK<br>- # points used for Resection: 280<br>- # points validated by robust estimation: 254<br>- % points validated: 0.907143<br><h4>Robust resection of view 164003255: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame317.jpg<br>- Threshold (error max): 10.1456<br>- Resection status: OK<br>- # points used for Resection: 290<br>- # points validated by robust estimation: 267<br>- % points validated: 0.92069<br><h4>Robust resection of view 931540556: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame321.jpg<br>- Threshold (error max): 11.6007<br>- Resection status: OK<br>- # points used for Resection: 208<br>- # points validated by robust estimation: 180<br>- % points validated: 0.865385<br><h4>Robust resection of view 34740199: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame312.jpg<br>- Threshold (error max): 9.11765<br>- Resection status: OK<br>- # points used for Resection: 301<br>- # points validated by robust estimation: 272<br>- % points validated: 0.903654<br><h4>Robust resection of view 942802376: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame320.jpg<br>- Threshold (error max): 9.93764<br>- Resection status: OK<br>- # points used for Resection: 220<br>- # points validated by robust estimation: 186<br>- % points validated: 0.845455<br><h4>Robust resection of view 490605153: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame315.jpg<br>- Threshold (error max): 7.75106<br>- Resection status: OK<br>- # points used for Resection: 285<br>- # points validated by robust estimation: 249<br>- % points validated: 0.873684<br><h4>Robust resection of view 235200387: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame318.jpg<br>- Threshold (error max): 7.62258<br>- Resection status: OK<br>- # points used for Resection: 257<br>- # points validated by robust estimation: 226<br>- % points validated: 0.879377<br><h4>Robust resection of view 487027095: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame314.jpg<br>- Threshold (error max): 8.62455<br>- Resection status: OK<br>- # points used for Resection: 299<br>- # points validated by robust estimation: 268<br>- % points validated: 0.896321<br><h4>Robust resection of view 518952327: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame316.jpg<br>- Threshold (error max): 7.26259<br>- Resection status: OK<br>- # points used for Resection: 291<br>- # points validated by robust estimation: 259<br>- % points validated: 0.890034<br><h4>Robust resection of view 2074518637: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame152.jpg<br>- Threshold (error max): 7.00472<br>- Resection status: OK<br>- # points used for Resection: 247<br>- # points validated by robust estimation: 207<br>- % points validated: 0.838057<br><h4>Robust resection of view 336552145: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame332.jpg<br>- Threshold (error max): 12.035<br>- Resection status: OK<br>- # points used for Resection: 210<br>- # points validated by robust estimation: 173<br>- % points validated: 0.82381<br><h4>Robust resection of view 30054572: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame329.jpg<br>- Threshold (error max): 11.5523<br>- Resection status: OK<br>- # points used for Resection: 207<br>- # points validated by robust estimation: 176<br>- % points validated: 0.850242<br><h4>Robust resection of view 35421336: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame328.jpg<br>- Threshold (error max): 11.4023<br>- Resection status: OK<br>- # points used for Resection: 225<br>- # points validated by robust estimation: 195<br>- % points validated: 0.866667<br><h4>Robust resection of view 78729933: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame325.jpg<br>- Threshold (error max): 11.8102<br>- Resection status: OK<br>- # points used for Resection: 203<br>- # points validated by robust estimation: 168<br>- % points validated: 0.827586<br><h4>Robust resection of view 262461669: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame319.jpg<br>- Threshold (error max): 11.4021<br>- Resection status: OK<br>- # points used for Resection: 260<br>- # points validated by robust estimation: 237<br>- % points validated: 0.911538<br><h4>Robust resection of view 1762319479: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame330.jpg<br>- Threshold (error max): 8.60125<br>- Resection status: OK<br>- # points used for Resection: 214<br>- # points validated by robust estimation: 173<br>- % points validated: 0.808411<br><h4>Robust resection of view 71946186: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame327.jpg<br>- Threshold (error max): 10.7768<br>- Resection status: OK<br>- # points used for Resection: 210<br>- # points validated by robust estimation: 176<br>- % points validated: 0.838095<br><h4>Robust resection of view 939206154: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame322.jpg<br>- Threshold (error max): 11.8203<br>- Resection status: OK<br>- # points used for Resection: 230<br>- # points validated by robust estimation: 207<br>- % points validated: 0.9<br><h4>Robust resection of view 340736639: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame333.jpg<br>- Threshold (error max): 9.57787<br>- Resection status: OK<br>- # points used for Resection: 193<br>- # points validated by robust estimation: 161<br>- % points validated: 0.834197<br><h4>Robust resection of view 337187425: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame331.jpg<br>- Threshold (error max): 12.586<br>- Resection status: OK<br>- # points used for Resection: 211<br>- # points validated by robust estimation: 180<br>- % points validated: 0.853081<br><h4>Robust resection of view 938261213: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame323.jpg<br>- Threshold (error max): 7.5815<br>- Resection status: OK<br>- # points used for Resection: 253<br>- # points validated by robust estimation: 219<br>- % points validated: 0.865613<br><h4>Robust resection of view 47752111: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame324.jpg<br>- Threshold (error max): 7.8757<br>- Resection status: OK<br>- # points used for Resection: 243<br>- # points validated by robust estimation: 205<br>- % points validated: 0.843621<br><h4>Robust resection of view 74400298: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame326.jpg<br>- Threshold (error max): 10.4483<br>- Resection status: OK<br>- # points used for Resection: 242<br>- # points validated by robust estimation: 217<br>- % points validated: 0.896694<br><h4>Robust resection of view 506948959: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame343.jpg<br>- Threshold (error max): 11.7933<br>- Resection status: OK<br>- # points used for Resection: 165<br>- # points validated by robust estimation: 136<br>- % points validated: 0.824242<br><h4>Robust resection of view 517546670: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame340.jpg<br>- Threshold (error max): 9.03723<br>- Resection status: OK<br>- # points used for Resection: 196<br>- # points validated by robust estimation: 159<br>- % points validated: 0.811224<br><h4>Robust resection of view 360357052: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame334.jpg<br>- Threshold (error max): 9.84651<br>- Resection status: OK<br>- # points used for Resection: 244<br>- # points validated by robust estimation: 215<br>- % points validated: 0.881148<br><h4>Robust resection of view 363369386: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame335.jpg<br>- Threshold (error max): 8.13867<br>- Resection status: OK<br>- # points used for Resection: 218<br>- # points validated by robust estimation: 181<br>- % points validated: 0.830275<br><h4>Robust resection of view 399717847: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame336.jpg<br>- Threshold (error max): 8.68098<br>- Resection status: OK<br>- # points used for Resection: 216<br>- # points validated by robust estimation: 185<br>- % points validated: 0.856481<br><h4>Robust resection of view 401611409: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame337.jpg<br>- Threshold (error max): 15.4639<br>- Resection status: OK<br>- # points used for Resection: 211<br>- # points validated by robust estimation: 190<br>- % points validated: 0.900474<br><h4>Robust resection of view 1354250593: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame338.jpg<br>- Threshold (error max): 7.92619<br>- Resection status: OK<br>- # points used for Resection: 195<br>- # points validated by robust estimation: 159<br>- % points validated: 0.815385<br><h4>Robust resection of view 1390325544: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame339.jpg<br>- Threshold (error max): 8.65205<br>- Resection status: OK<br>- # points used for Resection: 247<br>- # points validated by robust estimation: 218<br>- % points validated: 0.882591<br><h4>Robust resection of view 505960397: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame342.jpg<br>- Threshold (error max): 8.65326<br>- Resection status: OK<br>- # points used for Resection: 222<br>- # points validated by robust estimation: 194<br>- % points validated: 0.873874<br><h4>Robust resection of view 511698710: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame341.jpg<br>- Threshold (error max): 8.20345<br>- Resection status: OK<br>- # points used for Resection: 241<br>- # points validated by robust estimation: 208<br>- % points validated: 0.863071<br><h4>Robust resection of view 1255928639: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame345.jpg<br>- Threshold (error max): 8.2481<br>- Resection status: OK<br>- # points used for Resection: 207<br>- # points validated by robust estimation: 178<br>- % points validated: 0.859903<br><h4>Robust resection of view 536031117: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame344.jpg<br>- Threshold (error max): 10.28<br>- Resection status: OK<br>- # points used for Resection: 206<br>- # points validated by robust estimation: 180<br>- % points validated: 0.873786<br><h4>Robust resection of view 1243699362: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame346.jpg<br>- Threshold (error max): 10.8006<br>- Resection status: OK<br>- # points used for Resection: 197<br>- # points validated by robust estimation: 173<br>- % points validated: 0.878173<br><h4>Robust resection of view 1310885300: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame386.jpg<br>- Threshold (error max): 8.4094<br>- Resection status: OK<br>- # points used for Resection: 183<br>- # points validated by robust estimation: 147<br>- % points validated: 0.803279<br><h4>Robust resection of view 1739215929: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame387.jpg<br>- Threshold (error max): 12.4228<br>- Resection status: OK<br>- # points used for Resection: 182<br>- # points validated by robust estimation: 160<br>- % points validated: 0.879121<br><h4>Robust resection of view 1331315103: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame385.jpg<br>- Threshold (error max): 7.07785<br>- Resection status: OK<br>- # points used for Resection: 157<br>- # points validated by robust estimation: 122<br>- % points validated: 0.77707<br><h4>Robust resection of view 1653298662: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame356.jpg<br>- Threshold (error max): 11.3279<br>- Resection status: OK<br>- # points used for Resection: 145<br>- # points validated by robust estimation: 113<br>- % points validated: 0.77931<br><h4>Robust resection of view 1242884354: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame347.jpg<br>- Threshold (error max): 10.3333<br>- Resection status: OK<br>- # points used for Resection: 215<br>- # points validated by robust estimation: 191<br>- % points validated: 0.888372<br><h4>Robust resection of view 2082737869: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame353.jpg<br>- Threshold (error max): 6.89676<br>- Resection status: OK<br>- # points used for Resection: 175<br>- # points validated by robust estimation: 133<br>- % points validated: 0.76<br><h4>Robust resection of view 2086272894: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame352.jpg<br>- Threshold (error max): 7.94884<br>- Resection status: OK<br>- # points used for Resection: 188<br>- # points validated by robust estimation: 151<br>- % points validated: 0.803191<br><h4>Robust resection of view 1323736696: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame382.jpg<br>- Threshold (error max): 10.1095<br>- Resection status: OK<br>- # points used for Resection: 168<br>- # points validated by robust estimation: 141<br>- % points validated: 0.839286<br><h4>Robust resection of view 1326443433: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame384.jpg<br>- Threshold (error max): 8.93666<br>- Resection status: OK<br>- # points used for Resection: 173<br>- # points validated by robust estimation: 143<br>- % points validated: 0.82659<br><h4>Robust resection of view 1658327501: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame358.jpg<br>- Threshold (error max): 15.6271<br>- Resection status: OK<br>- # points used for Resection: 171<br>- # points validated by robust estimation: 148<br>- % points validated: 0.865497<br><h4>Robust resection of view 1299758803: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame362.jpg<br>- Threshold (error max): 18.5244<br>- Resection status: OK<br>- # points used for Resection: 168<br>- # points validated by robust estimation: 149<br>- % points validated: 0.886905<br><h4>Robust resection of view 1228617184: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame360.jpg<br>- Threshold (error max): 18.254<br>- Resection status: OK<br>- # points used for Resection: 172<br>- # points validated by robust estimation: 152<br>- % points validated: 0.883721<br><h4>Robust resection of view 1178070969: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame351.jpg<br>- Threshold (error max): 8.29028<br>- Resection status: OK<br>- # points used for Resection: 194<br>- # points validated by robust estimation: 158<br>- % points validated: 0.814433<br><h4>Robust resection of view 1162224339: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame349.jpg<br>- Threshold (error max): 7.96678<br>- Resection status: OK<br>- # points used for Resection: 182<br>- # points validated by robust estimation: 152<br>- % points validated: 0.835165<br><h4>Robust resection of view 2085489062: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame354.jpg<br>- Threshold (error max): 8.65493<br>- Resection status: OK<br>- # points used for Resection: 214<br>- # points validated by robust estimation: 190<br>- % points validated: 0.88785<br><h4>Robust resection of view 1163617126: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame348.jpg<br>- Threshold (error max): 6.96881<br>- Resection status: OK<br>- # points used for Resection: 235<br>- # points validated by robust estimation: 208<br>- % points validated: 0.885106<br><h4>Robust resection of view 2087959275: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame357.jpg<br>- Threshold (error max): 8.84328<br>- Resection status: OK<br>- # points used for Resection: 215<br>- # points validated by robust estimation: 187<br>- % points validated: 0.869767<br><h4>Robust resection of view 1298459240: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame361.jpg<br>- Threshold (error max): 8.62058<br>- Resection status: OK<br>- # points used for Resection: 206<br>- # points validated by robust estimation: 173<br>- % points validated: 0.839806<br><h4>Robust resection of view 1299373372: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame363.jpg<br>- Threshold (error max): 9.75918<br>- Resection status: OK<br>- # points used for Resection: 188<br>- # points validated by robust estimation: 161<br>- % points validated: 0.856383<br><h4>Robust resection of view 2083207906: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame355.jpg<br>- Threshold (error max): 7.31548<br>- Resection status: OK<br>- # points used for Resection: 208<br>- # points validated by robust estimation: 177<br>- % points validated: 0.850962<br><h4>Robust resection of view 1320324448: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame383.jpg<br>- Threshold (error max): 10.9263<br>- Resection status: OK<br>- # points used for Resection: 210<br>- # points validated by robust estimation: 180<br>- % points validated: 0.857143<br><h4>Robust resection of view 1199410991: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame350.jpg<br>- Threshold (error max): 10.2404<br>- Resection status: OK<br>- # points used for Resection: 229<br>- # points validated by robust estimation: 206<br>- % points validated: 0.899563<br><h4>Robust resection of view 1253324034: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame364.jpg<br>- Threshold (error max): 7.91088<br>- Resection status: OK<br>- # points used for Resection: 188<br>- # points validated by robust estimation: 159<br>- % points validated: 0.845745<br><h4>Robust resection of view 2008196400: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame368.jpg<br>- Threshold (error max): 9.30832<br>- Resection status: OK<br>- # points used for Resection: 192<br>- # points validated by robust estimation: 167<br>- % points validated: 0.869792<br><h4>Robust resection of view 1256772442: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame365.jpg<br>- Threshold (error max): 8.09221<br>- Resection status: OK<br>- # points used for Resection: 219<br>- # points validated by robust estimation: 196<br>- % points validated: 0.894977<br><h4>Robust resection of view 2118372128: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame359.jpg<br>- Threshold (error max): 7.70619<br>- Resection status: OK<br>- # points used for Resection: 225<br>- # points validated by robust estimation: 199<br>- % points validated: 0.884444<br><h4>Robust resection of view 2039291699: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame379.jpg<br>- Threshold (error max): 7.19614<br>- Resection status: OK<br>- # points used for Resection: 195<br>- # points validated by robust estimation: 161<br>- % points validated: 0.825641<br><h4>Robust resection of view 1318342903: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame381.jpg<br>- Threshold (error max): 6.53311<br>- Resection status: OK<br>- # points used for Resection: 197<br>- # points validated by robust estimation: 160<br>- % points validated: 0.812183<br><h4>Robust resection of view 2029263815: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame373.jpg<br>- Threshold (error max): 12.4263<br>- Resection status: OK<br>- # points used for Resection: 194<br>- # points validated by robust estimation: 175<br>- % points validated: 0.902062<br><h4>Robust resection of view 2134206936: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame375.jpg<br>- Threshold (error max): 10.7423<br>- Resection status: OK<br>- # points used for Resection: 188<br>- # points validated by robust estimation: 165<br>- % points validated: 0.87766<br><h4>Robust resection of view 179061950: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame366.jpg<br>- Threshold (error max): 10.2651<br>- Resection status: OK<br>- # points used for Resection: 205<br>- # points validated by robust estimation: 186<br>- % points validated: 0.907317<br><h4>Robust resection of view 696316735: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame371.jpg<br>- Threshold (error max): 7.96378<br>- Resection status: OK<br>- # points used for Resection: 197<br>- # points validated by robust estimation: 167<br>- % points validated: 0.847716<br><h4>Robust resection of view 1323934836: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame380.jpg<br>- Threshold (error max): 6.74152<br>- Resection status: OK<br>- # points used for Resection: 202<br>- # points validated by robust estimation: 167<br>- % points validated: 0.826733<br><h4>Robust resection of view 700433174: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame372.jpg<br>- Threshold (error max): 12.429<br>- Resection status: OK<br>- # points used for Resection: 206<br>- # points validated by robust estimation: 185<br>- % points validated: 0.898058<br><h4>Robust resection of view 2020317779: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame378.jpg<br>- Threshold (error max): 6.42686<br>- Resection status: OK<br>- # points used for Resection: 235<br>- # points validated by robust estimation: 197<br>- % points validated: 0.838298<br><h4>Robust resection of view 2023126095: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame374.jpg<br>- Threshold (error max): 9.72499<br>- Resection status: OK<br>- # points used for Resection: 235<br>- # points validated by robust estimation: 213<br>- % points validated: 0.906383<br><h4>Robust resection of view 2147122593: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame377.jpg<br>- Threshold (error max): 7.73893<br>- Resection status: OK<br>- # points used for Resection: 223<br>- # points validated by robust estimation: 194<br>- % points validated: 0.869955<br><h4>Robust resection of view 169096327: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame367.jpg<br>- Threshold (error max): 11.139<br>- Resection status: OK<br>- # points used for Resection: 239<br>- # points validated by robust estimation: 216<br>- % points validated: 0.903766<br><h4>Robust resection of view 1998527084: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame369.jpg<br>- Threshold (error max): 6.91217<br>- Resection status: OK<br>- # points used for Resection: 243<br>- # points validated by robust estimation: 217<br>- % points validated: 0.893004<br><h4>Robust resection of view 2133744623: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame376.jpg<br>- Threshold (error max): 8.80423<br>- Resection status: OK<br>- # points used for Resection: 206<br>- # points validated by robust estimation: 182<br>- % points validated: 0.883495<br><h4>Robust resection of view 686091610: <br></h4>
+
+- Image path: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/out/frame370.jpg<br>- Threshold (error max): 8.81805<br>- Resection status: OK<br>- # points used for Resection: 226<br>- # points validated by robust estimation: 206<br>- % points validated: 0.911504<br><hr><h3>Structure from Motion process finished.</h3>
+Structure from Motion statistics:<br>- # input images: 471<br>- # camera calibrated: 471<br>- # poses: 471
+<br>- # landmarks: 12453<br>- elapsed time: 521.152<br>- residual RMSE: 1.416<h2>Histogram of reprojection-residuals</h2>
+
+<div id="3DtoImageResiduals" class="jxgbox" style="width:600px; height:300px;"></div>
+<script type="text/javascript">
+var board = JXG.JSXGraph.initBoard('3DtoImageResiduals', {boundingbox: [-10, 10, 10, -10], axis:true,showCopyright:false});
+board.suspendUpdate();
+var data0= [0.00000,0.51613,1.03226,1.54839,2.06452,2.58065,3.09677,3.61290,4.12903,4.64516,5.16129,5.67742,6.19355,6.70968,7.22581,7.74194,8.25806,8.77419,9.29032,9.80645,10.32258,10.83871,11.35484,11.87097,12.38710,12.90323,13.41935,13.93548,14.45161,14.96774,15.48387,16.00000,];
+var data1= [31910.00000,33328.00000,22019.00000,14441.00000,9697.00000,6611.00000,4952.00000,3237.00000,2215.00000,1597.00000,1186.00000,918.00000,671.00000,436.00000,356.00000,189.00000,103.00000,99.00000,56.00000,30.00000,17.00000,13.00000,4.00000,15.00000,4.00000,0.00000,0.00000,0.00000,0.00000,0.00000,0.00000,1.00000,];
+board.createElement('chart', [ data0,data1], {chartStyle:'line,point',labels:[ data0,data1],strokeColor:'#0000ff',highlightStrokeColor:'#0000ff'});
+board.unsuspendUpdate();
+board.setBoundingBox([-3.20000,39993.60000,19.20000,-6665.60000]);
+</script>
+
+<div id="3DtoTracksSize" class="jxgbox" style="width:600px; height:300px;"></div>
+<script type="text/javascript">
+var board = JXG.JSXGraph.initBoard('3DtoTracksSize', {boundingbox: [-10, 10, 10, -10], axis:true,showCopyright:false});
+board.suspendUpdate();
+var data0= [2.00000,3.00221,4.00442,5.00662,6.00883,7.01104,8.01325,9.01545,10.01766,11.01987,12.02208,13.02428,14.02649,15.02870,16.03091,17.03311,18.03532,19.03753,20.03974,21.04194,22.04415,23.04636,24.04857,25.05077,26.05298,27.05519,28.05740,29.05960,30.06181,31.06402,32.06623,33.06843,34.07064,35.07285,36.07506,37.07726,38.07947,39.08168,40.08389,41.08609,42.08830,43.09051,44.09272,45.09492,46.09713,47.09934,48.10155,49.10375,50.10596,51.10817,52.11038,53.11258,54.11479,55.11700,56.11921,57.12141,58.12362,59.12583,60.12804,61.13024,62.13245,63.13466,64.13687,65.13907,66.14128,67.14349,68.14570,69.14790,70.15011,71.15232,72.15453,73.15673,74.15894,75.16115,76.16336,77.16556,78.16777,79.16998,80.17219,81.17439,82.17660,83.17881,84.18102,85.18322,86.18543,87.18764,88.18985,89.19205,90.19426,91.19647,92.19868,93.20088,94.20309,95.20530,96.20751,97.20971,98.21192,99.21413,100.21634,101.21854,102.22075,103.22296,104.22517,105.22737,106.22958,107.23179,108.23400,109.23620,110.23841,111.24062,112.24283,113.24503,114.24724,115.24945,116.25166,117.25386,118.25607,119.25828,120.26049,121.26269,122.26490,123.26711,124.26932,125.27152,126.27373,127.27594,128.27815,129.28035,130.28256,131.28477,132.28698,133.28918,134.29139,135.29360,136.29581,137.29801,138.30022,139.30243,140.30464,141.30684,142.30905,143.31126,144.31347,145.31567,146.31788,147.32009,148.32230,149.32450,150.32671,151.32892,152.33113,153.33333,154.33554,155.33775,156.33996,157.34216,158.34437,159.34658,160.34879,161.35099,162.35320,163.35541,164.35762,165.35982,166.36203,167.36424,168.36645,169.36865,170.37086,171.37307,172.37528,173.37748,174.37969,175.38190,176.38411,177.38631,178.38852,179.39073,180.39294,181.39514,182.39735,183.39956,184.40177,185.40397,186.40618,187.40839,188.41060,189.41280,190.41501,191.41722,192.41943,193.42163,194.42384,195.42605,196.42826,197.43046,198.43267,199.43488,200.43709,201.43929,202.44150,203.44371,204.44592,205.44812,206.45033,207.45254,208.45475,209.45695,210.45916,211.46137,212.46358,213.46578,214.46799,215.47020,216.47241,217.47461,218.47682,219.47903,220.48124,221.48344,222.48565,223.48786,224.49007,225.49227,226.49448,227.49669,228.49890,229.50110,230.50331,231.50552,232.50773,233.50993,234.51214,235.51435,236.51656,237.51876,238.52097,239.52318,240.52539,241.52759,242.52980,243.53201,244.53422,245.53642,246.53863,247.54084,248.54305,249.54525,250.54746,251.54967,252.55188,253.55408,254.55629,255.55850,256.56071,257.56291,258.56512,259.56733,260.56954,261.57174,262.57395,263.57616,264.57837,265.58057,266.58278,267.58499,268.58720,269.58940,270.59161,271.59382,272.59603,273.59823,274.60044,275.60265,276.60486,277.60706,278.60927,279.61148,280.61369,281.61589,282.61810,283.62031,284.62252,285.62472,286.62693,287.62914,288.63135,289.63355,290.63576,291.63797,292.64018,293.64238,294.64459,295.64680,296.64901,297.65121,298.65342,299.65563,300.65784,301.66004,302.66225,303.66446,304.66667,305.66887,306.67108,307.67329,308.67550,309.67770,310.67991,311.68212,312.68433,313.68653,314.68874,315.69095,316.69316,317.69536,318.69757,319.69978,320.70199,321.70419,322.70640,323.70861,324.71082,325.71302,326.71523,327.71744,328.71965,329.72185,330.72406,331.72627,332.72848,333.73068,334.73289,335.73510,336.73731,337.73951,338.74172,339.74393,340.74614,341.74834,342.75055,343.75276,344.75497,345.75717,346.75938,347.76159,348.76380,349.76600,350.76821,351.77042,352.77263,353.77483,354.77704,355.77925,356.78146,357.78366,358.78587,359.78808,360.79029,361.79249,362.79470,363.79691,364.79912,365.80132,366.80353,367.80574,368.80795,369.81015,370.81236,371.81457,372.81678,373.81898,374.82119,375.82340,376.82561,377.82781,378.83002,379.83223,380.83444,381.83664,382.83885,383.84106,384.84327,385.84547,386.84768,387.84989,388.85210,389.85430,390.85651,391.85872,392.86093,393.86313,394.86534,395.86755,396.86976,397.87196,398.87417,399.87638,400.87859,401.88079,402.88300,403.88521,404.88742,405.88962,406.89183,407.89404,408.89625,409.89845,410.90066,411.90287,412.90508,413.90728,414.90949,415.91170,416.91391,417.91611,418.91832,419.92053,420.92274,421.92494,422.92715,423.92936,424.93157,425.93377,426.93598,427.93819,428.94040,429.94260,430.94481,431.94702,432.94923,433.95143,434.95364,435.95585,436.95806,437.96026,438.96247,439.96468,440.96689,441.96909,442.97130,443.97351,444.97572,445.97792,446.98013,447.98234,448.98455,449.98675,450.98896,451.99117,452.99338,453.99558,454.99779,456.00000,];
+var data1= [3655.00000,2121.00000,1282.00000,872.00000,648.00000,474.00000,359.00000,286.00000,257.00000,189.00000,190.00000,150.00000,114.00000,125.00000,79.00000,110.00000,69.00000,66.00000,49.00000,60.00000,58.00000,55.00000,66.00000,39.00000,38.00000,34.00000,44.00000,28.00000,30.00000,33.00000,30.00000,33.00000,18.00000,17.00000,26.00000,24.00000,18.00000,25.00000,23.00000,16.00000,18.00000,15.00000,20.00000,7.00000,16.00000,14.00000,16.00000,13.00000,14.00000,15.00000,14.00000,5.00000,5.00000,9.00000,8.00000,10.00000,13.00000,8.00000,7.00000,7.00000,4.00000,10.00000,13.00000,8.00000,6.00000,10.00000,8.00000,3.00000,5.00000,9.00000,12.00000,7.00000,6.00000,7.00000,3.00000,11.00000,5.00000,2.00000,10.00000,4.00000,13.00000,6.00000,3.00000,3.00000,3.00000,5.00000,4.00000,2.00000,3.00000,4.00000,3.00000,3.00000,1.00000,4.00000,5.00000,3.00000,2.00000,4.00000,6.00000,5.00000,0.00000,1.00000,2.00000,2.00000,5.00000,3.00000,4.00000,2.00000,1.00000,3.00000,3.00000,2.00000,4.00000,4.00000,3.00000,4.00000,2.00000,5.00000,5.00000,4.00000,1.00000,1.00000,1.00000,0.00000,1.00000,0.00000,3.00000,2.00000,2.00000,3.00000,2.00000,2.00000,2.00000,1.00000,0.00000,2.00000,2.00000,2.00000,0.00000,0.00000,0.00000,2.00000,2.00000,0.00000,1.00000,2.00000,1.00000,0.00000,4.00000,1.00000,3.00000,1.00000,2.00000,5.00000,3.00000,1.00000,2.00000,0.00000,1.00000,1.00000,1.00000,1.00000,0.00000,1.00000,1.00000,3.00000,3.00000,1.00000,0.00000,0.00000,1.00000,2.00000,3.00000,0.00000,2.00000,0.00000,1.00000,0.00000,0.00000,0.00000,2.00000,0.00000,0.00000,1.00000,1.00000,1.00000,0.00000,1.00000,2.00000,0.00000,2.00000,0.00000,1.00000,1.00000,1.00000,0.00000,0.00000,0.00000,1.00000,1.00000,0.00000,0.00000,0.00000,0.00000,0.00000,1.00000,0.00000,0.00000,0.00000,1.00000,1.00000,2.00000,1.00000,2.00000,0.00000,2.00000,1.00000,0.00000,1.00000,0.00000,0.00000,0.00000,0.00000,0.00000,0.00000,1.00000,0.00000,0.00000,1.00000,0.00000,0.00000,0.00000,1.00000,0.00000,0.00000,0.00000,0.00000,0.00000,0.00000,0.00000,0.00000,0.00000,0.00000,1.00000,0.00000,0.00000,0.00000,0.00000,2.00000,0.00000,0.00000,0.00000,0.00000,0.00000,0.00000,0.00000,0.00000,1.00000,0.00000,0.00000,0.00000,0.00000,0.00000,0.00000,1.00000,0.00000,0.00000,1.00000,0.00000,0.00000,0.00000,0.00000,1.00000,0.00000,0.00000,1.00000,0.00000,1.00000,0.00000,0.00000,0.00000,0.00000,0.00000,0.00000,0.00000,0.00000,0.00000,0.00000,0.00000,0.00000,0.00000,1.00000,0.00000,0.00000,0.00000,0.00000,0.00000,0.00000,0.00000,0.00000,0.00000,0.00000,0.00000,0.00000,0.00000,0.00000,0.00000,0.00000,0.00000,0.00000,1.00000,0.00000,0.00000,0.00000,0.00000,0.00000,0.00000,0.00000,0.00000,0.00000,0.00000,0.00000,0.00000,0.00000,0.00000,0.00000,0.00000,0.00000,0.00000,0.00000,0.00000,0.00000,0.00000,0.00000,0.00000,0.00000,0.00000,0.00000,0.00000,0.00000,0.00000,0.00000,0.00000,0.00000,0.00000,0.00000,1.00000,0.00000,0.00000,0.00000,0.00000,0.00000,0.00000,0.00000,1.00000,0.00000,0.00000,0.00000,0.00000,0.00000,0.00000,0.00000,0.00000,0.00000,0.00000,0.00000,0.00000,0.00000,0.00000,0.00000,0.00000,0.00000,0.00000,0.00000,0.00000,0.00000,0.00000,0.00000,1.00000,0.00000,0.00000,0.00000,0.00000,0.00000,0.00000,0.00000,0.00000,0.00000,0.00000,0.00000,0.00000,0.00000,1.00000,0.00000,0.00000,0.00000,0.00000,0.00000,0.00000,0.00000,0.00000,0.00000,0.00000,0.00000,0.00000,0.00000,0.00000,0.00000,0.00000,0.00000,0.00000,0.00000,0.00000,0.00000,0.00000,0.00000,0.00000,0.00000,0.00000,0.00000,0.00000,0.00000,0.00000,0.00000,0.00000,0.00000,0.00000,0.00000,0.00000,0.00000,0.00000,0.00000,0.00000,0.00000,0.00000,0.00000,0.00000,0.00000,0.00000,0.00000,0.00000,0.00000,0.00000,0.00000,0.00000,0.00000,0.00000,0.00000,0.00000,0.00000,0.00000,0.00000,0.00000,1.00000,];
+board.createElement('chart', [ data0,data1], {chartStyle:'line,point',labels:[ data0,data1],strokeColor:'#0000ff',highlightStrokeColor:'#0000ff'});
+board.unsuspendUpdate();
+board.setBoundingBox([-88.80000,4386.00000,546.80000,-731.00000]);
+</script>
+</html>

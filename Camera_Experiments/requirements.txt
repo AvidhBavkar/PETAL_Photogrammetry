@@ -1,0 +1,3 @@
+numpy==2.1.3
+opencv-python==4.10.0.84
+vmbpy @ file:///C:/Users/Avidh%20Bavkar/Downloads/vmbpy-1.0.5-py3-none-any.whl#sha256=c0e3d235e073cd75d584d224f07f6804b19b33f9da14320c2c22f0049989cd52

@@ -1,0 +1,1388 @@
+[2024-11-20 10:11:10.428055] [0x00008388] [trace]   Embedded OCIO configuration file: 'C:\Users\Avidh Bavkar\Downloads\Meshroom-2023.3.0-win64\Meshroom-2023.3.0\aliceVision/share/aliceVision/config.ocio' found.
+Program called with the following parameters:
+ * crossMatching = 0
+ * describerTypes = "dspsift"
+ * distanceRatio = 0.8
+ * exportDebugFiles = 0
+ * featuresFolders =  = [C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/meshroom/MeshroomCache/FeatureExtraction/5c68a583c5e7573bbf35259a8ba5825d54c33d86]
+ * geometricError = 0
+ * geometricEstimator =  Unknown Type "enum aliceVision::robustEstimation::ERobustEstimator"
+ * geometricFilterType = "fundamental_matrix"
+ * guidedMatching = 0
+ * imagePairsList =  = [C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/meshroom/MeshroomCache/ImageMatching/6b550069c26329b8135e484255601fb69cf4676e/imageMatches.txt]
+ * input = "C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/meshroom/MeshroomCache/CameraInit/b5483bef2ee92723720762112d9f4a8f006a9142/cameraInit.sfm"
+ * knownPosesGeometricErrorMax = 5
+ * matchFilePerImage = 0 (default)
+ * matchFromKnownCameraPoses = 0
+ * maxCoresAvailable =  Unknown Type "unsigned int" (default)
+ * maxIteration = 2048
+ * maxMatches = 0
+ * maxMemoryAvailable = 18446744073709551615 (default)
+ * minRequired2DMotion = -1
+ * output = "C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/meshroom/MeshroomCache/FeatureMatching/75d97128ab4bc3bb6f618549006c33c9dca842e8"
+ * photometricMatchingMethod = "ANN_L2"
+ * randomSeed = 5489 (default)
+ * rangeSize = 20
+ * rangeStart = 340
+ * savePutativeMatches = 0
+ * useGridSort = 1 (default)
+ * verboseLevel = "info"
+
+Hardware : 
+	Detected core count : 20
+	OpenMP will use 20 cores
+	Detected available memory : 10958 Mo
+
+[10:11:10.479597][info] Load pair list from file: C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/meshroom/MeshroomCache/ImageMatching/6b550069c26329b8135e484255601fb69cf4676e/imageMatches.txt
+[10:11:10.481599][info] loadPairs: image pair (1676544566, 1678469656) added.
+[10:11:10.481599][info] loadPairs: image pair (1676544566, 1730880300) added.
+[10:11:10.481599][info] loadPairs: image pair (1676544566, 1758100110) added.
+[10:11:10.481599][info] loadPairs: image pair (1676544566, 1808854681) added.
+[10:11:10.481599][info] loadPairs: image pair (1676544566, 1809681707) added.
+[10:11:10.481599][info] loadPairs: image pair (1676544566, 2114403589) added.
+[10:11:10.481599][info] loadPairs: image pair (1676544566, 2115178513) added.
+[10:11:10.481599][info] loadPairs: image pair (1676544566, 2115477492) added.
+[10:11:10.481599][info] loadPairs: image pair (1676544566, 2117096263) added.
+[10:11:10.481599][info] loadPairs: image pair (1676544566, 2118959901) added.
+[10:11:10.481599][info] loadPairs: image pair (1676544566, 2121094510) added.
+[10:11:10.481599][info] loadPairs: image pair (1678469656, 387626071) added.
+[10:11:10.481599][info] loadPairs: image pair (1678469656, 494192468) added.
+[10:11:10.481599][info] loadPairs: image pair (1678469656, 494465385) added.
+[10:11:10.481599][info] loadPairs: image pair (1678469656, 1008530225) added.
+[10:11:10.481599][info] loadPairs: image pair (1678469656, 1369049933) added.
+[10:11:10.481599][info] loadPairs: image pair (1678469656, 1730880300) added.
+[10:11:10.481599][info] loadPairs: image pair (1678469656, 1808854681) added.
+[10:11:10.481599][info] loadPairs: image pair (1678469656, 1809681707) added.
+[10:11:10.481599][info] loadPairs: image pair (1678469656, 1836279308) added.
+[10:11:10.481599][info] loadPairs: image pair (1678469656, 2114403589) added.
+[10:11:10.482598][info] loadPairs: image pair (1678469656, 2115178513) added.
+[10:11:10.482598][info] loadPairs: image pair (1678469656, 2115477492) added.
+[10:11:10.482598][info] loadPairs: image pair (1678469656, 2117096263) added.
+[10:11:10.482598][info] loadPairs: image pair (1678469656, 2118959901) added.
+[10:11:10.482598][info] loadPairs: image pair (1678469656, 2121094510) added.
+[10:11:10.482598][info] loadPairs: image pair (1687844965, 321820492) added.
+[10:11:10.482598][info] loadPairs: image pair (1687844965, 343829511) added.
+[10:11:10.482598][info] loadPairs: image pair (1687844965, 380151696) added.
+[10:11:10.482598][info] loadPairs: image pair (1687844965, 387626071) added.
+[10:11:10.482598][info] loadPairs: image pair (1687844965, 402744329) added.
+[10:11:10.482598][info] loadPairs: image pair (1687844965, 406906200) added.
+[10:11:10.482598][info] loadPairs: image pair (1687844965, 411798668) added.
+[10:11:10.482598][info] loadPairs: image pair (1687844965, 413164761) added.
+[10:11:10.482598][info] loadPairs: image pair (1687844965, 549414295) added.
+[10:11:10.482598][info] loadPairs: image pair (1687844965, 1008530225) added.
+[10:11:10.482598][info] loadPairs: image pair (1687844965, 1012223083) added.
+[10:11:10.482598][info] loadPairs: image pair (1687844965, 1014072530) added.
+[10:11:10.482598][info] loadPairs: image pair (1687844965, 1069725499) added.
+[10:11:10.482598][info] loadPairs: image pair (1687844965, 1072340907) added.
+[10:11:10.482598][info] loadPairs: image pair (1687844965, 1241144298) added.
+[10:11:10.482598][info] loadPairs: image pair (1687844965, 1371614603) added.
+[10:11:10.482598][info] loadPairs: image pair (1687844965, 1653353040) added.
+[10:11:10.482598][info] loadPairs: image pair (1687844965, 1655462924) added.
+[10:11:10.482598][info] loadPairs: image pair (1687844965, 1676544566) added.
+[10:11:10.482598][info] loadPairs: image pair (1687844965, 1690218467) added.
+[10:11:10.482598][info] loadPairs: image pair (1687844965, 1705920442) added.
+[10:11:10.482598][info] loadPairs: image pair (1687844965, 1712378675) added.
+[10:11:10.482598][info] loadPairs: image pair (1687844965, 1714571667) added.
+[10:11:10.482598][info] loadPairs: image pair (1687844965, 1730880300) added.
+[10:11:10.482598][info] loadPairs: image pair (1687844965, 1758100110) added.
+[10:11:10.482598][info] loadPairs: image pair (1687844965, 1758915103) added.
+[10:11:10.482598][info] loadPairs: image pair (1687844965, 1800685516) added.
+[10:11:10.482598][info] loadPairs: image pair (1687844965, 1808854681) added.
+[10:11:10.482598][info] loadPairs: image pair (1687844965, 1809681707) added.
+[10:11:10.482598][info] loadPairs: image pair (1687844965, 1825209049) added.
+[10:11:10.482598][info] loadPairs: image pair (1687844965, 1830211028) added.
+[10:11:10.482598][info] loadPairs: image pair (1687844965, 2115178513) added.
+[10:11:10.482598][info] loadPairs: image pair (1687844965, 2117096263) added.
+[10:11:10.482598][info] loadPairs: image pair (1690218467, 307559079) added.
+[10:11:10.482598][info] loadPairs: image pair (1690218467, 321820492) added.
+[10:11:10.482598][info] loadPairs: image pair (1690218467, 341785447) added.
+[10:11:10.482598][info] loadPairs: image pair (1690218467, 343829511) added.
+[10:11:10.482598][info] loadPairs: image pair (1690218467, 380151696) added.
+[10:11:10.483599][info] loadPairs: image pair (1690218467, 384648517) added.
+[10:11:10.483599][info] loadPairs: image pair (1690218467, 387626071) added.
+[10:11:10.483599][info] loadPairs: image pair (1690218467, 406906200) added.
+[10:11:10.483599][info] loadPairs: image pair (1690218467, 494465385) added.
+[10:11:10.483599][info] loadPairs: image pair (1690218467, 549414295) added.
+[10:11:10.483599][info] loadPairs: image pair (1690218467, 1008530225) added.
+[10:11:10.483599][info] loadPairs: image pair (1690218467, 1012223083) added.
+[10:11:10.483599][info] loadPairs: image pair (1690218467, 1014072530) added.
+[10:11:10.483599][info] loadPairs: image pair (1690218467, 1069725499) added.
+[10:11:10.483599][info] loadPairs: image pair (1690218467, 1241144298) added.
+[10:11:10.483599][info] loadPairs: image pair (1690218467, 1369049933) added.
+[10:11:10.483599][info] loadPairs: image pair (1690218467, 1653353040) added.
+[10:11:10.483599][info] loadPairs: image pair (1690218467, 1655462924) added.
+[10:11:10.483599][info] loadPairs: image pair (1690218467, 1705920442) added.
+[10:11:10.483599][info] loadPairs: image pair (1690218467, 1712378675) added.
+[10:11:10.483599][info] loadPairs: image pair (1690218467, 1714571667) added.
+[10:11:10.483599][info] loadPairs: image pair (1690218467, 1730880300) added.
+[10:11:10.483599][info] loadPairs: image pair (1690218467, 1758100110) added.
+[10:11:10.483599][info] loadPairs: image pair (1690218467, 1758915103) added.
+[10:11:10.483599][info] loadPairs: image pair (1690218467, 1772951300) added.
+[10:11:10.483599][info] loadPairs: image pair (1690218467, 1800685516) added.
+[10:11:10.483599][info] loadPairs: image pair (1690218467, 1808854681) added.
+[10:11:10.483599][info] loadPairs: image pair (1690218467, 1825209049) added.
+[10:11:10.484597][info] loadPairs: image pair (1690218467, 1830211028) added.
+[10:11:10.484597][info] loadPairs: image pair (1690218467, 1836279308) added.
+[10:11:10.484597][info] loadPairs: image pair (1690218467, 2115178513) added.
+[10:11:10.484597][info] loadPairs: image pair (1690218467, 2115477492) added.
+[10:11:10.484597][info] loadPairs: image pair (1705920442, 310442431) added.
+[10:11:10.484597][info] loadPairs: image pair (1705920442, 341785447) added.
+[10:11:10.484597][info] loadPairs: image pair (1705920442, 343829511) added.
+[10:11:10.484597][info] loadPairs: image pair (1705920442, 380151696) added.
+[10:11:10.484597][info] loadPairs: image pair (1705920442, 406906200) added.
+[10:11:10.484597][info] loadPairs: image pair (1705920442, 413164761) added.
+[10:11:10.484597][info] loadPairs: image pair (1705920442, 494192468) added.
+[10:11:10.484597][info] loadPairs: image pair (1705920442, 494465385) added.
+[10:11:10.484597][info] loadPairs: image pair (1705920442, 1008530225) added.
+[10:11:10.484597][info] loadPairs: image pair (1705920442, 1012223083) added.
+[10:11:10.484597][info] loadPairs: image pair (1705920442, 1014072530) added.
+[10:11:10.484597][info] loadPairs: image pair (1705920442, 1072340907) added.
+[10:11:10.484597][info] loadPairs: image pair (1705920442, 1241144298) added.
+[10:11:10.484597][info] loadPairs: image pair (1705920442, 1369049933) added.
+[10:11:10.484597][info] loadPairs: image pair (1705920442, 1371614603) added.
+[10:11:10.484597][info] loadPairs: image pair (1705920442, 1405795738) added.
+[10:11:10.484597][info] loadPairs: image pair (1705920442, 1653353040) added.
+[10:11:10.484597][info] loadPairs: image pair (1705920442, 1655462924) added.
+[10:11:10.484597][info] loadPairs: image pair (1705920442, 1712378675) added.
+[10:11:10.484597][info] loadPairs: image pair (1705920442, 1714571667) added.
+[10:11:10.484597][info] loadPairs: image pair (1705920442, 1758100110) added.
+[10:11:10.484597][info] loadPairs: image pair (1705920442, 1758915103) added.
+[10:11:10.484597][info] loadPairs: image pair (1705920442, 1800685516) added.
+[10:11:10.484597][info] loadPairs: image pair (1705920442, 1808854681) added.
+[10:11:10.484597][info] loadPairs: image pair (1705920442, 1809681707) added.
+[10:11:10.484597][info] loadPairs: image pair (1705920442, 1825209049) added.
+[10:11:10.484597][info] loadPairs: image pair (1705920442, 1836279308) added.
+[10:11:10.484597][info] loadPairs: image pair (1705920442, 2115178513) added.
+[10:11:10.484597][info] loadPairs: image pair (1705920442, 2115477492) added.
+[10:11:10.484597][info] loadPairs: image pair (1705920442, 2117096263) added.
+[10:11:10.484597][info] loadPairs: image pair (1705920442, 2121094510) added.
+[10:11:10.484597][info] loadPairs: image pair (1712378675, 307559079) added.
+[10:11:10.484597][info] loadPairs: image pair (1712378675, 341785447) added.
+[10:11:10.484597][info] loadPairs: image pair (1712378675, 343829511) added.
+[10:11:10.484597][info] loadPairs: image pair (1712378675, 378056512) added.
+[10:11:10.484597][info] loadPairs: image pair (1712378675, 387626071) added.
+[10:11:10.484597][info] loadPairs: image pair (1712378675, 402744329) added.
+[10:11:10.484597][info] loadPairs: image pair (1712378675, 411798668) added.
+[10:11:10.484597][info] loadPairs: image pair (1712378675, 413164761) added.
+[10:11:10.484597][info] loadPairs: image pair (1712378675, 494192468) added.
+[10:11:10.484597][info] loadPairs: image pair (1712378675, 494465385) added.
+[10:11:10.484597][info] loadPairs: image pair (1712378675, 549414295) added.
+[10:11:10.484597][info] loadPairs: image pair (1712378675, 1008530225) added.
+[10:11:10.485595][info] loadPairs: image pair (1712378675, 1012223083) added.
+[10:11:10.485595][info] loadPairs: image pair (1712378675, 1069725499) added.
+[10:11:10.485595][info] loadPairs: image pair (1712378675, 1072340907) added.
+[10:11:10.485595][info] loadPairs: image pair (1712378675, 1239378354) added.
+[10:11:10.485595][info] loadPairs: image pair (1712378675, 1241144298) added.
+[10:11:10.485595][info] loadPairs: image pair (1712378675, 1369049933) added.
+[10:11:10.485595][info] loadPairs: image pair (1712378675, 1371614603) added.
+[10:11:10.485595][info] loadPairs: image pair (1712378675, 1653353040) added.
+[10:11:10.485595][info] loadPairs: image pair (1712378675, 1655462924) added.
+[10:11:10.485595][info] loadPairs: image pair (1712378675, 1714571667) added.
+[10:11:10.485595][info] loadPairs: image pair (1712378675, 1772951300) added.
+[10:11:10.485595][info] loadPairs: image pair (1712378675, 1800685516) added.
+[10:11:10.485595][info] loadPairs: image pair (1712378675, 1808854681) added.
+[10:11:10.485595][info] loadPairs: image pair (1712378675, 1809681707) added.
+[10:11:10.485595][info] loadPairs: image pair (1712378675, 1825209049) added.
+[10:11:10.485595][info] loadPairs: image pair (1712378675, 1830211028) added.
+[10:11:10.485595][info] loadPairs: image pair (1712378675, 1836279308) added.
+[10:11:10.485595][info] loadPairs: image pair (1712378675, 2115178513) added.
+[10:11:10.485595][info] loadPairs: image pair (1714571667, 307559079) added.
+[10:11:10.485595][info] loadPairs: image pair (1714571667, 356138844) added.
+[10:11:10.485595][info] loadPairs: image pair (1714571667, 384648517) added.
+[10:11:10.485595][info] loadPairs: image pair (1714571667, 387626071) added.
+[10:11:10.485595][info] loadPairs: image pair (1714571667, 411798668) added.
+[10:11:10.485595][info] loadPairs: image pair (1714571667, 413164761) added.
+[10:11:10.485595][info] loadPairs: image pair (1714571667, 494192468) added.
+[10:11:10.485595][info] loadPairs: image pair (1714571667, 494465385) added.
+[10:11:10.485595][info] loadPairs: image pair (1714571667, 549414295) added.
+[10:11:10.485595][info] loadPairs: image pair (1714571667, 1008530225) added.
+[10:11:10.485595][info] loadPairs: image pair (1714571667, 1009199228) added.
+[10:11:10.485595][info] loadPairs: image pair (1714571667, 1012223083) added.
+[10:11:10.485595][info] loadPairs: image pair (1714571667, 1014072530) added.
+[10:11:10.485595][info] loadPairs: image pair (1714571667, 1069725499) added.
+[10:11:10.485595][info] loadPairs: image pair (1714571667, 1239378354) added.
+[10:11:10.485595][info] loadPairs: image pair (1714571667, 1241144298) added.
+[10:11:10.485595][info] loadPairs: image pair (1714571667, 1371614603) added.
+[10:11:10.485595][info] loadPairs: image pair (1714571667, 1653353040) added.
+[10:11:10.485595][info] loadPairs: image pair (1714571667, 1730880300) added.
+[10:11:10.485595][info] loadPairs: image pair (1714571667, 1758100110) added.
+[10:11:10.485595][info] loadPairs: image pair (1714571667, 1772951300) added.
+[10:11:10.485595][info] loadPairs: image pair (1714571667, 1800685516) added.
+[10:11:10.485595][info] loadPairs: image pair (1714571667, 1825209049) added.
+[10:11:10.485595][info] loadPairs: image pair (1714571667, 1830211028) added.
+[10:11:10.485595][info] loadPairs: image pair (1714571667, 1836279308) added.
+[10:11:10.485595][info] loadPairs: image pair (1714571667, 2114403589) added.
+[10:11:10.485595][info] loadPairs: image pair (1714571667, 2115178513) added.
+[10:11:10.485595][info] loadPairs: image pair (1714571667, 2117096263) added.
+[10:11:10.486596][info] loadPairs: image pair (1714571667, 2121094510) added.
+[10:11:10.486596][info] loadPairs: image pair (1721573006, 539532734) added.
+[10:11:10.486596][info] loadPairs: image pair (1721573006, 543043803) added.
+[10:11:10.486596][info] loadPairs: image pair (1721573006, 592170711) added.
+[10:11:10.486596][info] loadPairs: image pair (1721573006, 597631376) added.
+[10:11:10.486596][info] loadPairs: image pair (1721573006, 1055152894) added.
+[10:11:10.486596][info] loadPairs: image pair (1721573006, 1722496470) added.
+[10:11:10.486596][info] loadPairs: image pair (1721573006, 1726878806) added.
+[10:11:10.486596][info] loadPairs: image pair (1721573006, 1733283469) added.
+[10:11:10.486596][info] loadPairs: image pair (1721573006, 1733583250) added.
+[10:11:10.486596][info] loadPairs: image pair (1721573006, 1734525654) added.
+[10:11:10.486596][info] loadPairs: image pair (1721573006, 1736336538) added.
+[10:11:10.486596][info] loadPairs: image pair (1721573006, 1938092020) added.
+[10:11:10.486596][info] loadPairs: image pair (1721573006, 1940264908) added.
+[10:11:10.486596][info] loadPairs: image pair (1721573006, 1945317872) added.
+[10:11:10.486596][info] loadPairs: image pair (1721573006, 1972083977) added.
+[10:11:10.486596][info] loadPairs: image pair (1721573006, 1972235731) added.
+[10:11:10.486596][info] loadPairs: image pair (1721921389, 92208979) added.
+[10:11:10.486596][info] loadPairs: image pair (1721921389, 1333750311) added.
+[10:11:10.486596][info] loadPairs: image pair (1721921389, 1722863191) added.
+[10:11:10.486596][info] loadPairs: image pair (1721921389, 1727963742) added.
+[10:11:10.486596][info] loadPairs: image pair (1721921389, 1728092725) added.
+[10:11:10.486596][info] loadPairs: image pair (1721921389, 1729551748) added.
+[10:11:10.486596][info] loadPairs: image pair (1721921389, 1747237197) added.
+[10:11:10.486596][info] loadPairs: image pair (1721921389, 1758874427) added.
+[10:11:10.486596][info] loadPairs: image pair (1721921389, 1764792200) added.
+[10:11:10.486596][info] loadPairs: image pair (1721921389, 1770484637) added.
+[10:11:10.486596][info] loadPairs: image pair (1721921389, 1773692128) added.
+[10:11:10.486596][info] loadPairs: image pair (1721921389, 1775276919) added.
+[10:11:10.486596][info] loadPairs: image pair (1721921389, 1775441569) added.
+[10:11:10.486596][info] loadPairs: image pair (1721921389, 1896975152) added.
+[10:11:10.486596][info] loadPairs: image pair (1721921389, 1897024024) added.
+[10:11:10.486596][info] loadPairs: image pair (1721921389, 1908604899) added.
+[10:11:10.486596][info] loadPairs: image pair (1721921389, 1911888489) added.
+[10:11:10.486596][info] loadPairs: image pair (1722496470, 1726878806) added.
+[10:11:10.486596][info] loadPairs: image pair (1722496470, 1733283469) added.
+[10:11:10.486596][info] loadPairs: image pair (1722496470, 1733583250) added.
+[10:11:10.486596][info] loadPairs: image pair (1722496470, 1734525654) added.
+[10:11:10.486596][info] loadPairs: image pair (1722496470, 1736336538) added.
+[10:11:10.486596][info] loadPairs: image pair (1722496470, 1938092020) added.
+[10:11:10.486596][info] loadPairs: image pair (1722496470, 1940264908) added.
+[10:11:10.487595][info] loadPairs: image pair (1722496470, 1945317872) added.
+[10:11:10.487595][info] loadPairs: image pair (1722863191, 204851431) added.
+[10:11:10.487595][info] loadPairs: image pair (1722863191, 310442431) added.
+[10:11:10.487595][info] loadPairs: image pair (1722863191, 1310267620) added.
+[10:11:10.487595][info] loadPairs: image pair (1722863191, 1727963742) added.
+[10:11:10.487595][info] loadPairs: image pair (1722863191, 1728092725) added.
+[10:11:10.487595][info] loadPairs: image pair (1722863191, 1729551748) added.
+[10:11:10.487595][info] loadPairs: image pair (1722863191, 1747237197) added.
+[10:11:10.487595][info] loadPairs: image pair (1722863191, 1758874427) added.
+[10:11:10.487595][info] loadPairs: image pair (1722863191, 1764792200) added.
+[10:11:10.487595][info] loadPairs: image pair (1722863191, 1770484637) added.
+[10:11:10.487595][info] loadPairs: image pair (1722863191, 1773692128) added.
+[10:11:10.487595][info] loadPairs: image pair (1722863191, 1775276919) added.
+[10:11:10.487595][info] loadPairs: image pair (1722863191, 1775441569) added.
+[10:11:10.487595][info] loadPairs: image pair (1722863191, 1896975152) added.
+[10:11:10.487595][info] loadPairs: image pair (1722863191, 1897024024) added.
+[10:11:10.487595][info] loadPairs: image pair (1722863191, 1908604899) added.
+[10:11:10.487595][info] loadPairs: image pair (1722863191, 1911888489) added.
+[10:11:10.487595][info] loadPairs: image pair (1723904574, 65799229) added.
+[10:11:10.487595][info] loadPairs: image pair (1723904574, 1726285970) added.
+[10:11:10.487595][info] loadPairs: image pair (1723904574, 1819771540) added.
+[10:11:10.487595][info] loadPairs: image pair (1723904574, 1820872116) added.
+[10:11:10.487595][info] loadPairs: image pair (1723904574, 1873867005) added.
+[10:11:10.487595][info] loadPairs: image pair (1723904574, 1874446037) added.
+[10:11:10.487595][info] loadPairs: image pair (1723904574, 1874613154) added.
+[10:11:10.487595][info] loadPairs: image pair (1723904574, 1972083977) added.
+[10:11:10.487595][info] loadPairs: image pair (1723904574, 1972235731) added.
+[10:11:10.487595][info] loadPairs: image pair (1726285970, 1726878806) added.
+[10:11:10.487595][info] loadPairs: image pair (1726285970, 1819771540) added.
+[10:11:10.487595][info] loadPairs: image pair (1726285970, 1820872116) added.
+[10:11:10.487595][info] loadPairs: image pair (1726285970, 1873867005) added.
+[10:11:10.487595][info] loadPairs: image pair (1726285970, 1874446037) added.
+[10:11:10.487595][info] loadPairs: image pair (1726285970, 1874613154) added.
+[10:11:10.487595][info] loadPairs: image pair (1726285970, 1972083977) added.
+[10:11:10.487595][info] loadPairs: image pair (1726285970, 1972235731) added.
+[10:11:10.487595][info] loadPairs: image pair (1726878806, 1733283469) added.
+[10:11:10.487595][info] loadPairs: image pair (1726878806, 1733583250) added.
+[10:11:10.487595][info] loadPairs: image pair (1726878806, 1734525654) added.
+[10:11:10.487595][info] loadPairs: image pair (1726878806, 1736336538) added.
+[10:11:10.487595][info] loadPairs: image pair (1726878806, 1938092020) added.
+[10:11:10.487595][info] loadPairs: image pair (1726878806, 1940264908) added.
+[10:11:10.487595][info] loadPairs: image pair (1726878806, 1972083977) added.
+[10:11:10.487595][info] loadPairs: image pair (1726878806, 1972235731) added.
+[10:11:10.487595][info] loadPairs: image pair (1727963742, 92208979) added.
+[10:11:10.487595][info] loadPairs: image pair (1727963742, 204851431) added.
+[10:11:10.487595][info] loadPairs: image pair (1727963742, 240190079) added.
+[10:11:10.488596][info] loadPairs: image pair (1727963742, 792727664) added.
+[10:11:10.488596][info] loadPairs: image pair (1727963742, 1330868845) added.
+[10:11:10.488596][info] loadPairs: image pair (1727963742, 1728092725) added.
+[10:11:10.488596][info] loadPairs: image pair (1727963742, 1729551748) added.
+[10:11:10.488596][info] loadPairs: image pair (1727963742, 1747237197) added.
+[10:11:10.488596][info] loadPairs: image pair (1727963742, 1758874427) added.
+[10:11:10.488596][info] loadPairs: image pair (1727963742, 1764792200) added.
+[10:11:10.488596][info] loadPairs: image pair (1727963742, 1770484637) added.
+[10:11:10.488596][info] loadPairs: image pair (1727963742, 1773692128) added.
+[10:11:10.488596][info] loadPairs: image pair (1727963742, 1775276919) added.
+[10:11:10.488596][info] loadPairs: image pair (1727963742, 1775441569) added.
+[10:11:10.488596][info] loadPairs: image pair (1727963742, 1801480956) added.
+[10:11:10.488596][info] loadPairs: image pair (1727963742, 1896975152) added.
+[10:11:10.488596][info] loadPairs: image pair (1727963742, 1897024024) added.
+[10:11:10.488596][info] loadPairs: image pair (1727963742, 1908604899) added.
+[10:11:10.488596][info] loadPairs: image pair (1727963742, 1911888489) added.
+[10:11:10.488596][info] loadPairs: image pair (1728092725, 204851431) added.
+[10:11:10.488596][info] loadPairs: image pair (1728092725, 379106790) added.
+[10:11:10.488596][info] loadPairs: image pair (1728092725, 1729551748) added.
+[10:11:10.488596][info] loadPairs: image pair (1728092725, 1747237197) added.
+[10:11:10.488596][info] loadPairs: image pair (1728092725, 1758874427) added.
+[10:11:10.488596][info] loadPairs: image pair (1728092725, 1764792200) added.
+[10:11:10.488596][info] loadPairs: image pair (1728092725, 1770484637) added.
+[10:11:10.488596][info] loadPairs: image pair (1728092725, 1773692128) added.
+[10:11:10.488596][info] loadPairs: image pair (1728092725, 1775276919) added.
+[10:11:10.488596][info] loadPairs: image pair (1728092725, 1775441569) added.
+[10:11:10.488596][info] loadPairs: image pair (1728092725, 1896975152) added.
+[10:11:10.488596][info] loadPairs: image pair (1728092725, 1897024024) added.
+[10:11:10.488596][info] loadPairs: image pair (1728092725, 1908604899) added.
+[10:11:10.488596][info] loadPairs: image pair (1728092725, 1911888489) added.
+[10:11:10.488596][info] loadPairs: image pair (1729551748, 30969912) added.
+[10:11:10.488596][info] loadPairs: image pair (1729551748, 204851431) added.
+[10:11:10.488596][info] loadPairs: image pair (1729551748, 864810314) added.
+[10:11:10.488596][info] loadPairs: image pair (1729551748, 1747237197) added.
+[10:11:10.488596][info] loadPairs: image pair (1729551748, 1758874427) added.
+[10:11:10.488596][info] loadPairs: image pair (1729551748, 1764792200) added.
+[10:11:10.488596][info] loadPairs: image pair (1729551748, 1770484637) added.
+[10:11:10.488596][info] loadPairs: image pair (1729551748, 1773692128) added.
+[10:11:10.488596][info] loadPairs: image pair (1729551748, 1775250928) added.
+[10:11:10.488596][info] loadPairs: image pair (1729551748, 1775276919) added.
+[10:11:10.488596][info] loadPairs: image pair (1729551748, 1775441569) added.
+[10:11:10.488596][info] loadPairs: image pair (1729551748, 1896975152) added.
+[10:11:10.488596][info] loadPairs: image pair (1729551748, 1897024024) added.
+[10:11:10.488596][info] loadPairs: image pair (1729551748, 1908604899) added.
+[10:11:10.488596][info] loadPairs: image pair (1729551748, 1911888489) added.
+[10:11:10.488596][info] loadPairs: image pair (1730880300, 387626071) added.
+[10:11:10.488596][info] loadPairs: image pair (1730880300, 1014072530) added.
+[10:11:10.489595][info] loadPairs: image pair (1730880300, 1655462924) added.
+[10:11:10.489595][info] loadPairs: image pair (1730880300, 1758100110) added.
+[10:11:10.489595][info] loadPairs: image pair (1730880300, 1808854681) added.
+[10:11:10.489595][info] loadPairs: image pair (1730880300, 1809681707) added.
+[10:11:10.489595][info] loadPairs: image pair (1730880300, 2114403589) added.
+[10:11:10.489595][info] loadPairs: image pair (1730880300, 2115178513) added.
+[10:11:10.489595][info] loadPairs: image pair (1730880300, 2117096263) added.
+[10:11:10.489595][info] loadPairs: image pair (1730880300, 2118959901) added.
+[10:11:10.489595][info] loadPairs: image pair (1730880300, 2121094510) added.
+[10:11:10.489595][info] loadPairs: image pair (1733283469, 1733583250) added.
+[10:11:10.489595][info] loadPairs: image pair (1733283469, 1734525654) added.
+[10:11:10.489595][info] loadPairs: image pair (1733283469, 1736336538) added.
+[10:11:10.489595][info] loadPairs: image pair (1733283469, 1938092020) added.
+[10:11:10.489595][info] loadPairs: image pair (1733283469, 1940264908) added.
+[10:11:10.489595][info] loadPairs: image pair (1733283469, 1945317872) added.
+[10:11:10.489595][info] loadPairs: image pair (1733583250, 1055152894) added.
+[10:11:10.489595][info] loadPairs: image pair (1733583250, 1726285970) added.
+[10:11:10.489595][info] loadPairs: image pair (1733583250, 1734525654) added.
+[10:11:10.489595][info] loadPairs: image pair (1733583250, 1736336538) added.
+[10:11:10.489595][info] loadPairs: image pair (1733583250, 1836140009) added.
+[10:11:10.489595][info] loadPairs: image pair (1733583250, 1855120617) added.
+[10:11:10.489595][info] loadPairs: image pair (1733583250, 1938092020) added.
+[10:11:10.489595][info] loadPairs: image pair (1733583250, 1940264908) added.
+[10:11:10.489595][info] loadPairs: image pair (1733583250, 1945317872) added.
+[10:11:10.489595][info] Number of pairs: 338
+[10:11:10.489595][info] There are 471 views and 338 image pairs.
+[10:11:10.489595][info] Load features and descriptors
+Loading regions
+0%   10   20   30   40   50   60   70   80   90   100%
+|----|----|----|----|----|----|----|----|----|----|
+************[10:11:11.523009][info] Putative matches (unknown poses): 338 image pairs.
+[10:11:11.523009][info] dspsift Regions Matching
+
+0%   10   20   30   40   50   60   70   80   90   100%
+|----|----|----|----|----|----|----|----|----|----|
+***************************************************
+[10:11:19.087410][info] 338 putative image pair matches
+[10:11:19.087410][info] 	- image pair (30969912, 1729551748) contains 150 putative matches.
+[10:11:19.087410][info] 	- image pair (65799229, 1723904574) contains 469 putative matches.
+[10:11:19.087410][info] 	- image pair (92208979, 1721921389) contains 73 putative matches.
+[10:11:19.087410][info] 	- image pair (92208979, 1727963742) contains 64 putative matches.
+[10:11:19.087410][info] 	- image pair (204851431, 1722863191) contains 59 putative matches.
+[10:11:19.087410][info] 	- image pair (204851431, 1727963742) contains 54 putative matches.
+[10:11:19.087410][info] 	- image pair (204851431, 1728092725) contains 62 putative matches.
+[10:11:19.087410][info] 	- image pair (204851431, 1729551748) contains 60 putative matches.
+[10:11:19.087410][info] 	- image pair (240190079, 1727963742) contains 152 putative matches.
+[10:11:19.087410][info] 	- image pair (307559079, 1690218467) contains 475 putative matches.
+[10:11:19.087410][info] 	- image pair (307559079, 1712378675) contains 455 putative matches.
+[10:11:19.087410][info] 	- image pair (307559079, 1714571667) contains 455 putative matches.
+[10:11:19.087410][info] 	- image pair (310442431, 1705920442) contains 465 putative matches.
+[10:11:19.087410][info] 	- image pair (310442431, 1722863191) contains 48 putative matches.
+[10:11:19.087410][info] 	- image pair (321820492, 1687844965) contains 477 putative matches.
+[10:11:19.087410][info] 	- image pair (321820492, 1690218467) contains 487 putative matches.
+[10:11:19.088425][info] 	- image pair (341785447, 1690218467) contains 469 putative matches.
+[10:11:19.088425][info] 	- image pair (341785447, 1705920442) contains 480 putative matches.
+[10:11:19.088425][info] 	- image pair (341785447, 1712378675) contains 462 putative matches.
+[10:11:19.088425][info] 	- image pair (343829511, 1687844965) contains 450 putative matches.
+[10:11:19.088425][info] 	- image pair (343829511, 1690218467) contains 472 putative matches.
+[10:11:19.088425][info] 	- image pair (343829511, 1705920442) contains 469 putative matches.
+[10:11:19.088425][info] 	- image pair (343829511, 1712378675) contains 470 putative matches.
+[10:11:19.088425][info] 	- image pair (356138844, 1714571667) contains 466 putative matches.
+[10:11:19.088425][info] 	- image pair (378056512, 1712378675) contains 431 putative matches.
+[10:11:19.088425][info] 	- image pair (379106790, 1728092725) contains 68 putative matches.
+[10:11:19.088425][info] 	- image pair (380151696, 1687844965) contains 480 putative matches.
+[10:11:19.088425][info] 	- image pair (380151696, 1690218467) contains 471 putative matches.
+[10:11:19.088425][info] 	- image pair (380151696, 1705920442) contains 450 putative matches.
+[10:11:19.088425][info] 	- image pair (384648517, 1690218467) contains 469 putative matches.
+[10:11:19.088425][info] 	- image pair (384648517, 1714571667) contains 461 putative matches.
+[10:11:19.088425][info] 	- image pair (387626071, 1678469656) contains 562 putative matches.
+[10:11:19.088425][info] 	- image pair (387626071, 1687844965) contains 471 putative matches.
+[10:11:19.088425][info] 	- image pair (387626071, 1690218467) contains 485 putative matches.
+[10:11:19.088425][info] 	- image pair (387626071, 1712378675) contains 466 putative matches.
+[10:11:19.089426][info] 	- image pair (387626071, 1714571667) contains 460 putative matches.
+[10:11:19.089426][info] 	- image pair (387626071, 1730880300) contains 564 putative matches.
+[10:11:19.089426][info] 	- image pair (402744329, 1687844965) contains 468 putative matches.
+[10:11:19.089426][info] 	- image pair (402744329, 1712378675) contains 463 putative matches.
+[10:11:19.089426][info] 	- image pair (406906200, 1687844965) contains 477 putative matches.
+[10:11:19.089426][info] 	- image pair (406906200, 1690218467) contains 463 putative matches.
+[10:11:19.089426][info] 	- image pair (406906200, 1705920442) contains 462 putative matches.
+[10:11:19.089426][info] 	- image pair (411798668, 1687844965) contains 467 putative matches.
+[10:11:19.089426][info] 	- image pair (411798668, 1712378675) contains 450 putative matches.
+[10:11:19.089426][info] 	- image pair (411798668, 1714571667) contains 462 putative matches.
+[10:11:19.089426][info] 	- image pair (413164761, 1687844965) contains 473 putative matches.
+[10:11:19.089426][info] 	- image pair (413164761, 1705920442) contains 478 putative matches.
+[10:11:19.089426][info] 	- image pair (413164761, 1712378675) contains 450 putative matches.
+[10:11:19.089426][info] 	- image pair (413164761, 1714571667) contains 483 putative matches.
+[10:11:19.089426][info] 	- image pair (494192468, 1678469656) contains 538 putative matches.
+[10:11:19.089426][info] 	- image pair (494192468, 1705920442) contains 471 putative matches.
+[10:11:19.089426][info] 	- image pair (494192468, 1712378675) contains 454 putative matches.
+[10:11:19.089426][info] 	- image pair (494192468, 1714571667) contains 463 putative matches.
+[10:11:19.089426][info] 	- image pair (494465385, 1678469656) contains 544 putative matches.
+[10:11:19.089426][info] 	- image pair (494465385, 1690218467) contains 471 putative matches.
+[10:11:19.089426][info] 	- image pair (494465385, 1705920442) contains 465 putative matches.
+[10:11:19.089426][info] 	- image pair (494465385, 1712378675) contains 444 putative matches.
+[10:11:19.089426][info] 	- image pair (494465385, 1714571667) contains 439 putative matches.
+[10:11:19.089426][info] 	- image pair (539532734, 1721573006) contains 508 putative matches.
+[10:11:19.089426][info] 	- image pair (543043803, 1721573006) contains 504 putative matches.
+[10:11:19.089426][info] 	- image pair (549414295, 1687844965) contains 469 putative matches.
+[10:11:19.089426][info] 	- image pair (549414295, 1690218467) contains 480 putative matches.
+[10:11:19.089426][info] 	- image pair (549414295, 1712378675) contains 463 putative matches.
+[10:11:19.089426][info] 	- image pair (549414295, 1714571667) contains 481 putative matches.
+[10:11:19.089426][info] 	- image pair (592170711, 1721573006) contains 523 putative matches.
+[10:11:19.089426][info] 	- image pair (597631376, 1721573006) contains 513 putative matches.
+[10:11:19.089426][info] 	- image pair (792727664, 1727963742) contains 58 putative matches.
+[10:11:19.090424][info] 	- image pair (864810314, 1729551748) contains 232 putative matches.
+[10:11:19.090424][info] 	- image pair (1008530225, 1678469656) contains 534 putative matches.
+[10:11:19.090424][info] 	- image pair (1008530225, 1687844965) contains 473 putative matches.
+[10:11:19.090424][info] 	- image pair (1008530225, 1690218467) contains 483 putative matches.
+[10:11:19.090424][info] 	- image pair (1008530225, 1705920442) contains 466 putative matches.
+[10:11:19.090424][info] 	- image pair (1008530225, 1712378675) contains 462 putative matches.
+[10:11:19.090424][info] 	- image pair (1008530225, 1714571667) contains 458 putative matches.
+[10:11:19.090424][info] 	- image pair (1009199228, 1714571667) contains 468 putative matches.
+[10:11:19.090424][info] 	- image pair (1012223083, 1687844965) contains 469 putative matches.
+[10:11:19.090424][info] 	- image pair (1012223083, 1690218467) contains 472 putative matches.
+[10:11:19.090424][info] 	- image pair (1012223083, 1705920442) contains 450 putative matches.
+[10:11:19.090424][info] 	- image pair (1012223083, 1712378675) contains 445 putative matches.
+[10:11:19.090424][info] 	- image pair (1012223083, 1714571667) contains 464 putative matches.
+[10:11:19.090424][info] 	- image pair (1014072530, 1687844965) contains 462 putative matches.
+[10:11:19.090424][info] 	- image pair (1014072530, 1690218467) contains 471 putative matches.
+[10:11:19.090424][info] 	- image pair (1014072530, 1705920442) contains 460 putative matches.
+[10:11:19.090424][info] 	- image pair (1014072530, 1714571667) contains 463 putative matches.
+[10:11:19.090424][info] 	- image pair (1014072530, 1730880300) contains 536 putative matches.
+[10:11:19.090424][info] 	- image pair (1055152894, 1721573006) contains 499 putative matches.
+[10:11:19.090424][info] 	- image pair (1055152894, 1733583250) contains 424 putative matches.
+[10:11:19.090424][info] 	- image pair (1069725499, 1687844965) contains 474 putative matches.
+[10:11:19.090424][info] 	- image pair (1069725499, 1690218467) contains 490 putative matches.
+[10:11:19.090424][info] 	- image pair (1069725499, 1712378675) contains 433 putative matches.
+[10:11:19.090424][info] 	- image pair (1069725499, 1714571667) contains 456 putative matches.
+[10:11:19.090424][info] 	- image pair (1072340907, 1687844965) contains 457 putative matches.
+[10:11:19.090424][info] 	- image pair (1072340907, 1705920442) contains 461 putative matches.
+[10:11:19.090424][info] 	- image pair (1072340907, 1712378675) contains 464 putative matches.
+[10:11:19.091425][info] 	- image pair (1239378354, 1712378675) contains 451 putative matches.
+[10:11:19.091425][info] 	- image pair (1239378354, 1714571667) contains 456 putative matches.
+[10:11:19.091425][info] 	- image pair (1241144298, 1687844965) contains 462 putative matches.
+[10:11:19.091425][info] 	- image pair (1241144298, 1690218467) contains 479 putative matches.
+[10:11:19.091425][info] 	- image pair (1241144298, 1705920442) contains 486 putative matches.
+[10:11:19.091425][info] 	- image pair (1241144298, 1712378675) contains 462 putative matches.
+[10:11:19.091425][info] 	- image pair (1241144298, 1714571667) contains 462 putative matches.
+[10:11:19.091425][info] 	- image pair (1310267620, 1722863191) contains 134 putative matches.
+[10:11:19.091425][info] 	- image pair (1330868845, 1727963742) contains 52 putative matches.
+[10:11:19.091425][info] 	- image pair (1333750311, 1721921389) contains 85 putative matches.
+[10:11:19.091425][info] 	- image pair (1369049933, 1678469656) contains 555 putative matches.
+[10:11:19.091425][info] 	- image pair (1369049933, 1690218467) contains 465 putative matches.
+[10:11:19.091425][info] 	- image pair (1369049933, 1705920442) contains 456 putative matches.
+[10:11:19.091425][info] 	- image pair (1369049933, 1712378675) contains 441 putative matches.
+[10:11:19.091425][info] 	- image pair (1371614603, 1687844965) contains 460 putative matches.
+[10:11:19.091425][info] 	- image pair (1371614603, 1705920442) contains 465 putative matches.
+[10:11:19.091425][info] 	- image pair (1371614603, 1712378675) contains 440 putative matches.
+[10:11:19.091425][info] 	- image pair (1371614603, 1714571667) contains 462 putative matches.
+[10:11:19.091425][info] 	- image pair (1405795738, 1705920442) contains 449 putative matches.
+[10:11:19.091425][info] 	- image pair (1653353040, 1687844965) contains 467 putative matches.
+[10:11:19.091425][info] 	- image pair (1653353040, 1690218467) contains 486 putative matches.
+[10:11:19.091425][info] 	- image pair (1653353040, 1705920442) contains 468 putative matches.
+[10:11:19.091425][info] 	- image pair (1653353040, 1712378675) contains 455 putative matches.
+[10:11:19.091425][info] 	- image pair (1653353040, 1714571667) contains 466 putative matches.
+[10:11:19.091425][info] 	- image pair (1655462924, 1687844965) contains 478 putative matches.
+[10:11:19.091425][info] 	- image pair (1655462924, 1690218467) contains 473 putative matches.
+[10:11:19.091425][info] 	- image pair (1655462924, 1705920442) contains 476 putative matches.
+[10:11:19.091425][info] 	- image pair (1655462924, 1712378675) contains 483 putative matches.
+[10:11:19.091425][info] 	- image pair (1655462924, 1730880300) contains 558 putative matches.
+[10:11:19.091425][info] 	- image pair (1676544566, 1678469656) contains 535 putative matches.
+[10:11:19.091425][info] 	- image pair (1676544566, 1687844965) contains 452 putative matches.
+[10:11:19.091425][info] 	- image pair (1676544566, 1730880300) contains 550 putative matches.
+[10:11:19.091425][info] 	- image pair (1676544566, 1758100110) contains 558 putative matches.
+[10:11:19.091425][info] 	- image pair (1676544566, 1808854681) contains 565 putative matches.
+[10:11:19.091425][info] 	- image pair (1676544566, 1809681707) contains 559 putative matches.
+[10:11:19.091425][info] 	- image pair (1676544566, 2114403589) contains 565 putative matches.
+[10:11:19.091425][info] 	- image pair (1676544566, 2115178513) contains 589 putative matches.
+[10:11:19.091425][info] 	- image pair (1676544566, 2115477492) contains 542 putative matches.
+[10:11:19.091425][info] 	- image pair (1676544566, 2117096263) contains 563 putative matches.
+[10:11:19.091425][info] 	- image pair (1676544566, 2118959901) contains 563 putative matches.
+[10:11:19.091425][info] 	- image pair (1676544566, 2121094510) contains 568 putative matches.
+[10:11:19.091425][info] 	- image pair (1678469656, 1730880300) contains 519 putative matches.
+[10:11:19.092436][info] 	- image pair (1678469656, 1808854681) contains 542 putative matches.
+[10:11:19.092436][info] 	- image pair (1678469656, 1809681707) contains 542 putative matches.
+[10:11:19.092436][info] 	- image pair (1678469656, 1836279308) contains 525 putative matches.
+[10:11:19.092436][info] 	- image pair (1678469656, 2114403589) contains 584 putative matches.
+[10:11:19.092436][info] 	- image pair (1678469656, 2115178513) contains 557 putative matches.
+[10:11:19.092436][info] 	- image pair (1678469656, 2115477492) contains 545 putative matches.
+[10:11:19.092436][info] 	- image pair (1678469656, 2117096263) contains 554 putative matches.
+[10:11:19.092436][info] 	- image pair (1678469656, 2118959901) contains 527 putative matches.
+[10:11:19.092436][info] 	- image pair (1678469656, 2121094510) contains 539 putative matches.
+[10:11:19.092436][info] 	- image pair (1687844965, 1690218467) contains 585 putative matches.
+[10:11:19.092436][info] 	- image pair (1687844965, 1705920442) contains 582 putative matches.
+[10:11:19.092436][info] 	- image pair (1687844965, 1712378675) contains 594 putative matches.
+[10:11:19.092436][info] 	- image pair (1687844965, 1714571667) contains 575 putative matches.
+[10:11:19.092436][info] 	- image pair (1687844965, 1730880300) contains 452 putative matches.
+[10:11:19.092436][info] 	- image pair (1687844965, 1758100110) contains 437 putative matches.
+[10:11:19.092436][info] 	- image pair (1687844965, 1758915103) contains 453 putative matches.
+[10:11:19.092436][info] 	- image pair (1687844965, 1800685516) contains 443 putative matches.
+[10:11:19.092436][info] 	- image pair (1687844965, 1808854681) contains 458 putative matches.
+[10:11:19.092436][info] 	- image pair (1687844965, 1809681707) contains 457 putative matches.
+[10:11:19.092436][info] 	- image pair (1687844965, 1825209049) contains 471 putative matches.
+[10:11:19.092436][info] 	- image pair (1687844965, 1830211028) contains 433 putative matches.
+[10:11:19.092436][info] 	- image pair (1687844965, 2115178513) contains 460 putative matches.
+[10:11:19.092436][info] 	- image pair (1687844965, 2117096263) contains 478 putative matches.
+[10:11:19.092436][info] 	- image pair (1690218467, 1705920442) contains 574 putative matches.
+[10:11:19.092436][info] 	- image pair (1690218467, 1712378675) contains 558 putative matches.
+[10:11:19.092436][info] 	- image pair (1690218467, 1714571667) contains 561 putative matches.
+[10:11:19.092436][info] 	- image pair (1690218467, 1730880300) contains 470 putative matches.
+[10:11:19.092436][info] 	- image pair (1690218467, 1758100110) contains 463 putative matches.
+[10:11:19.092436][info] 	- image pair (1690218467, 1758915103) contains 448 putative matches.
+[10:11:19.092436][info] 	- image pair (1690218467, 1772951300) contains 424 putative matches.
+[10:11:19.092436][info] 	- image pair (1690218467, 1800685516) contains 437 putative matches.
+[10:11:19.092436][info] 	- image pair (1690218467, 1808854681) contains 465 putative matches.
+[10:11:19.092436][info] 	- image pair (1690218467, 1825209049) contains 461 putative matches.
+[10:11:19.092436][info] 	- image pair (1690218467, 1830211028) contains 441 putative matches.
+[10:11:19.092436][info] 	- image pair (1690218467, 1836279308) contains 445 putative matches.
+[10:11:19.092436][info] 	- image pair (1690218467, 2115178513) contains 470 putative matches.
+[10:11:19.092436][info] 	- image pair (1690218467, 2115477492) contains 456 putative matches.
+[10:11:19.092436][info] 	- image pair (1705920442, 1712378675) contains 567 putative matches.
+[10:11:19.092436][info] 	- image pair (1705920442, 1714571667) contains 576 putative matches.
+[10:11:19.092436][info] 	- image pair (1705920442, 1758100110) contains 454 putative matches.
+[10:11:19.092436][info] 	- image pair (1705920442, 1758915103) contains 459 putative matches.
+[10:11:19.092436][info] 	- image pair (1705920442, 1800685516) contains 438 putative matches.
+[10:11:19.092436][info] 	- image pair (1705920442, 1808854681) contains 463 putative matches.
+[10:11:19.092436][info] 	- image pair (1705920442, 1809681707) contains 471 putative matches.
+[10:11:19.093437][info] 	- image pair (1705920442, 1825209049) contains 450 putative matches.
+[10:11:19.093437][info] 	- image pair (1705920442, 1836279308) contains 435 putative matches.
+[10:11:19.093437][info] 	- image pair (1705920442, 2115178513) contains 469 putative matches.
+[10:11:19.093437][info] 	- image pair (1705920442, 2115477492) contains 448 putative matches.
+[10:11:19.093437][info] 	- image pair (1705920442, 2117096263) contains 458 putative matches.
+[10:11:19.093437][info] 	- image pair (1705920442, 2121094510) contains 462 putative matches.
+[10:11:19.093437][info] 	- image pair (1712378675, 1714571667) contains 572 putative matches.
+[10:11:19.093437][info] 	- image pair (1712378675, 1772951300) contains 411 putative matches.
+[10:11:19.093437][info] 	- image pair (1712378675, 1800685516) contains 427 putative matches.
+[10:11:19.093437][info] 	- image pair (1712378675, 1808854681) contains 448 putative matches.
+[10:11:19.093437][info] 	- image pair (1712378675, 1809681707) contains 484 putative matches.
+[10:11:19.093437][info] 	- image pair (1712378675, 1825209049) contains 435 putative matches.
+[10:11:19.093437][info] 	- image pair (1712378675, 1830211028) contains 433 putative matches.
+[10:11:19.093437][info] 	- image pair (1712378675, 1836279308) contains 431 putative matches.
+[10:11:19.093437][info] 	- image pair (1712378675, 2115178513) contains 439 putative matches.
+[10:11:19.093437][info] 	- image pair (1714571667, 1730880300) contains 456 putative matches.
+[10:11:19.093437][info] 	- image pair (1714571667, 1758100110) contains 451 putative matches.
+[10:11:19.093437][info] 	- image pair (1714571667, 1772951300) contains 427 putative matches.
+[10:11:19.093437][info] 	- image pair (1714571667, 1800685516) contains 441 putative matches.
+[10:11:19.093437][info] 	- image pair (1714571667, 1825209049) contains 471 putative matches.
+[10:11:19.093437][info] 	- image pair (1714571667, 1830211028) contains 442 putative matches.
+[10:11:19.093437][info] 	- image pair (1714571667, 1836279308) contains 470 putative matches.
+[10:11:19.093437][info] 	- image pair (1714571667, 2114403589) contains 457 putative matches.
+[10:11:19.093437][info] 	- image pair (1714571667, 2115178513) contains 469 putative matches.
+[10:11:19.093437][info] 	- image pair (1714571667, 2117096263) contains 476 putative matches.
+[10:11:19.093437][info] 	- image pair (1714571667, 2121094510) contains 475 putative matches.
+[10:11:19.093437][info] 	- image pair (1721573006, 1722496470) contains 632 putative matches.
+[10:11:19.093437][info] 	- image pair (1721573006, 1726878806) contains 678 putative matches.
+[10:11:19.093437][info] 	- image pair (1721573006, 1733283469) contains 622 putative matches.
+[10:11:19.093437][info] 	- image pair (1721573006, 1733583250) contains 591 putative matches.
+[10:11:19.093437][info] 	- image pair (1721573006, 1734525654) contains 530 putative matches.
+[10:11:19.093437][info] 	- image pair (1721573006, 1736336538) contains 540 putative matches.
+[10:11:19.093437][info] 	- image pair (1721573006, 1938092020) contains 440 putative matches.
+[10:11:19.093437][info] 	- image pair (1721573006, 1940264908) contains 447 putative matches.
+[10:11:19.093437][info] 	- image pair (1721573006, 1945317872) contains 459 putative matches.
+[10:11:19.093437][info] 	- image pair (1721573006, 1972083977) contains 470 putative matches.
+[10:11:19.093437][info] 	- image pair (1721573006, 1972235731) contains 497 putative matches.
+[10:11:19.093437][info] 	- image pair (1721921389, 1722863191) contains 421 putative matches.
+[10:11:19.093437][info] 	- image pair (1721921389, 1727963742) contains 451 putative matches.
+[10:11:19.093437][info] 	- image pair (1721921389, 1728092725) contains 406 putative matches.
+[10:11:19.093437][info] 	- image pair (1721921389, 1729551748) contains 432 putative matches.
+[10:11:19.093437][info] 	- image pair (1721921389, 1747237197) contains 458 putative matches.
+[10:11:19.093437][info] 	- image pair (1721921389, 1758874427) contains 460 putative matches.
+[10:11:19.093437][info] 	- image pair (1721921389, 1764792200) contains 280 putative matches.
+[10:11:19.093437][info] 	- image pair (1721921389, 1770484637) contains 349 putative matches.
+[10:11:19.093437][info] 	- image pair (1721921389, 1773692128) contains 385 putative matches.
+[10:11:19.093437][info] 	- image pair (1721921389, 1775276919) contains 329 putative matches.
+[10:11:19.093437][info] 	- image pair (1721921389, 1775441569) contains 308 putative matches.
+[10:11:19.093437][info] 	- image pair (1721921389, 1896975152) contains 242 putative matches.
+[10:11:19.094434][info] 	- image pair (1721921389, 1897024024) contains 310 putative matches.
+[10:11:19.094434][info] 	- image pair (1721921389, 1908604899) contains 239 putative matches.
+[10:11:19.094434][info] 	- image pair (1721921389, 1911888489) contains 238 putative matches.
+[10:11:19.094434][info] 	- image pair (1722496470, 1726878806) contains 700 putative matches.
+[10:11:19.094434][info] 	- image pair (1722496470, 1733283469) contains 713 putative matches.
+[10:11:19.094434][info] 	- image pair (1722496470, 1733583250) contains 623 putative matches.
+[10:11:19.094434][info] 	- image pair (1722496470, 1734525654) contains 557 putative matches.
+[10:11:19.094434][info] 	- image pair (1722496470, 1736336538) contains 573 putative matches.
+[10:11:19.094434][info] 	- image pair (1722496470, 1938092020) contains 460 putative matches.
+[10:11:19.094434][info] 	- image pair (1722496470, 1940264908) contains 496 putative matches.
+[10:11:19.094434][info] 	- image pair (1722496470, 1945317872) contains 484 putative matches.
+[10:11:19.094434][info] 	- image pair (1722863191, 1727963742) contains 371 putative matches.
+[10:11:19.094434][info] 	- image pair (1722863191, 1728092725) contains 497 putative matches.
+[10:11:19.094434][info] 	- image pair (1722863191, 1729551748) contains 452 putative matches.
+[10:11:19.094434][info] 	- image pair (1722863191, 1747237197) contains 422 putative matches.
+[10:11:19.094434][info] 	- image pair (1722863191, 1758874427) contains 394 putative matches.
+[10:11:19.094434][info] 	- image pair (1722863191, 1764792200) contains 238 putative matches.
+[10:11:19.094434][info] 	- image pair (1722863191, 1770484637) contains 301 putative matches.
+[10:11:19.094434][info] 	- image pair (1722863191, 1773692128) contains 304 putative matches.
+[10:11:19.094434][info] 	- image pair (1722863191, 1775276919) contains 274 putative matches.
+[10:11:19.094434][info] 	- image pair (1722863191, 1775441569) contains 238 putative matches.
+[10:11:19.094434][info] 	- image pair (1722863191, 1896975152) contains 279 putative matches.
+[10:11:19.094434][info] 	- image pair (1722863191, 1897024024) contains 328 putative matches.
+[10:11:19.094434][info] 	- image pair (1722863191, 1908604899) contains 270 putative matches.
+[10:11:19.094434][info] 	- image pair (1722863191, 1911888489) contains 290 putative matches.
+[10:11:19.094434][info] 	- image pair (1723904574, 1726285970) contains 659 putative matches.
+[10:11:19.094434][info] 	- image pair (1723904574, 1819771540) contains 624 putative matches.
+[10:11:19.094434][info] 	- image pair (1723904574, 1820872116) contains 629 putative matches.
+[10:11:19.094434][info] 	- image pair (1723904574, 1873867005) contains 727 putative matches.
+[10:11:19.094434][info] 	- image pair (1723904574, 1874446037) contains 654 putative matches.
+[10:11:19.094434][info] 	- image pair (1723904574, 1874613154) contains 681 putative matches.
+[10:11:19.094434][info] 	- image pair (1723904574, 1972083977) contains 616 putative matches.
+[10:11:19.094434][info] 	- image pair (1723904574, 1972235731) contains 603 putative matches.
+[10:11:19.094434][info] 	- image pair (1726285970, 1726878806) contains 415 putative matches.
+[10:11:19.094434][info] 	- image pair (1726285970, 1733583250) contains 381 putative matches.
+[10:11:19.094434][info] 	- image pair (1726285970, 1819771540) contains 553 putative matches.
+[10:11:19.094434][info] 	- image pair (1726285970, 1820872116) contains 554 putative matches.
+[10:11:19.094434][info] 	- image pair (1726285970, 1873867005) contains 620 putative matches.
+[10:11:19.094434][info] 	- image pair (1726285970, 1874446037) contains 585 putative matches.
+[10:11:19.094434][info] 	- image pair (1726285970, 1874613154) contains 601 putative matches.
+[10:11:19.094434][info] 	- image pair (1726285970, 1972083977) contains 749 putative matches.
+[10:11:19.094434][info] 	- image pair (1726285970, 1972235731) contains 708 putative matches.
+[10:11:19.094434][info] 	- image pair (1726878806, 1733283469) contains 673 putative matches.
+[10:11:19.094434][info] 	- image pair (1726878806, 1733583250) contains 604 putative matches.
+[10:11:19.094434][info] 	- image pair (1726878806, 1734525654) contains 534 putative matches.
+[10:11:19.094434][info] 	- image pair (1726878806, 1736336538) contains 581 putative matches.
+[10:11:19.094434][info] 	- image pair (1726878806, 1938092020) contains 421 putative matches.
+[10:11:19.094434][info] 	- image pair (1726878806, 1940264908) contains 453 putative matches.
+[10:11:19.094434][info] 	- image pair (1726878806, 1972083977) contains 449 putative matches.
+[10:11:19.094434][info] 	- image pair (1726878806, 1972235731) contains 469 putative matches.
+[10:11:19.094434][info] 	- image pair (1727963742, 1728092725) contains 405 putative matches.
+[10:11:19.094434][info] 	- image pair (1727963742, 1729551748) contains 391 putative matches.
+[10:11:19.094434][info] 	- image pair (1727963742, 1747237197) contains 417 putative matches.
+[10:11:19.094434][info] 	- image pair (1727963742, 1758874427) contains 416 putative matches.
+[10:11:19.094434][info] 	- image pair (1727963742, 1764792200) contains 304 putative matches.
+[10:11:19.094434][info] 	- image pair (1727963742, 1770484637) contains 354 putative matches.
+[10:11:19.094434][info] 	- image pair (1727963742, 1773692128) contains 382 putative matches.
+[10:11:19.094434][info] 	- image pair (1727963742, 1775276919) contains 327 putative matches.
+[10:11:19.094434][info] 	- image pair (1727963742, 1775441569) contains 340 putative matches.
+[10:11:19.094434][info] 	- image pair (1727963742, 1801480956) contains 56 putative matches.
+[10:11:19.094434][info] 	- image pair (1727963742, 1896975152) contains 216 putative matches.
+[10:11:19.094434][info] 	- image pair (1727963742, 1897024024) contains 277 putative matches.
+[10:11:19.094434][info] 	- image pair (1727963742, 1908604899) contains 230 putative matches.
+[10:11:19.094434][info] 	- image pair (1727963742, 1911888489) contains 231 putative matches.
+[10:11:19.095434][info] 	- image pair (1728092725, 1729551748) contains 466 putative matches.
+[10:11:19.095434][info] 	- image pair (1728092725, 1747237197) contains 457 putative matches.
+[10:11:19.095434][info] 	- image pair (1728092725, 1758874427) contains 396 putative matches.
+[10:11:19.095434][info] 	- image pair (1728092725, 1764792200) contains 229 putative matches.
+[10:11:19.095434][info] 	- image pair (1728092725, 1770484637) contains 319 putative matches.
+[10:11:19.095434][info] 	- image pair (1728092725, 1773692128) contains 315 putative matches.
+[10:11:19.095434][info] 	- image pair (1728092725, 1775276919) contains 280 putative matches.
+[10:11:19.095434][info] 	- image pair (1728092725, 1775441569) contains 258 putative matches.
+[10:11:19.095434][info] 	- image pair (1728092725, 1896975152) contains 275 putative matches.
+[10:11:19.095434][info] 	- image pair (1728092725, 1897024024) contains 337 putative matches.
+[10:11:19.095434][info] 	- image pair (1728092725, 1908604899) contains 271 putative matches.
+[10:11:19.095434][info] 	- image pair (1728092725, 1911888489) contains 282 putative matches.
+[10:11:19.095434][info] 	- image pair (1729551748, 1747237197) contains 477 putative matches.
+[10:11:19.095434][info] 	- image pair (1729551748, 1758874427) contains 438 putative matches.
+[10:11:19.095434][info] 	- image pair (1729551748, 1764792200) contains 267 putative matches.
+[10:11:19.095434][info] 	- image pair (1729551748, 1770484637) contains 308 putative matches.
+[10:11:19.095434][info] 	- image pair (1729551748, 1773692128) contains 348 putative matches.
+[10:11:19.095434][info] 	- image pair (1729551748, 1775250928) contains 68 putative matches.
+[10:11:19.095434][info] 	- image pair (1729551748, 1775276919) contains 300 putative matches.
+[10:11:19.095434][info] 	- image pair (1729551748, 1775441569) contains 278 putative matches.
+[10:11:19.095434][info] 	- image pair (1729551748, 1896975152) contains 281 putative matches.
+[10:11:19.095434][info] 	- image pair (1729551748, 1897024024) contains 320 putative matches.
+[10:11:19.095434][info] 	- image pair (1729551748, 1908604899) contains 269 putative matches.
+[10:11:19.095434][info] 	- image pair (1729551748, 1911888489) contains 275 putative matches.
+[10:11:19.095434][info] 	- image pair (1730880300, 1758100110) contains 571 putative matches.
+[10:11:19.095434][info] 	- image pair (1730880300, 1808854681) contains 566 putative matches.
+[10:11:19.095434][info] 	- image pair (1730880300, 1809681707) contains 560 putative matches.
+[10:11:19.095434][info] 	- image pair (1730880300, 2114403589) contains 548 putative matches.
+[10:11:19.095434][info] 	- image pair (1730880300, 2115178513) contains 550 putative matches.
+[10:11:19.095434][info] 	- image pair (1730880300, 2117096263) contains 536 putative matches.
+[10:11:19.095434][info] 	- image pair (1730880300, 2118959901) contains 562 putative matches.
+[10:11:19.095434][info] 	- image pair (1730880300, 2121094510) contains 551 putative matches.
+[10:11:19.095434][info] 	- image pair (1733283469, 1733583250) contains 651 putative matches.
+[10:11:19.095434][info] 	- image pair (1733283469, 1734525654) contains 600 putative matches.
+[10:11:19.095434][info] 	- image pair (1733283469, 1736336538) contains 614 putative matches.
+[10:11:19.095434][info] 	- image pair (1733283469, 1938092020) contains 480 putative matches.
+[10:11:19.095434][info] 	- image pair (1733283469, 1940264908) contains 478 putative matches.
+[10:11:19.095434][info] 	- image pair (1733283469, 1945317872) contains 482 putative matches.
+[10:11:19.095434][info] 	- image pair (1733583250, 1734525654) contains 606 putative matches.
+[10:11:19.095434][info] 	- image pair (1733583250, 1736336538) contains 622 putative matches.
+[10:11:19.095434][info] 	- image pair (1733583250, 1836140009) contains 373 putative matches.
+[10:11:19.095434][info] 	- image pair (1733583250, 1855120617) contains 406 putative matches.
+[10:11:19.095434][info] 	- image pair (1733583250, 1938092020) contains 479 putative matches.
+[10:11:19.095434][info] 	- image pair (1733583250, 1940264908) contains 487 putative matches.
+[10:11:19.095434][info] 	- image pair (1733583250, 1945317872) contains 487 putative matches.
+[10:11:19.095434][info] Task (Regions Matching) done in (s): 7.572000
+[10:11:19.108426][info] Geometric filtering: using fundamental_matrix
+Robust Model Estimation
+0%   10   20   30   40   50   60   70   80   90   100%
+|----|----|----|----|----|----|----|----|----|----|
+***************************************************
+[10:11:20.411130][info] 326 geometric image pair matches:
+[10:11:20.411641][info] 	- image pair (30969912, 1729551748) contains 117 geometric matches.
+[10:11:20.411641][info] 	- image pair (65799229, 1723904574) contains 397 geometric matches.
+[10:11:20.411641][info] 	- image pair (240190079, 1727963742) contains 111 geometric matches.
+[10:11:20.411641][info] 	- image pair (307559079, 1690218467) contains 413 geometric matches.
+[10:11:20.411641][info] 	- image pair (307559079, 1712378675) contains 397 geometric matches.
+[10:11:20.411641][info] 	- image pair (307559079, 1714571667) contains 384 geometric matches.
+[10:11:20.411641][info] 	- image pair (310442431, 1705920442) contains 408 geometric matches.
+[10:11:20.411641][info] 	- image pair (321820492, 1687844965) contains 410 geometric matches.
+[10:11:20.412198][info] 	- image pair (321820492, 1690218467) contains 416 geometric matches.
+[10:11:20.412266][info] 	- image pair (341785447, 1690218467) contains 420 geometric matches.
+[10:11:20.412266][info] 	- image pair (341785447, 1705920442) contains 434 geometric matches.
+[10:11:20.412266][info] 	- image pair (341785447, 1712378675) contains 404 geometric matches.
+[10:11:20.412266][info] 	- image pair (343829511, 1687844965) contains 374 geometric matches.
+[10:11:20.412266][info] 	- image pair (343829511, 1690218467) contains 419 geometric matches.
+[10:11:20.412266][info] 	- image pair (343829511, 1705920442) contains 418 geometric matches.
+[10:11:20.412266][info] 	- image pair (343829511, 1712378675) contains 403 geometric matches.
+[10:11:20.412266][info] 	- image pair (356138844, 1714571667) contains 395 geometric matches.
+[10:11:20.412266][info] 	- image pair (378056512, 1712378675) contains 372 geometric matches.
+[10:11:20.412266][info] 	- image pair (379106790, 1728092725) contains 51 geometric matches.
+[10:11:20.412777][info] 	- image pair (380151696, 1687844965) contains 428 geometric matches.
+[10:11:20.412777][info] 	- image pair (380151696, 1690218467) contains 412 geometric matches.
+[10:11:20.412777][info] 	- image pair (380151696, 1705920442) contains 386 geometric matches.
+[10:11:20.412777][info] 	- image pair (384648517, 1690218467) contains 381 geometric matches.
+[10:11:20.412777][info] 	- image pair (384648517, 1714571667) contains 401 geometric matches.
+[10:11:20.412777][info] 	- image pair (387626071, 1678469656) contains 503 geometric matches.
+[10:11:20.412777][info] 	- image pair (387626071, 1687844965) contains 394 geometric matches.
+[10:11:20.413328][info] 	- image pair (387626071, 1690218467) contains 447 geometric matches.
+[10:11:20.413328][info] 	- image pair (387626071, 1712378675) contains 393 geometric matches.
+[10:11:20.413328][info] 	- image pair (387626071, 1714571667) contains 419 geometric matches.
+[10:11:20.413416][info] 	- image pair (387626071, 1730880300) contains 504 geometric matches.
+[10:11:20.413416][info] 	- image pair (402744329, 1687844965) contains 402 geometric matches.
+[10:11:20.413416][info] 	- image pair (402744329, 1712378675) contains 418 geometric matches.
+[10:11:20.413416][info] 	- image pair (406906200, 1687844965) contains 415 geometric matches.
+[10:11:20.413416][info] 	- image pair (406906200, 1690218467) contains 406 geometric matches.
+[10:11:20.413416][info] 	- image pair (406906200, 1705920442) contains 403 geometric matches.
+[10:11:20.413416][info] 	- image pair (411798668, 1687844965) contains 405 geometric matches.
+[10:11:20.413416][info] 	- image pair (411798668, 1712378675) contains 377 geometric matches.
+[10:11:20.413416][info] 	- image pair (411798668, 1714571667) contains 405 geometric matches.
+[10:11:20.413416][info] 	- image pair (413164761, 1687844965) contains 434 geometric matches.
+[10:11:20.413927][info] 	- image pair (413164761, 1705920442) contains 418 geometric matches.
+[10:11:20.413927][info] 	- image pair (413164761, 1712378675) contains 401 geometric matches.
+[10:11:20.413927][info] 	- image pair (413164761, 1714571667) contains 435 geometric matches.
+[10:11:20.413927][info] 	- image pair (494192468, 1678469656) contains 504 geometric matches.
+[10:11:20.413927][info] 	- image pair (494192468, 1705920442) contains 400 geometric matches.
+[10:11:20.414129][info] 	- image pair (494192468, 1712378675) contains 427 geometric matches.
+[10:11:20.414129][info] 	- image pair (494192468, 1714571667) contains 417 geometric matches.
+[10:11:20.414129][info] 	- image pair (494465385, 1678469656) contains 479 geometric matches.
+[10:11:20.414129][info] 	- image pair (494465385, 1690218467) contains 422 geometric matches.
+[10:11:20.414129][info] 	- image pair (494465385, 1705920442) contains 410 geometric matches.
+[10:11:20.414129][info] 	- image pair (494465385, 1712378675) contains 383 geometric matches.
+[10:11:20.414129][info] 	- image pair (494465385, 1714571667) contains 404 geometric matches.
+[10:11:20.414129][info] 	- image pair (539532734, 1721573006) contains 422 geometric matches.
+[10:11:20.414129][info] 	- image pair (543043803, 1721573006) contains 420 geometric matches.
+[10:11:20.414129][info] 	- image pair (549414295, 1687844965) contains 433 geometric matches.
+[10:11:20.414129][info] 	- image pair (549414295, 1690218467) contains 442 geometric matches.
+[10:11:20.414129][info] 	- image pair (549414295, 1712378675) contains 434 geometric matches.
+[10:11:20.414129][info] 	- image pair (549414295, 1714571667) contains 437 geometric matches.
+[10:11:20.414129][info] 	- image pair (592170711, 1721573006) contains 436 geometric matches.
+[10:11:20.414129][info] 	- image pair (597631376, 1721573006) contains 446 geometric matches.
+[10:11:20.414129][info] 	- image pair (864810314, 1729551748) contains 174 geometric matches.
+[10:11:20.414640][info] 	- image pair (1008530225, 1678469656) contains 467 geometric matches.
+[10:11:20.414640][info] 	- image pair (1008530225, 1687844965) contains 428 geometric matches.
+[10:11:20.414713][info] 	- image pair (1008530225, 1690218467) contains 449 geometric matches.
+[10:11:20.414713][info] 	- image pair (1008530225, 1705920442) contains 440 geometric matches.
+[10:11:20.414713][info] 	- image pair (1008530225, 1712378675) contains 387 geometric matches.
+[10:11:20.414713][info] 	- image pair (1008530225, 1714571667) contains 380 geometric matches.
+[10:11:20.414713][info] 	- image pair (1009199228, 1714571667) contains 411 geometric matches.
+[10:11:20.414713][info] 	- image pair (1012223083, 1687844965) contains 429 geometric matches.
+[10:11:20.414713][info] 	- image pair (1012223083, 1690218467) contains 422 geometric matches.
+[10:11:20.414713][info] 	- image pair (1012223083, 1705920442) contains 409 geometric matches.
+[10:11:20.414713][info] 	- image pair (1012223083, 1712378675) contains 398 geometric matches.
+[10:11:20.414713][info] 	- image pair (1012223083, 1714571667) contains 426 geometric matches.
+[10:11:20.414713][info] 	- image pair (1014072530, 1687844965) contains 411 geometric matches.
+[10:11:20.414713][info] 	- image pair (1014072530, 1690218467) contains 405 geometric matches.
+[10:11:20.414713][info] 	- image pair (1014072530, 1705920442) contains 407 geometric matches.
+[10:11:20.414713][info] 	- image pair (1014072530, 1714571667) contains 395 geometric matches.
+[10:11:20.414713][info] 	- image pair (1014072530, 1730880300) contains 485 geometric matches.
+[10:11:20.414713][info] 	- image pair (1055152894, 1721573006) contains 417 geometric matches.
+[10:11:20.414713][info] 	- image pair (1055152894, 1733583250) contains 350 geometric matches.
+[10:11:20.415223][info] 	- image pair (1069725499, 1687844965) contains 415 geometric matches.
+[10:11:20.415223][info] 	- image pair (1069725499, 1690218467) contains 410 geometric matches.
+[10:11:20.415223][info] 	- image pair (1069725499, 1712378675) contains 361 geometric matches.
+[10:11:20.415312][info] 	- image pair (1069725499, 1714571667) contains 431 geometric matches.
+[10:11:20.415312][info] 	- image pair (1072340907, 1687844965) contains 400 geometric matches.
+[10:11:20.415312][info] 	- image pair (1072340907, 1705920442) contains 397 geometric matches.
+[10:11:20.415312][info] 	- image pair (1072340907, 1712378675) contains 412 geometric matches.
+[10:11:20.415312][info] 	- image pair (1239378354, 1712378675) contains 391 geometric matches.
+[10:11:20.415312][info] 	- image pair (1239378354, 1714571667) contains 390 geometric matches.
+[10:11:20.415312][info] 	- image pair (1241144298, 1687844965) contains 386 geometric matches.
+[10:11:20.415312][info] 	- image pair (1241144298, 1690218467) contains 426 geometric matches.
+[10:11:20.415312][info] 	- image pair (1241144298, 1705920442) contains 431 geometric matches.
+[10:11:20.415312][info] 	- image pair (1241144298, 1712378675) contains 394 geometric matches.
+[10:11:20.415312][info] 	- image pair (1241144298, 1714571667) contains 397 geometric matches.
+[10:11:20.415312][info] 	- image pair (1310267620, 1722863191) contains 102 geometric matches.
+[10:11:20.415312][info] 	- image pair (1369049933, 1678469656) contains 490 geometric matches.
+[10:11:20.415312][info] 	- image pair (1369049933, 1690218467) contains 425 geometric matches.
+[10:11:20.415312][info] 	- image pair (1369049933, 1705920442) contains 397 geometric matches.
+[10:11:20.415312][info] 	- image pair (1369049933, 1712378675) contains 388 geometric matches.
+[10:11:20.415312][info] 	- image pair (1371614603, 1687844965) contains 390 geometric matches.
+[10:11:20.415312][info] 	- image pair (1371614603, 1705920442) contains 430 geometric matches.
+[10:11:20.415312][info] 	- image pair (1371614603, 1712378675) contains 372 geometric matches.
+[10:11:20.415312][info] 	- image pair (1371614603, 1714571667) contains 412 geometric matches.
+[10:11:20.415820][info] 	- image pair (1405795738, 1705920442) contains 385 geometric matches.
+[10:11:20.415820][info] 	- image pair (1653353040, 1687844965) contains 425 geometric matches.
+[10:11:20.415820][info] 	- image pair (1653353040, 1690218467) contains 427 geometric matches.
+[10:11:20.415820][info] 	- image pair (1653353040, 1705920442) contains 428 geometric matches.
+[10:11:20.415820][info] 	- image pair (1653353040, 1712378675) contains 396 geometric matches.
+[10:11:20.415820][info] 	- image pair (1653353040, 1714571667) contains 429 geometric matches.
+[10:11:20.415820][info] 	- image pair (1655462924, 1687844965) contains 401 geometric matches.
+[10:11:20.415820][info] 	- image pair (1655462924, 1690218467) contains 406 geometric matches.
+[10:11:20.415820][info] 	- image pair (1655462924, 1705920442) contains 437 geometric matches.
+[10:11:20.415820][info] 	- image pair (1655462924, 1712378675) contains 409 geometric matches.
+[10:11:20.415820][info] 	- image pair (1655462924, 1730880300) contains 492 geometric matches.
+[10:11:20.415820][info] 	- image pair (1676544566, 1678469656) contains 471 geometric matches.
+[10:11:20.415820][info] 	- image pair (1676544566, 1687844965) contains 389 geometric matches.
+[10:11:20.415820][info] 	- image pair (1676544566, 1730880300) contains 497 geometric matches.
+[10:11:20.415820][info] 	- image pair (1676544566, 1758100110) contains 512 geometric matches.
+[10:11:20.415820][info] 	- image pair (1676544566, 1808854681) contains 537 geometric matches.
+[10:11:20.415820][info] 	- image pair (1676544566, 1809681707) contains 501 geometric matches.
+[10:11:20.415820][info] 	- image pair (1676544566, 2114403589) contains 530 geometric matches.
+[10:11:20.415820][info] 	- image pair (1676544566, 2115178513) contains 518 geometric matches.
+[10:11:20.415820][info] 	- image pair (1676544566, 2115477492) contains 493 geometric matches.
+[10:11:20.415820][info] 	- image pair (1676544566, 2117096263) contains 504 geometric matches.
+[10:11:20.415820][info] 	- image pair (1676544566, 2118959901) contains 525 geometric matches.
+[10:11:20.415820][info] 	- image pair (1676544566, 2121094510) contains 516 geometric matches.
+[10:11:20.415820][info] 	- image pair (1678469656, 1730880300) contains 461 geometric matches.
+[10:11:20.415820][info] 	- image pair (1678469656, 1808854681) contains 465 geometric matches.
+[10:11:20.415820][info] 	- image pair (1678469656, 1809681707) contains 476 geometric matches.
+[10:11:20.415820][info] 	- image pair (1678469656, 1836279308) contains 469 geometric matches.
+[10:11:20.415820][info] 	- image pair (1678469656, 2114403589) contains 511 geometric matches.
+[10:11:20.415820][info] 	- image pair (1678469656, 2115178513) contains 476 geometric matches.
+[10:11:20.415820][info] 	- image pair (1678469656, 2115477492) contains 492 geometric matches.
+[10:11:20.415820][info] 	- image pair (1678469656, 2117096263) contains 469 geometric matches.
+[10:11:20.415820][info] 	- image pair (1678469656, 2118959901) contains 454 geometric matches.
+[10:11:20.415820][info] 	- image pair (1678469656, 2121094510) contains 482 geometric matches.
+[10:11:20.415820][info] 	- image pair (1687844965, 1690218467) contains 529 geometric matches.
+[10:11:20.415820][info] 	- image pair (1687844965, 1705920442) contains 529 geometric matches.
+[10:11:20.415820][info] 	- image pair (1687844965, 1712378675) contains 534 geometric matches.
+[10:11:20.415820][info] 	- image pair (1687844965, 1714571667) contains 518 geometric matches.
+[10:11:20.415820][info] 	- image pair (1687844965, 1730880300) contains 406 geometric matches.
+[10:11:20.415820][info] 	- image pair (1687844965, 1758100110) contains 383 geometric matches.
+[10:11:20.415820][info] 	- image pair (1687844965, 1758915103) contains 391 geometric matches.
+[10:11:20.415820][info] 	- image pair (1687844965, 1800685516) contains 401 geometric matches.
+[10:11:20.415820][info] 	- image pair (1687844965, 1808854681) contains 405 geometric matches.
+[10:11:20.415820][info] 	- image pair (1687844965, 1809681707) contains 406 geometric matches.
+[10:11:20.415820][info] 	- image pair (1687844965, 1825209049) contains 429 geometric matches.
+[10:11:20.415820][info] 	- image pair (1687844965, 1830211028) contains 379 geometric matches.
+[10:11:20.416830][info] 	- image pair (1687844965, 2115178513) contains 419 geometric matches.
+[10:11:20.416830][info] 	- image pair (1687844965, 2117096263) contains 412 geometric matches.
+[10:11:20.416830][info] 	- image pair (1690218467, 1705920442) contains 502 geometric matches.
+[10:11:20.416830][info] 	- image pair (1690218467, 1712378675) contains 490 geometric matches.
+[10:11:20.416830][info] 	- image pair (1690218467, 1714571667) contains 489 geometric matches.
+[10:11:20.416830][info] 	- image pair (1690218467, 1730880300) contains 401 geometric matches.
+[10:11:20.416830][info] 	- image pair (1690218467, 1758100110) contains 414 geometric matches.
+[10:11:20.416830][info] 	- image pair (1690218467, 1758915103) contains 396 geometric matches.
+[10:11:20.416830][info] 	- image pair (1690218467, 1772951300) contains 392 geometric matches.
+[10:11:20.416830][info] 	- image pair (1690218467, 1800685516) contains 394 geometric matches.
+[10:11:20.416830][info] 	- image pair (1690218467, 1808854681) contains 416 geometric matches.
+[10:11:20.416830][info] 	- image pair (1690218467, 1825209049) contains 412 geometric matches.
+[10:11:20.416830][info] 	- image pair (1690218467, 1830211028) contains 402 geometric matches.
+[10:11:20.416830][info] 	- image pair (1690218467, 1836279308) contains 398 geometric matches.
+[10:11:20.416830][info] 	- image pair (1690218467, 2115178513) contains 417 geometric matches.
+[10:11:20.416830][info] 	- image pair (1690218467, 2115477492) contains 404 geometric matches.
+[10:11:20.416830][info] 	- image pair (1705920442, 1712378675) contains 534 geometric matches.
+[10:11:20.416830][info] 	- image pair (1705920442, 1714571667) contains 519 geometric matches.
+[10:11:20.416830][info] 	- image pair (1705920442, 1758100110) contains 390 geometric matches.
+[10:11:20.416830][info] 	- image pair (1705920442, 1758915103) contains 416 geometric matches.
+[10:11:20.416830][info] 	- image pair (1705920442, 1800685516) contains 396 geometric matches.
+[10:11:20.416830][info] 	- image pair (1705920442, 1808854681) contains 405 geometric matches.
+[10:11:20.416830][info] 	- image pair (1705920442, 1809681707) contains 412 geometric matches.
+[10:11:20.416830][info] 	- image pair (1705920442, 1825209049) contains 387 geometric matches.
+[10:11:20.416830][info] 	- image pair (1705920442, 1836279308) contains 366 geometric matches.
+[10:11:20.416830][info] 	- image pair (1705920442, 2115178513) contains 411 geometric matches.
+[10:11:20.416830][info] 	- image pair (1705920442, 2115477492) contains 408 geometric matches.
+[10:11:20.416830][info] 	- image pair (1705920442, 2117096263) contains 398 geometric matches.
+[10:11:20.416830][info] 	- image pair (1705920442, 2121094510) contains 415 geometric matches.
+[10:11:20.416830][info] 	- image pair (1712378675, 1714571667) contains 521 geometric matches.
+[10:11:20.416830][info] 	- image pair (1712378675, 1772951300) contains 354 geometric matches.
+[10:11:20.416830][info] 	- image pair (1712378675, 1800685516) contains 395 geometric matches.
+[10:11:20.416830][info] 	- image pair (1712378675, 1808854681) contains 400 geometric matches.
+[10:11:20.416830][info] 	- image pair (1712378675, 1809681707) contains 436 geometric matches.
+[10:11:20.416830][info] 	- image pair (1712378675, 1825209049) contains 397 geometric matches.
+[10:11:20.416830][info] 	- image pair (1712378675, 1830211028) contains 374 geometric matches.
+[10:11:20.416830][info] 	- image pair (1712378675, 1836279308) contains 376 geometric matches.
+[10:11:20.416830][info] 	- image pair (1712378675, 2115178513) contains 371 geometric matches.
+[10:11:20.416830][info] 	- image pair (1714571667, 1730880300) contains 411 geometric matches.
+[10:11:20.417832][info] 	- image pair (1714571667, 1758100110) contains 392 geometric matches.
+[10:11:20.417832][info] 	- image pair (1714571667, 1772951300) contains 373 geometric matches.
+[10:11:20.417832][info] 	- image pair (1714571667, 1800685516) contains 390 geometric matches.
+[10:11:20.417832][info] 	- image pair (1714571667, 1825209049) contains 430 geometric matches.
+[10:11:20.417832][info] 	- image pair (1714571667, 1830211028) contains 373 geometric matches.
+[10:11:20.417832][info] 	- image pair (1714571667, 1836279308) contains 430 geometric matches.
+[10:11:20.417832][info] 	- image pair (1714571667, 2114403589) contains 424 geometric matches.
+[10:11:20.417832][info] 	- image pair (1714571667, 2115178513) contains 414 geometric matches.
+[10:11:20.417832][info] 	- image pair (1714571667, 2117096263) contains 414 geometric matches.
+[10:11:20.417832][info] 	- image pair (1714571667, 2121094510) contains 420 geometric matches.
+[10:11:20.417832][info] 	- image pair (1721573006, 1722496470) contains 585 geometric matches.
+[10:11:20.417832][info] 	- image pair (1721573006, 1726878806) contains 617 geometric matches.
+[10:11:20.417832][info] 	- image pair (1721573006, 1733283469) contains 570 geometric matches.
+[10:11:20.417832][info] 	- image pair (1721573006, 1733583250) contains 547 geometric matches.
+[10:11:20.417832][info] 	- image pair (1721573006, 1734525654) contains 449 geometric matches.
+[10:11:20.417832][info] 	- image pair (1721573006, 1736336538) contains 492 geometric matches.
+[10:11:20.417832][info] 	- image pair (1721573006, 1938092020) contains 386 geometric matches.
+[10:11:20.417832][info] 	- image pair (1721573006, 1940264908) contains 403 geometric matches.
+[10:11:20.417832][info] 	- image pair (1721573006, 1945317872) contains 406 geometric matches.
+[10:11:20.417832][info] 	- image pair (1721573006, 1972083977) contains 415 geometric matches.
+[10:11:20.417832][info] 	- image pair (1721573006, 1972235731) contains 455 geometric matches.
+[10:11:20.417832][info] 	- image pair (1721921389, 1722863191) contains 368 geometric matches.
+[10:11:20.417832][info] 	- image pair (1721921389, 1727963742) contains 418 geometric matches.
+[10:11:20.417832][info] 	- image pair (1721921389, 1728092725) contains 353 geometric matches.
+[10:11:20.417832][info] 	- image pair (1721921389, 1729551748) contains 373 geometric matches.
+[10:11:20.417832][info] 	- image pair (1721921389, 1747237197) contains 419 geometric matches.
+[10:11:20.417832][info] 	- image pair (1721921389, 1758874427) contains 397 geometric matches.
+[10:11:20.417832][info] 	- image pair (1721921389, 1764792200) contains 260 geometric matches.
+[10:11:20.417832][info] 	- image pair (1721921389, 1770484637) contains 314 geometric matches.
+[10:11:20.417832][info] 	- image pair (1721921389, 1773692128) contains 337 geometric matches.
+[10:11:20.417832][info] 	- image pair (1721921389, 1775276919) contains 290 geometric matches.
+[10:11:20.417832][info] 	- image pair (1721921389, 1775441569) contains 279 geometric matches.
+[10:11:20.417832][info] 	- image pair (1721921389, 1896975152) contains 213 geometric matches.
+[10:11:20.417832][info] 	- image pair (1721921389, 1897024024) contains 251 geometric matches.
+[10:11:20.417832][info] 	- image pair (1721921389, 1908604899) contains 183 geometric matches.
+[10:11:20.417832][info] 	- image pair (1721921389, 1911888489) contains 194 geometric matches.
+[10:11:20.417832][info] 	- image pair (1722496470, 1726878806) contains 626 geometric matches.
+[10:11:20.417832][info] 	- image pair (1722496470, 1733283469) contains 649 geometric matches.
+[10:11:20.417832][info] 	- image pair (1722496470, 1733583250) contains 544 geometric matches.
+[10:11:20.418831][info] 	- image pair (1722496470, 1734525654) contains 497 geometric matches.
+[10:11:20.418831][info] 	- image pair (1722496470, 1736336538) contains 528 geometric matches.
+[10:11:20.418831][info] 	- image pair (1722496470, 1938092020) contains 389 geometric matches.
+[10:11:20.418831][info] 	- image pair (1722496470, 1940264908) contains 431 geometric matches.
+[10:11:20.418831][info] 	- image pair (1722496470, 1945317872) contains 424 geometric matches.
+[10:11:20.418831][info] 	- image pair (1722863191, 1727963742) contains 335 geometric matches.
+[10:11:20.418831][info] 	- image pair (1722863191, 1728092725) contains 448 geometric matches.
+[10:11:20.418831][info] 	- image pair (1722863191, 1729551748) contains 416 geometric matches.
+[10:11:20.418831][info] 	- image pair (1722863191, 1747237197) contains 380 geometric matches.
+[10:11:20.418831][info] 	- image pair (1722863191, 1758874427) contains 357 geometric matches.
+[10:11:20.418831][info] 	- image pair (1722863191, 1764792200) contains 207 geometric matches.
+[10:11:20.418831][info] 	- image pair (1722863191, 1770484637) contains 252 geometric matches.
+[10:11:20.418831][info] 	- image pair (1722863191, 1773692128) contains 263 geometric matches.
+[10:11:20.418831][info] 	- image pair (1722863191, 1775276919) contains 239 geometric matches.
+[10:11:20.418831][info] 	- image pair (1722863191, 1775441569) contains 208 geometric matches.
+[10:11:20.418831][info] 	- image pair (1722863191, 1896975152) contains 228 geometric matches.
+[10:11:20.418831][info] 	- image pair (1722863191, 1897024024) contains 276 geometric matches.
+[10:11:20.418831][info] 	- image pair (1722863191, 1908604899) contains 230 geometric matches.
+[10:11:20.418831][info] 	- image pair (1722863191, 1911888489) contains 238 geometric matches.
+[10:11:20.418831][info] 	- image pair (1723904574, 1726285970) contains 591 geometric matches.
+[10:11:20.418831][info] 	- image pair (1723904574, 1819771540) contains 567 geometric matches.
+[10:11:20.418831][info] 	- image pair (1723904574, 1820872116) contains 568 geometric matches.
+[10:11:20.418831][info] 	- image pair (1723904574, 1873867005) contains 636 geometric matches.
+[10:11:20.418831][info] 	- image pair (1723904574, 1874446037) contains 592 geometric matches.
+[10:11:20.418831][info] 	- image pair (1723904574, 1874613154) contains 615 geometric matches.
+[10:11:20.418831][info] 	- image pair (1723904574, 1972083977) contains 532 geometric matches.
+[10:11:20.418831][info] 	- image pair (1723904574, 1972235731) contains 533 geometric matches.
+[10:11:20.418831][info] 	- image pair (1726285970, 1726878806) contains 363 geometric matches.
+[10:11:20.418831][info] 	- image pair (1726285970, 1733583250) contains 312 geometric matches.
+[10:11:20.418831][info] 	- image pair (1726285970, 1819771540) contains 477 geometric matches.
+[10:11:20.418831][info] 	- image pair (1726285970, 1820872116) contains 493 geometric matches.
+[10:11:20.418831][info] 	- image pair (1726285970, 1873867005) contains 548 geometric matches.
+[10:11:20.418831][info] 	- image pair (1726285970, 1874446037) contains 524 geometric matches.
+[10:11:20.418831][info] 	- image pair (1726285970, 1874613154) contains 545 geometric matches.
+[10:11:20.418831][info] 	- image pair (1726285970, 1972083977) contains 671 geometric matches.
+[10:11:20.418831][info] 	- image pair (1726285970, 1972235731) contains 652 geometric matches.
+[10:11:20.418831][info] 	- image pair (1726878806, 1733283469) contains 626 geometric matches.
+[10:11:20.418831][info] 	- image pair (1726878806, 1733583250) contains 530 geometric matches.
+[10:11:20.419830][info] 	- image pair (1726878806, 1734525654) contains 468 geometric matches.
+[10:11:20.419830][info] 	- image pair (1726878806, 1736336538) contains 524 geometric matches.
+[10:11:20.419830][info] 	- image pair (1726878806, 1938092020) contains 359 geometric matches.
+[10:11:20.419830][info] 	- image pair (1726878806, 1940264908) contains 394 geometric matches.
+[10:11:20.419830][info] 	- image pair (1726878806, 1972083977) contains 398 geometric matches.
+[10:11:20.419830][info] 	- image pair (1726878806, 1972235731) contains 415 geometric matches.
+[10:11:20.419830][info] 	- image pair (1727963742, 1728092725) contains 354 geometric matches.
+[10:11:20.419830][info] 	- image pair (1727963742, 1729551748) contains 342 geometric matches.
+[10:11:20.419830][info] 	- image pair (1727963742, 1747237197) contains 368 geometric matches.
+[10:11:20.419830][info] 	- image pair (1727963742, 1758874427) contains 378 geometric matches.
+[10:11:20.419830][info] 	- image pair (1727963742, 1764792200) contains 276 geometric matches.
+[10:11:20.419830][info] 	- image pair (1727963742, 1770484637) contains 328 geometric matches.
+[10:11:20.419830][info] 	- image pair (1727963742, 1773692128) contains 336 geometric matches.
+[10:11:20.419830][info] 	- image pair (1727963742, 1775276919) contains 286 geometric matches.
+[10:11:20.419830][info] 	- image pair (1727963742, 1775441569) contains 313 geometric matches.
+[10:11:20.419830][info] 	- image pair (1727963742, 1896975152) contains 166 geometric matches.
+[10:11:20.419830][info] 	- image pair (1727963742, 1897024024) contains 211 geometric matches.
+[10:11:20.419830][info] 	- image pair (1727963742, 1908604899) contains 165 geometric matches.
+[10:11:20.419830][info] 	- image pair (1727963742, 1911888489) contains 182 geometric matches.
+[10:11:20.419830][info] 	- image pair (1728092725, 1729551748) contains 415 geometric matches.
+[10:11:20.419830][info] 	- image pair (1728092725, 1747237197) contains 398 geometric matches.
+[10:11:20.419830][info] 	- image pair (1728092725, 1758874427) contains 356 geometric matches.
+[10:11:20.419830][info] 	- image pair (1728092725, 1764792200) contains 191 geometric matches.
+[10:11:20.419830][info] 	- image pair (1728092725, 1770484637) contains 276 geometric matches.
+[10:11:20.419830][info] 	- image pair (1728092725, 1773692128) contains 280 geometric matches.
+[10:11:20.419830][info] 	- image pair (1728092725, 1775276919) contains 253 geometric matches.
+[10:11:20.419830][info] 	- image pair (1728092725, 1775441569) contains 206 geometric matches.
+[10:11:20.419830][info] 	- image pair (1728092725, 1896975152) contains 220 geometric matches.
+[10:11:20.419830][info] 	- image pair (1728092725, 1897024024) contains 296 geometric matches.
+[10:11:20.419830][info] 	- image pair (1728092725, 1908604899) contains 239 geometric matches.
+[10:11:20.419830][info] 	- image pair (1728092725, 1911888489) contains 238 geometric matches.
+[10:11:20.419830][info] 	- image pair (1729551748, 1747237197) contains 427 geometric matches.
+[10:11:20.419830][info] 	- image pair (1729551748, 1758874427) contains 399 geometric matches.
+[10:11:20.419830][info] 	- image pair (1729551748, 1764792200) contains 235 geometric matches.
+[10:11:20.419830][info] 	- image pair (1729551748, 1770484637) contains 267 geometric matches.
+[10:11:20.419830][info] 	- image pair (1729551748, 1773692128) contains 301 geometric matches.
+[10:11:20.419830][info] 	- image pair (1729551748, 1775276919) contains 266 geometric matches.
+[10:11:20.419830][info] 	- image pair (1729551748, 1775441569) contains 242 geometric matches.
+[10:11:20.419830][info] 	- image pair (1729551748, 1896975152) contains 216 geometric matches.
+[10:11:20.420829][info] 	- image pair (1729551748, 1897024024) contains 287 geometric matches.
+[10:11:20.420829][info] 	- image pair (1729551748, 1908604899) contains 210 geometric matches.
+[10:11:20.420829][info] 	- image pair (1729551748, 1911888489) contains 219 geometric matches.
+[10:11:20.420829][info] 	- image pair (1730880300, 1758100110) contains 533 geometric matches.
+[10:11:20.420829][info] 	- image pair (1730880300, 1808854681) contains 509 geometric matches.
+[10:11:20.420829][info] 	- image pair (1730880300, 1809681707) contains 498 geometric matches.
+[10:11:20.420829][info] 	- image pair (1730880300, 2114403589) contains 494 geometric matches.
+[10:11:20.420829][info] 	- image pair (1730880300, 2115178513) contains 498 geometric matches.
+[10:11:20.420829][info] 	- image pair (1730880300, 2117096263) contains 474 geometric matches.
+[10:11:20.420829][info] 	- image pair (1730880300, 2118959901) contains 522 geometric matches.
+[10:11:20.420829][info] 	- image pair (1730880300, 2121094510) contains 474 geometric matches.
+[10:11:20.420829][info] 	- image pair (1733283469, 1733583250) contains 580 geometric matches.
+[10:11:20.420829][info] 	- image pair (1733283469, 1734525654) contains 516 geometric matches.
+[10:11:20.420829][info] 	- image pair (1733283469, 1736336538) contains 574 geometric matches.
+[10:11:20.420829][info] 	- image pair (1733283469, 1938092020) contains 405 geometric matches.
+[10:11:20.420829][info] 	- image pair (1733283469, 1940264908) contains 437 geometric matches.
+[10:11:20.420829][info] 	- image pair (1733283469, 1945317872) contains 407 geometric matches.
+[10:11:20.420829][info] 	- image pair (1733583250, 1734525654) contains 534 geometric matches.
+[10:11:20.420829][info] 	- image pair (1733583250, 1736336538) contains 548 geometric matches.
+[10:11:20.420829][info] 	- image pair (1733583250, 1836140009) contains 315 geometric matches.
+[10:11:20.420829][info] 	- image pair (1733583250, 1855120617) contains 359 geometric matches.
+[10:11:20.420829][info] 	- image pair (1733583250, 1938092020) contains 417 geometric matches.
+[10:11:20.420829][info] 	- image pair (1733583250, 1940264908) contains 443 geometric matches.
+[10:11:20.420829][info] 	- image pair (1733583250, 1945317872) contains 428 geometric matches.
+[10:11:20.420829][info] Grid filtering
+[10:11:20.469870][info] After grid filtering:
+[10:11:20.469870][info] 	- image pair (30969912, 1729551748) contains 117 geometric matches.
+[10:11:20.469870][info] 	- image pair (65799229, 1723904574) contains 397 geometric matches.
+[10:11:20.469870][info] 	- image pair (240190079, 1727963742) contains 111 geometric matches.
+[10:11:20.469870][info] 	- image pair (307559079, 1690218467) contains 413 geometric matches.
+[10:11:20.469870][info] 	- image pair (307559079, 1712378675) contains 397 geometric matches.
+[10:11:20.469870][info] 	- image pair (307559079, 1714571667) contains 384 geometric matches.
+[10:11:20.469870][info] 	- image pair (310442431, 1705920442) contains 408 geometric matches.
+[10:11:20.469870][info] 	- image pair (321820492, 1687844965) contains 410 geometric matches.
+[10:11:20.469870][info] 	- image pair (321820492, 1690218467) contains 416 geometric matches.
+[10:11:20.470379][info] 	- image pair (341785447, 1690218467) contains 420 geometric matches.
+[10:11:20.470379][info] 	- image pair (341785447, 1705920442) contains 434 geometric matches.
+[10:11:20.470379][info] 	- image pair (341785447, 1712378675) contains 404 geometric matches.
+[10:11:20.470379][info] 	- image pair (343829511, 1687844965) contains 374 geometric matches.
+[10:11:20.470379][info] 	- image pair (343829511, 1690218467) contains 419 geometric matches.
+[10:11:20.470379][info] 	- image pair (343829511, 1705920442) contains 418 geometric matches.
+[10:11:20.470379][info] 	- image pair (343829511, 1712378675) contains 403 geometric matches.
+[10:11:20.470379][info] 	- image pair (356138844, 1714571667) contains 395 geometric matches.
+[10:11:20.470379][info] 	- image pair (378056512, 1712378675) contains 372 geometric matches.
+[10:11:20.470379][info] 	- image pair (379106790, 1728092725) contains 51 geometric matches.
+[10:11:20.470379][info] 	- image pair (380151696, 1687844965) contains 428 geometric matches.
+[10:11:20.470379][info] 	- image pair (380151696, 1690218467) contains 412 geometric matches.
+[10:11:20.470379][info] 	- image pair (380151696, 1705920442) contains 386 geometric matches.
+[10:11:20.470379][info] 	- image pair (384648517, 1690218467) contains 381 geometric matches.
+[10:11:20.470379][info] 	- image pair (384648517, 1714571667) contains 401 geometric matches.
+[10:11:20.470379][info] 	- image pair (387626071, 1678469656) contains 503 geometric matches.
+[10:11:20.470379][info] 	- image pair (387626071, 1687844965) contains 394 geometric matches.
+[10:11:20.470379][info] 	- image pair (387626071, 1690218467) contains 447 geometric matches.
+[10:11:20.470379][info] 	- image pair (387626071, 1712378675) contains 393 geometric matches.
+[10:11:20.470379][info] 	- image pair (387626071, 1714571667) contains 419 geometric matches.
+[10:11:20.470379][info] 	- image pair (387626071, 1730880300) contains 504 geometric matches.
+[10:11:20.470379][info] 	- image pair (402744329, 1687844965) contains 402 geometric matches.
+[10:11:20.470921][info] 	- image pair (402744329, 1712378675) contains 418 geometric matches.
+[10:11:20.470921][info] 	- image pair (406906200, 1687844965) contains 415 geometric matches.
+[10:11:20.470921][info] 	- image pair (406906200, 1690218467) contains 406 geometric matches.
+[10:11:20.470921][info] 	- image pair (406906200, 1705920442) contains 403 geometric matches.
+[10:11:20.470921][info] 	- image pair (411798668, 1687844965) contains 405 geometric matches.
+[10:11:20.470921][info] 	- image pair (411798668, 1712378675) contains 377 geometric matches.
+[10:11:20.470921][info] 	- image pair (411798668, 1714571667) contains 405 geometric matches.
+[10:11:20.470921][info] 	- image pair (413164761, 1687844965) contains 434 geometric matches.
+[10:11:20.470921][info] 	- image pair (413164761, 1705920442) contains 418 geometric matches.
+[10:11:20.470921][info] 	- image pair (413164761, 1712378675) contains 401 geometric matches.
+[10:11:20.470921][info] 	- image pair (413164761, 1714571667) contains 435 geometric matches.
+[10:11:20.470921][info] 	- image pair (494192468, 1678469656) contains 504 geometric matches.
+[10:11:20.470921][info] 	- image pair (494192468, 1705920442) contains 400 geometric matches.
+[10:11:20.470921][info] 	- image pair (494192468, 1712378675) contains 427 geometric matches.
+[10:11:20.470921][info] 	- image pair (494192468, 1714571667) contains 417 geometric matches.
+[10:11:20.470921][info] 	- image pair (494465385, 1678469656) contains 479 geometric matches.
+[10:11:20.470921][info] 	- image pair (494465385, 1690218467) contains 422 geometric matches.
+[10:11:20.470921][info] 	- image pair (494465385, 1705920442) contains 410 geometric matches.
+[10:11:20.470921][info] 	- image pair (494465385, 1712378675) contains 383 geometric matches.
+[10:11:20.470921][info] 	- image pair (494465385, 1714571667) contains 404 geometric matches.
+[10:11:20.470921][info] 	- image pair (539532734, 1721573006) contains 422 geometric matches.
+[10:11:20.471454][info] 	- image pair (543043803, 1721573006) contains 420 geometric matches.
+[10:11:20.471454][info] 	- image pair (549414295, 1687844965) contains 433 geometric matches.
+[10:11:20.471454][info] 	- image pair (549414295, 1690218467) contains 442 geometric matches.
+[10:11:20.471454][info] 	- image pair (549414295, 1712378675) contains 434 geometric matches.
+[10:11:20.471454][info] 	- image pair (549414295, 1714571667) contains 437 geometric matches.
+[10:11:20.471454][info] 	- image pair (592170711, 1721573006) contains 436 geometric matches.
+[10:11:20.471454][info] 	- image pair (597631376, 1721573006) contains 446 geometric matches.
+[10:11:20.471454][info] 	- image pair (864810314, 1729551748) contains 174 geometric matches.
+[10:11:20.471454][info] 	- image pair (1008530225, 1678469656) contains 467 geometric matches.
+[10:11:20.471454][info] 	- image pair (1008530225, 1687844965) contains 428 geometric matches.
+[10:11:20.471454][info] 	- image pair (1008530225, 1690218467) contains 449 geometric matches.
+[10:11:20.471454][info] 	- image pair (1008530225, 1705920442) contains 440 geometric matches.
+[10:11:20.471454][info] 	- image pair (1008530225, 1712378675) contains 387 geometric matches.
+[10:11:20.471454][info] 	- image pair (1008530225, 1714571667) contains 380 geometric matches.
+[10:11:20.471454][info] 	- image pair (1009199228, 1714571667) contains 411 geometric matches.
+[10:11:20.471454][info] 	- image pair (1012223083, 1687844965) contains 429 geometric matches.
+[10:11:20.471454][info] 	- image pair (1012223083, 1690218467) contains 422 geometric matches.
+[10:11:20.471454][info] 	- image pair (1012223083, 1705920442) contains 409 geometric matches.
+[10:11:20.471454][info] 	- image pair (1012223083, 1712378675) contains 398 geometric matches.
+[10:11:20.471454][info] 	- image pair (1012223083, 1714571667) contains 426 geometric matches.
+[10:11:20.471454][info] 	- image pair (1014072530, 1687844965) contains 411 geometric matches.
+[10:11:20.471454][info] 	- image pair (1014072530, 1690218467) contains 405 geometric matches.
+[10:11:20.471999][info] 	- image pair (1014072530, 1705920442) contains 407 geometric matches.
+[10:11:20.471999][info] 	- image pair (1014072530, 1714571667) contains 395 geometric matches.
+[10:11:20.471999][info] 	- image pair (1014072530, 1730880300) contains 485 geometric matches.
+[10:11:20.471999][info] 	- image pair (1055152894, 1721573006) contains 417 geometric matches.
+[10:11:20.471999][info] 	- image pair (1055152894, 1733583250) contains 350 geometric matches.
+[10:11:20.471999][info] 	- image pair (1069725499, 1687844965) contains 415 geometric matches.
+[10:11:20.471999][info] 	- image pair (1069725499, 1690218467) contains 410 geometric matches.
+[10:11:20.471999][info] 	- image pair (1069725499, 1712378675) contains 361 geometric matches.
+[10:11:20.471999][info] 	- image pair (1069725499, 1714571667) contains 431 geometric matches.
+[10:11:20.471999][info] 	- image pair (1072340907, 1687844965) contains 400 geometric matches.
+[10:11:20.471999][info] 	- image pair (1072340907, 1705920442) contains 397 geometric matches.
+[10:11:20.471999][info] 	- image pair (1072340907, 1712378675) contains 412 geometric matches.
+[10:11:20.471999][info] 	- image pair (1239378354, 1712378675) contains 391 geometric matches.
+[10:11:20.471999][info] 	- image pair (1239378354, 1714571667) contains 390 geometric matches.
+[10:11:20.471999][info] 	- image pair (1241144298, 1687844965) contains 386 geometric matches.
+[10:11:20.471999][info] 	- image pair (1241144298, 1690218467) contains 426 geometric matches.
+[10:11:20.471999][info] 	- image pair (1241144298, 1705920442) contains 431 geometric matches.
+[10:11:20.471999][info] 	- image pair (1241144298, 1712378675) contains 394 geometric matches.
+[10:11:20.471999][info] 	- image pair (1241144298, 1714571667) contains 397 geometric matches.
+[10:11:20.471999][info] 	- image pair (1310267620, 1722863191) contains 102 geometric matches.
+[10:11:20.471999][info] 	- image pair (1369049933, 1678469656) contains 490 geometric matches.
+[10:11:20.471999][info] 	- image pair (1369049933, 1690218467) contains 425 geometric matches.
+[10:11:20.471999][info] 	- image pair (1369049933, 1705920442) contains 397 geometric matches.
+[10:11:20.472547][info] 	- image pair (1369049933, 1712378675) contains 388 geometric matches.
+[10:11:20.472547][info] 	- image pair (1371614603, 1687844965) contains 390 geometric matches.
+[10:11:20.472547][info] 	- image pair (1371614603, 1705920442) contains 430 geometric matches.
+[10:11:20.472547][info] 	- image pair (1371614603, 1712378675) contains 372 geometric matches.
+[10:11:20.472547][info] 	- image pair (1371614603, 1714571667) contains 412 geometric matches.
+[10:11:20.472547][info] 	- image pair (1405795738, 1705920442) contains 385 geometric matches.
+[10:11:20.472547][info] 	- image pair (1653353040, 1687844965) contains 425 geometric matches.
+[10:11:20.472547][info] 	- image pair (1653353040, 1690218467) contains 427 geometric matches.
+[10:11:20.472547][info] 	- image pair (1653353040, 1705920442) contains 428 geometric matches.
+[10:11:20.472547][info] 	- image pair (1653353040, 1712378675) contains 396 geometric matches.
+[10:11:20.472547][info] 	- image pair (1653353040, 1714571667) contains 429 geometric matches.
+[10:11:20.472547][info] 	- image pair (1655462924, 1687844965) contains 401 geometric matches.
+[10:11:20.472547][info] 	- image pair (1655462924, 1690218467) contains 406 geometric matches.
+[10:11:20.472547][info] 	- image pair (1655462924, 1705920442) contains 437 geometric matches.
+[10:11:20.472547][info] 	- image pair (1655462924, 1712378675) contains 409 geometric matches.
+[10:11:20.472547][info] 	- image pair (1655462924, 1730880300) contains 492 geometric matches.
+[10:11:20.472547][info] 	- image pair (1676544566, 1678469656) contains 471 geometric matches.
+[10:11:20.472547][info] 	- image pair (1676544566, 1687844965) contains 389 geometric matches.
+[10:11:20.472547][info] 	- image pair (1676544566, 1730880300) contains 497 geometric matches.
+[10:11:20.472547][info] 	- image pair (1676544566, 1758100110) contains 512 geometric matches.
+[10:11:20.472547][info] 	- image pair (1676544566, 1808854681) contains 537 geometric matches.
+[10:11:20.472547][info] 	- image pair (1676544566, 1809681707) contains 501 geometric matches.
+[10:11:20.473095][info] 	- image pair (1676544566, 2114403589) contains 530 geometric matches.
+[10:11:20.473095][info] 	- image pair (1676544566, 2115178513) contains 518 geometric matches.
+[10:11:20.473095][info] 	- image pair (1676544566, 2115477492) contains 493 geometric matches.
+[10:11:20.473095][info] 	- image pair (1676544566, 2117096263) contains 504 geometric matches.
+[10:11:20.473095][info] 	- image pair (1676544566, 2118959901) contains 525 geometric matches.
+[10:11:20.473095][info] 	- image pair (1676544566, 2121094510) contains 516 geometric matches.
+[10:11:20.473095][info] 	- image pair (1678469656, 1730880300) contains 461 geometric matches.
+[10:11:20.473095][info] 	- image pair (1678469656, 1808854681) contains 465 geometric matches.
+[10:11:20.473095][info] 	- image pair (1678469656, 1809681707) contains 476 geometric matches.
+[10:11:20.473095][info] 	- image pair (1678469656, 1836279308) contains 469 geometric matches.
+[10:11:20.473095][info] 	- image pair (1678469656, 2114403589) contains 511 geometric matches.
+[10:11:20.473095][info] 	- image pair (1678469656, 2115178513) contains 476 geometric matches.
+[10:11:20.473095][info] 	- image pair (1678469656, 2115477492) contains 492 geometric matches.
+[10:11:20.473095][info] 	- image pair (1678469656, 2117096263) contains 469 geometric matches.
+[10:11:20.473095][info] 	- image pair (1678469656, 2118959901) contains 454 geometric matches.
+[10:11:20.473095][info] 	- image pair (1678469656, 2121094510) contains 482 geometric matches.
+[10:11:20.473095][info] 	- image pair (1687844965, 1690218467) contains 529 geometric matches.
+[10:11:20.473095][info] 	- image pair (1687844965, 1705920442) contains 529 geometric matches.
+[10:11:20.473095][info] 	- image pair (1687844965, 1712378675) contains 534 geometric matches.
+[10:11:20.473095][info] 	- image pair (1687844965, 1714571667) contains 518 geometric matches.
+[10:11:20.473095][info] 	- image pair (1687844965, 1730880300) contains 406 geometric matches.
+[10:11:20.473095][info] 	- image pair (1687844965, 1758100110) contains 383 geometric matches.
+[10:11:20.473653][info] 	- image pair (1687844965, 1758915103) contains 391 geometric matches.
+[10:11:20.473653][info] 	- image pair (1687844965, 1800685516) contains 401 geometric matches.
+[10:11:20.473653][info] 	- image pair (1687844965, 1808854681) contains 405 geometric matches.
+[10:11:20.473653][info] 	- image pair (1687844965, 1809681707) contains 406 geometric matches.
+[10:11:20.473653][info] 	- image pair (1687844965, 1825209049) contains 429 geometric matches.
+[10:11:20.473653][info] 	- image pair (1687844965, 1830211028) contains 379 geometric matches.
+[10:11:20.473653][info] 	- image pair (1687844965, 2115178513) contains 419 geometric matches.
+[10:11:20.473653][info] 	- image pair (1687844965, 2117096263) contains 412 geometric matches.
+[10:11:20.473653][info] 	- image pair (1690218467, 1705920442) contains 502 geometric matches.
+[10:11:20.473653][info] 	- image pair (1690218467, 1712378675) contains 490 geometric matches.
+[10:11:20.473653][info] 	- image pair (1690218467, 1714571667) contains 489 geometric matches.
+[10:11:20.473653][info] 	- image pair (1690218467, 1730880300) contains 401 geometric matches.
+[10:11:20.473653][info] 	- image pair (1690218467, 1758100110) contains 414 geometric matches.
+[10:11:20.473653][info] 	- image pair (1690218467, 1758915103) contains 396 geometric matches.
+[10:11:20.473653][info] 	- image pair (1690218467, 1772951300) contains 392 geometric matches.
+[10:11:20.473653][info] 	- image pair (1690218467, 1800685516) contains 394 geometric matches.
+[10:11:20.473653][info] 	- image pair (1690218467, 1808854681) contains 416 geometric matches.
+[10:11:20.473653][info] 	- image pair (1690218467, 1825209049) contains 412 geometric matches.
+[10:11:20.473653][info] 	- image pair (1690218467, 1830211028) contains 402 geometric matches.
+[10:11:20.473653][info] 	- image pair (1690218467, 1836279308) contains 398 geometric matches.
+[10:11:20.473653][info] 	- image pair (1690218467, 2115178513) contains 417 geometric matches.
+[10:11:20.473653][info] 	- image pair (1690218467, 2115477492) contains 404 geometric matches.
+[10:11:20.473653][info] 	- image pair (1705920442, 1712378675) contains 534 geometric matches.
+[10:11:20.474198][info] 	- image pair (1705920442, 1714571667) contains 519 geometric matches.
+[10:11:20.474198][info] 	- image pair (1705920442, 1758100110) contains 390 geometric matches.
+[10:11:20.474198][info] 	- image pair (1705920442, 1758915103) contains 416 geometric matches.
+[10:11:20.474278][info] 	- image pair (1705920442, 1800685516) contains 396 geometric matches.
+[10:11:20.474278][info] 	- image pair (1705920442, 1808854681) contains 405 geometric matches.
+[10:11:20.474278][info] 	- image pair (1705920442, 1809681707) contains 412 geometric matches.
+[10:11:20.474278][info] 	- image pair (1705920442, 1825209049) contains 387 geometric matches.
+[10:11:20.474278][info] 	- image pair (1705920442, 1836279308) contains 366 geometric matches.
+[10:11:20.474278][info] 	- image pair (1705920442, 2115178513) contains 411 geometric matches.
+[10:11:20.474278][info] 	- image pair (1705920442, 2115477492) contains 408 geometric matches.
+[10:11:20.474278][info] 	- image pair (1705920442, 2117096263) contains 398 geometric matches.
+[10:11:20.474278][info] 	- image pair (1705920442, 2121094510) contains 415 geometric matches.
+[10:11:20.474278][info] 	- image pair (1712378675, 1714571667) contains 521 geometric matches.
+[10:11:20.474278][info] 	- image pair (1712378675, 1772951300) contains 354 geometric matches.
+[10:11:20.474278][info] 	- image pair (1712378675, 1800685516) contains 395 geometric matches.
+[10:11:20.474278][info] 	- image pair (1712378675, 1808854681) contains 400 geometric matches.
+[10:11:20.474278][info] 	- image pair (1712378675, 1809681707) contains 436 geometric matches.
+[10:11:20.474278][info] 	- image pair (1712378675, 1825209049) contains 397 geometric matches.
+[10:11:20.474278][info] 	- image pair (1712378675, 1830211028) contains 374 geometric matches.
+[10:11:20.474278][info] 	- image pair (1712378675, 1836279308) contains 376 geometric matches.
+[10:11:20.474278][info] 	- image pair (1712378675, 2115178513) contains 371 geometric matches.
+[10:11:20.474278][info] 	- image pair (1714571667, 1730880300) contains 411 geometric matches.
+[10:11:20.474278][info] 	- image pair (1714571667, 1758100110) contains 392 geometric matches.
+[10:11:20.474278][info] 	- image pair (1714571667, 1772951300) contains 373 geometric matches.
+[10:11:20.474278][info] 	- image pair (1714571667, 1800685516) contains 390 geometric matches.
+[10:11:20.474825][info] 	- image pair (1714571667, 1825209049) contains 430 geometric matches.
+[10:11:20.474825][info] 	- image pair (1714571667, 1830211028) contains 373 geometric matches.
+[10:11:20.474825][info] 	- image pair (1714571667, 1836279308) contains 430 geometric matches.
+[10:11:20.474895][info] 	- image pair (1714571667, 2114403589) contains 424 geometric matches.
+[10:11:20.474895][info] 	- image pair (1714571667, 2115178513) contains 414 geometric matches.
+[10:11:20.474895][info] 	- image pair (1714571667, 2117096263) contains 414 geometric matches.
+[10:11:20.474895][info] 	- image pair (1714571667, 2121094510) contains 420 geometric matches.
+[10:11:20.474895][info] 	- image pair (1721573006, 1722496470) contains 585 geometric matches.
+[10:11:20.474895][info] 	- image pair (1721573006, 1726878806) contains 617 geometric matches.
+[10:11:20.474895][info] 	- image pair (1721573006, 1733283469) contains 570 geometric matches.
+[10:11:20.474895][info] 	- image pair (1721573006, 1733583250) contains 547 geometric matches.
+[10:11:20.474895][info] 	- image pair (1721573006, 1734525654) contains 449 geometric matches.
+[10:11:20.474895][info] 	- image pair (1721573006, 1736336538) contains 492 geometric matches.
+[10:11:20.474895][info] 	- image pair (1721573006, 1938092020) contains 386 geometric matches.
+[10:11:20.474895][info] 	- image pair (1721573006, 1940264908) contains 403 geometric matches.
+[10:11:20.474895][info] 	- image pair (1721573006, 1945317872) contains 406 geometric matches.
+[10:11:20.474895][info] 	- image pair (1721573006, 1972083977) contains 415 geometric matches.
+[10:11:20.474895][info] 	- image pair (1721573006, 1972235731) contains 455 geometric matches.
+[10:11:20.474895][info] 	- image pair (1721921389, 1722863191) contains 368 geometric matches.
+[10:11:20.474895][info] 	- image pair (1721921389, 1727963742) contains 418 geometric matches.
+[10:11:20.474895][info] 	- image pair (1721921389, 1728092725) contains 353 geometric matches.
+[10:11:20.474895][info] 	- image pair (1721921389, 1729551748) contains 373 geometric matches.
+[10:11:20.474895][info] 	- image pair (1721921389, 1747237197) contains 419 geometric matches.
+[10:11:20.474895][info] 	- image pair (1721921389, 1758874427) contains 397 geometric matches.
+[10:11:20.475441][info] 	- image pair (1721921389, 1764792200) contains 260 geometric matches.
+[10:11:20.475441][info] 	- image pair (1721921389, 1770484637) contains 314 geometric matches.
+[10:11:20.475495][info] 	- image pair (1721921389, 1773692128) contains 337 geometric matches.
+[10:11:20.475495][info] 	- image pair (1721921389, 1775276919) contains 290 geometric matches.
+[10:11:20.475495][info] 	- image pair (1721921389, 1775441569) contains 279 geometric matches.
+[10:11:20.475495][info] 	- image pair (1721921389, 1896975152) contains 213 geometric matches.
+[10:11:20.475495][info] 	- image pair (1721921389, 1897024024) contains 251 geometric matches.
+[10:11:20.475495][info] 	- image pair (1721921389, 1908604899) contains 183 geometric matches.
+[10:11:20.475495][info] 	- image pair (1721921389, 1911888489) contains 194 geometric matches.
+[10:11:20.475495][info] 	- image pair (1722496470, 1726878806) contains 626 geometric matches.
+[10:11:20.475495][info] 	- image pair (1722496470, 1733283469) contains 649 geometric matches.
+[10:11:20.475495][info] 	- image pair (1722496470, 1733583250) contains 544 geometric matches.
+[10:11:20.475495][info] 	- image pair (1722496470, 1734525654) contains 497 geometric matches.
+[10:11:20.475495][info] 	- image pair (1722496470, 1736336538) contains 528 geometric matches.
+[10:11:20.475495][info] 	- image pair (1722496470, 1938092020) contains 389 geometric matches.
+[10:11:20.475495][info] 	- image pair (1722496470, 1940264908) contains 431 geometric matches.
+[10:11:20.475495][info] 	- image pair (1722496470, 1945317872) contains 424 geometric matches.
+[10:11:20.475495][info] 	- image pair (1722863191, 1727963742) contains 335 geometric matches.
+[10:11:20.475495][info] 	- image pair (1722863191, 1728092725) contains 448 geometric matches.
+[10:11:20.476049][info] 	- image pair (1722863191, 1729551748) contains 416 geometric matches.
+[10:11:20.476104][info] 	- image pair (1722863191, 1747237197) contains 380 geometric matches.
+[10:11:20.476104][info] 	- image pair (1722863191, 1758874427) contains 357 geometric matches.
+[10:11:20.476104][info] 	- image pair (1722863191, 1764792200) contains 207 geometric matches.
+[10:11:20.476104][info] 	- image pair (1722863191, 1770484637) contains 252 geometric matches.
+[10:11:20.476104][info] 	- image pair (1722863191, 1773692128) contains 263 geometric matches.
+[10:11:20.476104][info] 	- image pair (1722863191, 1775276919) contains 239 geometric matches.
+[10:11:20.476104][info] 	- image pair (1722863191, 1775441569) contains 208 geometric matches.
+[10:11:20.476104][info] 	- image pair (1722863191, 1896975152) contains 228 geometric matches.
+[10:11:20.476104][info] 	- image pair (1722863191, 1897024024) contains 276 geometric matches.
+[10:11:20.476104][info] 	- image pair (1722863191, 1908604899) contains 230 geometric matches.
+[10:11:20.476104][info] 	- image pair (1722863191, 1911888489) contains 238 geometric matches.
+[10:11:20.476104][info] 	- image pair (1723904574, 1726285970) contains 591 geometric matches.
+[10:11:20.476104][info] 	- image pair (1723904574, 1819771540) contains 567 geometric matches.
+[10:11:20.476104][info] 	- image pair (1723904574, 1820872116) contains 568 geometric matches.
+[10:11:20.476104][info] 	- image pair (1723904574, 1873867005) contains 636 geometric matches.
+[10:11:20.476623][info] 	- image pair (1723904574, 1874446037) contains 592 geometric matches.
+[10:11:20.476623][info] 	- image pair (1723904574, 1874613154) contains 615 geometric matches.
+[10:11:20.476700][info] 	- image pair (1723904574, 1972083977) contains 532 geometric matches.
+[10:11:20.476700][info] 	- image pair (1723904574, 1972235731) contains 533 geometric matches.
+[10:11:20.476700][info] 	- image pair (1726285970, 1726878806) contains 363 geometric matches.
+[10:11:20.476700][info] 	- image pair (1726285970, 1733583250) contains 312 geometric matches.
+[10:11:20.476700][info] 	- image pair (1726285970, 1819771540) contains 477 geometric matches.
+[10:11:20.476700][info] 	- image pair (1726285970, 1820872116) contains 493 geometric matches.
+[10:11:20.476700][info] 	- image pair (1726285970, 1873867005) contains 548 geometric matches.
+[10:11:20.476700][info] 	- image pair (1726285970, 1874446037) contains 524 geometric matches.
+[10:11:20.476700][info] 	- image pair (1726285970, 1874613154) contains 545 geometric matches.
+[10:11:20.476700][info] 	- image pair (1726285970, 1972083977) contains 671 geometric matches.
+[10:11:20.476700][info] 	- image pair (1726285970, 1972235731) contains 652 geometric matches.
+[10:11:20.476700][info] 	- image pair (1726878806, 1733283469) contains 626 geometric matches.
+[10:11:20.476700][info] 	- image pair (1726878806, 1733583250) contains 530 geometric matches.
+[10:11:20.477216][info] 	- image pair (1726878806, 1734525654) contains 468 geometric matches.
+[10:11:20.477216][info] 	- image pair (1726878806, 1736336538) contains 524 geometric matches.
+[10:11:20.477216][info] 	- image pair (1726878806, 1938092020) contains 359 geometric matches.
+[10:11:20.477216][info] 	- image pair (1726878806, 1940264908) contains 394 geometric matches.
+[10:11:20.477216][info] 	- image pair (1726878806, 1972083977) contains 398 geometric matches.
+[10:11:20.477216][info] 	- image pair (1726878806, 1972235731) contains 415 geometric matches.
+[10:11:20.477216][info] 	- image pair (1727963742, 1728092725) contains 354 geometric matches.
+[10:11:20.477216][info] 	- image pair (1727963742, 1729551748) contains 342 geometric matches.
+[10:11:20.477216][info] 	- image pair (1727963742, 1747237197) contains 368 geometric matches.
+[10:11:20.477216][info] 	- image pair (1727963742, 1758874427) contains 378 geometric matches.
+[10:11:20.477216][info] 	- image pair (1727963742, 1764792200) contains 276 geometric matches.
+[10:11:20.477216][info] 	- image pair (1727963742, 1770484637) contains 328 geometric matches.
+[10:11:20.477216][info] 	- image pair (1727963742, 1773692128) contains 336 geometric matches.
+[10:11:20.477216][info] 	- image pair (1727963742, 1775276919) contains 286 geometric matches.
+[10:11:20.477216][info] 	- image pair (1727963742, 1775441569) contains 313 geometric matches.
+[10:11:20.477216][info] 	- image pair (1727963742, 1896975152) contains 166 geometric matches.
+[10:11:20.477783][info] 	- image pair (1727963742, 1897024024) contains 211 geometric matches.
+[10:11:20.477783][info] 	- image pair (1727963742, 1908604899) contains 165 geometric matches.
+[10:11:20.477854][info] 	- image pair (1727963742, 1911888489) contains 182 geometric matches.
+[10:11:20.477923][info] 	- image pair (1728092725, 1729551748) contains 415 geometric matches.
+[10:11:20.477923][info] 	- image pair (1728092725, 1747237197) contains 398 geometric matches.
+[10:11:20.477923][info] 	- image pair (1728092725, 1758874427) contains 356 geometric matches.
+[10:11:20.478012][info] 	- image pair (1728092725, 1764792200) contains 191 geometric matches.
+[10:11:20.478012][info] 	- image pair (1728092725, 1770484637) contains 276 geometric matches.
+[10:11:20.478085][info] 	- image pair (1728092725, 1773692128) contains 280 geometric matches.
+[10:11:20.478085][info] 	- image pair (1728092725, 1775276919) contains 253 geometric matches.
+[10:11:20.478085][info] 	- image pair (1728092725, 1775441569) contains 206 geometric matches.
+[10:11:20.478085][info] 	- image pair (1728092725, 1896975152) contains 220 geometric matches.
+[10:11:20.478085][info] 	- image pair (1728092725, 1897024024) contains 296 geometric matches.
+[10:11:20.478085][info] 	- image pair (1728092725, 1908604899) contains 239 geometric matches.
+[10:11:20.478085][info] 	- image pair (1728092725, 1911888489) contains 238 geometric matches.
+[10:11:20.478085][info] 	- image pair (1729551748, 1747237197) contains 427 geometric matches.
+[10:11:20.478085][info] 	- image pair (1729551748, 1758874427) contains 399 geometric matches.
+[10:11:20.478085][info] 	- image pair (1729551748, 1764792200) contains 235 geometric matches.
+[10:11:20.478085][info] 	- image pair (1729551748, 1770484637) contains 267 geometric matches.
+[10:11:20.478085][info] 	- image pair (1729551748, 1773692128) contains 301 geometric matches.
+[10:11:20.478085][info] 	- image pair (1729551748, 1775276919) contains 266 geometric matches.
+[10:11:20.478085][info] 	- image pair (1729551748, 1775441569) contains 242 geometric matches.
+[10:11:20.478085][info] 	- image pair (1729551748, 1896975152) contains 216 geometric matches.
+[10:11:20.478604][info] 	- image pair (1729551748, 1897024024) contains 287 geometric matches.
+[10:11:20.478604][info] 	- image pair (1729551748, 1908604899) contains 210 geometric matches.
+[10:11:20.478678][info] 	- image pair (1729551748, 1911888489) contains 219 geometric matches.
+[10:11:20.478678][info] 	- image pair (1730880300, 1758100110) contains 533 geometric matches.
+[10:11:20.478848][info] 	- image pair (1730880300, 1808854681) contains 509 geometric matches.
+[10:11:20.478953][info] 	- image pair (1730880300, 1809681707) contains 498 geometric matches.
+[10:11:20.478953][info] 	- image pair (1730880300, 2114403589) contains 494 geometric matches.
+[10:11:20.478953][info] 	- image pair (1730880300, 2115178513) contains 498 geometric matches.
+[10:11:20.478953][info] 	- image pair (1730880300, 2117096263) contains 474 geometric matches.
+[10:11:20.478953][info] 	- image pair (1730880300, 2118959901) contains 522 geometric matches.
+[10:11:20.478953][info] 	- image pair (1730880300, 2121094510) contains 474 geometric matches.
+[10:11:20.478953][info] 	- image pair (1733283469, 1733583250) contains 580 geometric matches.
+[10:11:20.479520][info] 	- image pair (1733283469, 1734525654) contains 516 geometric matches.
+[10:11:20.479520][info] 	- image pair (1733283469, 1736336538) contains 574 geometric matches.
+[10:11:20.479620][info] 	- image pair (1733283469, 1938092020) contains 405 geometric matches.
+[10:11:20.479620][info] 	- image pair (1733283469, 1940264908) contains 437 geometric matches.
+[10:11:20.479620][info] 	- image pair (1733283469, 1945317872) contains 407 geometric matches.
+[10:11:20.479620][info] 	- image pair (1733583250, 1734525654) contains 534 geometric matches.
+[10:11:20.479620][info] 	- image pair (1733583250, 1736336538) contains 548 geometric matches.
+[10:11:20.479620][info] 	- image pair (1733583250, 1836140009) contains 315 geometric matches.
+[10:11:20.479620][info] 	- image pair (1733583250, 1855120617) contains 359 geometric matches.
+[10:11:20.479620][info] 	- image pair (1733583250, 1938092020) contains 417 geometric matches.
+[10:11:20.479620][info] 	- image pair (1733583250, 1940264908) contains 443 geometric matches.
+[10:11:20.480164][info] 	- image pair (1733583250, 1945317872) contains 428 geometric matches.
+[10:11:20.480227][info] Save geometric matches.
+[10:11:20.677506][info] Task done in (s): 1.568000

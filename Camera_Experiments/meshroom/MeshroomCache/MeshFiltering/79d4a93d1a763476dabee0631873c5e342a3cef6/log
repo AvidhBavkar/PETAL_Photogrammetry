@@ -1,0 +1,52 @@
+[2024-11-20 10:49:33.220978] [0x0000f138] [trace]   Embedded OCIO configuration file: 'C:\Users\Avidh Bavkar\Downloads\Meshroom-2023.3.0-win64\Meshroom-2023.3.0\aliceVision/share/aliceVision/config.ocio' found.
+Program called with the following parameters:
+ * filterLargeTrianglesFactor = 60
+ * filterTrianglesRatio = 0
+ * filteringIterations = 1
+ * filteringSubset = "all"
+ * inputMesh = "C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/meshroom/MeshroomCache/Meshing/da155b3fe0a1314114b58ee4bb1fbf7b4351a02f/mesh.obj"
+ * keepLargestMeshOnly = 0
+ * maxCoresAvailable =  Unknown Type "unsigned int" (default)
+ * maxMemoryAvailable = 18446744073709551615 (default)
+ * outputMesh = "C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/meshroom/MeshroomCache/MeshFiltering/79d4a93d1a763476dabee0631873c5e342a3cef6/mesh.obj"
+ * smoothingBoundariesNeighbours = 0
+ * smoothingIterations = 5
+ * smoothingLambda = 1
+ * smoothingSubset = "all"
+ * verboseLevel = "info"
+
+Hardware : 
+	Detected core count : 20
+	OpenMP will use 20 cores
+	Detected available memory : 10997 Mo
+
+[10:49:33.254957][info] Mesh file: "C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/meshroom/MeshroomCache/Meshing/da155b3fe0a1314114b58ee4bb1fbf7b4351a02f/mesh.obj" loaded.
+[10:49:33.254957][info] Input mesh: 1997 vertices and 4040 facets.
+[10:49:33.254957][info] Start mesh filtering.
+[10:49:33.254957][info] Mesh filtering: iteration 0
+[10:49:33.254957][info] Filtering large triangles.
+[10:49:33.257915][info] Filtering large triangles, done.
+[10:49:33.257915][info] Mesh filtering done: 1997 vertices and 4040 facets.
+[10:49:33.257915][info] Start mesh smoothing.
+[10:49:33.272509][info] cleanMesh:
+	- # wrong points: 83
+	- # new points: 84
+[10:49:33.280510][info] cleanMesh:
+	- # wrong points: 0
+	- # new points: 0
+[10:49:33.282509][info] Optimizing mesh smooth: 
+	- lamda: 1
+	- niters: 5
+[10:49:33.282509][info] Optimizing mesh smooth: iteration 0
+[10:49:33.282509][info] Optimizing mesh smooth: iteration 1
+[10:49:33.283511][info] Optimizing mesh smooth: iteration 2
+[10:49:33.283511][info] Optimizing mesh smooth: iteration 3
+[10:49:33.283511][info] Optimizing mesh smooth: iteration 4
+[10:49:33.283511][info] Mesh smoothing done: 2081 vertices and 4040 facets.
+[10:49:33.283511][info] remove free points from mesh.
+Output mesh: 1997 vertices and 4040 facets.
+[10:49:33.283511][info] Save mesh.
+[10:49:33.283511][info] Save obj mesh file
+[10:49:33.306031][info] Save mesh to obj done.
+[10:49:33.307028][info] Mesh file: "C:/Users/Avidh Bavkar/OneDrive - purdue.edu/PETAL/PETAL_Photogrammetry/Scripts/Camera_Experiments/meshroom/MeshroomCache/MeshFiltering/79d4a93d1a763476dabee0631873c5e342a3cef6/mesh.obj" saved.
+[10:49:33.307028][info] Task done in (s): 0.084000
