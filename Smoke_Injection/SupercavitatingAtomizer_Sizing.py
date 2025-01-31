@@ -11,7 +11,7 @@
 
 # Debug stuff:
 global debug
-debug = True
+debug = False
 def printD(string): 
     if(debug):
         print(string);
@@ -28,14 +28,14 @@ u = PDrop.units
 
 # Inputs:
 target_cav_index = 0.632; #Hiroyasu et. al. Table 1, Boundary of Supercavitation
-orifice_diam = 0.6 * u.mm; #Smallest good hole according to Logan on 3D printer
-orifice_count = 37; #From https://www.engineeringtoolbox.com/smaller-circles-in-larger-circle-d_1849.html
+orifice_diam = 0.8 * u.mm; #Smallest good hole according to Logan on 3D printer
+orifice_count = 3; #From https://www.engineeringtoolbox.com/smaller-circles-in-larger-circle-d_1849.html
 orifice_CD = 0.98; #Discharge coeffient for a single orifice.
 
 iterations = 3;
 
 while (iterations > 0):
-    printD(f"-----------ITERATIONS LEFT:{iterations}-----------")
+    printD(f"-----------ITERATIONS LEFT: {iterations}-----------")
     # Fluid properties of Fog Juice:
     inlet_pres = 101325 * u.Pa; #Starting value, will iterate it.
     inlet_temp = 293 * u.K;
